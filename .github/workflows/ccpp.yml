@@ -12,7 +12,9 @@ jobs:
     - name: Get Package
       uses: mstksg/get-package@v1
       with:
-        apt-get: uuid-dev      
+        apt-get: uuid-dev, libjson0-dev      
     - name: configure
-      run: mkdir build && pushd build && cmake .. && make
+      run: mkdir build && pushd build && cmake .. && popd
+    - name: build
+      run: pushd build && make
 

@@ -10,7 +10,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Get Package
+    - name: File Changes Action
+      uses: trilom/file-changes-action@v1.0.0
+    - name: Get Packages
       uses: mstksg/get-package@v1
       with:
         apt-get: uuid-dev libjson-c-dev libhwloc-dev    
@@ -20,3 +22,4 @@ jobs:
       run: pushd build && make && popd
     - name: test
       run: pushd build && make test && popd
+

@@ -36,5 +36,6 @@ jobs:
       run: |
         pushd build
         make test_unit
+        ctest -j3 --timeout 180
         popd
 

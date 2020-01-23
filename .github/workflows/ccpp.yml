@@ -20,6 +20,6 @@ jobs:
     - name: Get Packages
       uses: mstksg/get-package@v1
       with:
-        apt-get: uuid-dev libjson-c-dev libhwloc-dev    
+        apt-get: uuid-dev libjson-c-dev libhwloc-dev lcov
     - name: Run Unit Tests with Coverage
       run: ./scripts/cover.sh

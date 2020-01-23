@@ -12,7 +12,7 @@ jobs:
     - name: Get Package
       uses: mstksg/get-package@v1
       with:
-        apt-get: cmake, libjson-c-dev, uuid-dev      
+        apt-get: cmake, uuid-dev      
     - name: configure
       run: cmake --build .
 

@@ -14,5 +14,5 @@ jobs:
       with:
         apt-get: uuid-dev      
     - name: configure
-      run: cmake --build .
+      run: mkdir build && pushd build && cmake .. && make
 

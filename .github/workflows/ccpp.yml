@@ -21,16 +21,5 @@ jobs:
       uses: mstksg/get-package@v1
       with:
         apt-get: uuid-dev libjson-c-dev libhwloc-dev    
-    - name: configure
-      run: |
-        mkdir build
-        pushd build
-        cmake .. -DBUILD_TESTS=ON
-        popd
-    - name: test
-      run: |
-        pushd build
-        make test_unit xfpga modbmc fpgad-xfpga
-        ctest -j3 --timeout 180
-        popd
-
+    - name: Run Unit Tests with Coverage
+      run: ./scripts/cover.sh

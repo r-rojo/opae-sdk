@@ -15,7 +15,7 @@ jobs:
       with:
         apt-get: uuid-dev libjson-c-dev libhwloc-dev    
     - name: configure
-      run: mkdir build && pushd build && cmake .. && popd
+      run: mkdir build && pushd build && cmake .. -DBUILD_TESTS=ON && popd
     - name: build
       run: pushd build && make && popd
     - name: test

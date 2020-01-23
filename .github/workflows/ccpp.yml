@@ -2,7 +2,7 @@ name: C/C++ CI
 
 on:
   push:
-    paths: ['**.c', '**.h', '**.cpp', '**CMakeLists.txt']
+    paths: ['**.c', '**.h', '**.cpp', '**CMakeLists.txt', '**.yml']
 jobs:
   build:
 

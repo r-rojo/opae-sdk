@@ -9,11 +9,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: Get Package
+      uses: mstksg/get-package@v1
+      with:
+        apt-get: cmake, json-c-dev, uuid-dev      
     - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      run: cmake --build .
+

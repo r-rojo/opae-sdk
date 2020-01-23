@@ -12,7 +12,7 @@ jobs:
     - name: Get Package
       uses: mstksg/get-package@v1
       with:
-        apt-get: uuid-dev libjson-c-dev      
+        apt-get: uuid-dev libjson-c-dev libhwloc-dev    
     - name: configure
       run: mkdir build && pushd build && cmake .. && popd
     - name: build

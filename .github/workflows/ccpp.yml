@@ -27,15 +27,10 @@ jobs:
         pushd build
         cmake .. -DBUILD_TESTS=ON
         popd
-    - name: build
-      run: |
-        pushd build
-        make
-        popd
     - name: test
       run: |
         pushd build
-        make test_unit
+        make test_unit xfpga modbmc fpgad-xfpga
         ctest -j3 --timeout 180
         popd
 

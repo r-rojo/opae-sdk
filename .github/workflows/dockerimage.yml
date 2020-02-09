@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag my-image-name:latest
     - name: save
-      run: docker save my-image-name:latest > my-image.tar
+      run: docker images && docker save my-image-name:latest > my-image.tar
     - name: Archive production artifacts 
       uses: actions/upload-artifact@v1
       with:

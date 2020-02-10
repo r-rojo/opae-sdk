@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Install Packages
-      run: sudo apt update && sudo apt install libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev
+      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:

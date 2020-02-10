@@ -5,7 +5,8 @@ on: [push]
 jobs:
 
   build:
-
+    env:
+      GOPATH: ${{ github.workspace }}/go
     runs-on: ubuntu-latest
 
     steps:

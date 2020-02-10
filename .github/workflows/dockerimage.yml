@@ -27,7 +27,7 @@ jobs:
     - name: Save Docker Image
       run: docker images && docker save my-image-name:latest > my-image.tar
     - name: Convert to OCI bundle
-      run: skopeo copy docker-archive:my-image.tar oci:my-image-oci
+      run: skopeo copy docker-archive:my-image.tar oci:my-image-oci:latest
     - name: Tar OCI image
       run: tar -czvf my-image-oci.tar.gz my-image-oci
     - name: Unpack OCI image

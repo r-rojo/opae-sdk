@@ -34,7 +34,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: my-image-oci
-        path: my-image-ociar.gz
+        path: my-image-oci.tar.gz
     - name: Unpack OCI image
       run: sudo oci-image-tool create --ref name=latest my-image-oci my-image-unpacked
     - name: Tar unpacked bundle

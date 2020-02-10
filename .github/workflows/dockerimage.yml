@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Install Packages
-      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man oci-image-tool
+      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:
@@ -20,6 +20,8 @@ jobs:
     - name: Build skopeo
       run: git clone https://github.com/containers/skopeo $GOPATH/src/github.com/containers/skopeo &&cd $GOPATH/src/github.com/containers/skopeo && make binary-local && sudo make install
     - uses: actions/checkout@v2
+    - name: Build oci-image-tool
+      run: go get -d github.com/opencontainers/image-tools/cmd/oci-image-tool && cd $GOPATH/src/github.com/opencontainers/image-tools/ && make all && sudo make install
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:latest
     - name: Save Docker Image
@@ -28,8 +30,12 @@ jobs:
       run: skopeo copy docker-archive:my-image.tar oci:my-image-oci
     - name: Tar OCI image
       run: tar -czvf my-image-oci.tar.gz my-image-oci
-    - name: Archive production artifacts 
+    - name: Archive production artifacts
+    - name: Unpack OCI image
+      run: oci-image-tool create ref name=latest my-image-oci my-image-unpacked
+    - name: Tar unpacked bundle
+      run: tar -czvf my-image-unpacked.tgz my-image-unpacked
       uses: actions/upload-artifact@v1
       with:
         name: my-image-oci
-        path: my-image-oci.tar.gz
+        path: my-image-*.tar.gz

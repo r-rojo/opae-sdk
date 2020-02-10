@@ -19,9 +19,9 @@ jobs:
         #version: # optional, default is 1.10
     - name: Build skopeo
       run: git clone https://github.com/containers/skopeo $GOPATH/src/github.com/containers/skopeo &&cd $GOPATH/src/github.com/containers/skopeo && make binary-local && sudo make install
-    - uses: actions/checkout@v2
     - name: Build oci-image-tool
       run: go get -d github.com/opencontainers/image-tools/cmd/oci-image-tool && cd $GOPATH/src/github.com/opencontainers/image-tools/ && make all && sudo make install
+    - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:latest
     - name: Save Docker Image
@@ -31,7 +31,7 @@ jobs:
     - name: Tar OCI image
       run: tar -czvf my-image-oci.tar.gz my-image-oci
     - name: Unpack OCI image
-      run: oci-image-tool create ref name=latest my-image-oci my-image-unpacked
+      run: oci-image-tool create --ref name=latest my-image-oci my-image-unpacked
     - name: Tar unpacked bundle
       run: tar -czvf my-image-unpacked.tgz my-image-unpacked
     - name: Archive production artifacts

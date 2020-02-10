@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Install Packages
-      run: apt install update && apt install snapd && snap install skopeo
+      run: sudo apt update && sudo apt install snapd && sudo snap install skopeo
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:latest

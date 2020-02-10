@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install Packages
+      run: sudo apt install libgpgme-dev libassuan-dev libbtrfs-dev libdevmapper-dev
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:

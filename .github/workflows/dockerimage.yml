@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Install Packages
-      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man
+      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man oci-image-tool
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:

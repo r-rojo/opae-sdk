@@ -31,9 +31,9 @@ jobs:
     - name: Tar OCI image
       run: tar -czvf my-image-oci.tar.gz my-image-oci
     - name: Unpack OCI image
-      run: sudo chmod -R a+r my-image-oci && oci-image-tool create --ref name=latest my-image-oci my-image-unpacked
+      run: sudo oci-image-tool create --ref name=latest my-image-oci my-image-unpacked
     - name: Tar unpacked bundle
-      run: tar -czvf my-image-unpacked.tgz my-image-unpacked
+      run: sudo chmod -R a+r my-image-unpacked && tar -czvf my-image-unpacked.tgz my-image-unpacked
     - name: Archive production artifacts
       uses: actions/upload-artifact@v1
       with:

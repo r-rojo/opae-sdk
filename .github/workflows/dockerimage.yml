@@ -30,12 +30,17 @@ jobs:
       run: skopeo copy docker-archive:my-image.tar oci:my-image-oci:latest
     - name: Tar OCI image
       run: tar -czf my-image-oci.tar.gz my-image-oci
+    - name: Archive oci image artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: my-image-oci
+        path: my-image-ociar.gz
     - name: Unpack OCI image
       run: sudo oci-image-tool create --ref name=latest my-image-oci my-image-unpacked
     - name: Tar unpacked bundle
       run: sudo tar -czf my-image-unpacked.tar.gz my-image-unpacked && sudo chmod a+r my-image-unpacked.tar.gz
-    - name: Archive production artifacts
+    - name: Archive unpacked image
       uses: actions/upload-artifact@v1
       with:
-        name: my-image-files
-        path: my-image*.tar.gz
+        name: my-image-unpacked
+        path: my-image-unpacked.tar.gz

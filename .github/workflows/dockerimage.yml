@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Install Packages
       run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:latest
+    - name: Save Docker Image
+      run: docker images && docker save my-image-name:latest > my-image.tar      
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:
@@ -21,11 +26,6 @@ jobs:
       run: git clone https://github.com/containers/skopeo $GOPATH/src/github.com/containers/skopeo &&cd $GOPATH/src/github.com/containers/skopeo && make binary-local && sudo make install
     - name: Build oci-image-tool
       run: go get -d github.com/opencontainers/image-tools/cmd/oci-image-tool && cd $GOPATH/src/github.com/opencontainers/image-tools/ && make all && sudo make install
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:latest
-    - name: Save Docker Image
-      run: docker images && docker save my-image-name:latest > my-image.tar
     - name: Convert to OCI bundle
       run: skopeo copy docker-archive:my-image.tar oci:my-image-oci:latest
     - name: Tar OCI image

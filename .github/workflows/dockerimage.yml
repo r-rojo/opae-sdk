@@ -27,7 +27,7 @@ jobs:
     - uses: actions/download-artifact@master
       with:
           name: opae-fedora
-          path: opae-fedora.tar
+          path: opae-fedora/opae-fedora.tar
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:

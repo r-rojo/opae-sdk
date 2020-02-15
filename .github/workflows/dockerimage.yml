@@ -3,7 +3,7 @@ name: Docker Image CI
 on: [push]
 
 jobs:
-  build:
+  build_docker_image:
     runs-on: ubuntu-latest
     steps:
     - name: Install Packages
@@ -19,6 +19,7 @@ jobs:
         name: opae-fedora
         path: opae-fedora.tar
   build_oci_image:
+    needs: build_docker_image
     env:
       GOPATH: ${{ github.workspace }}/go
     runs-on: ubuntu-latest

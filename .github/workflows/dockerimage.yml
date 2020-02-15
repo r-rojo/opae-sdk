@@ -22,12 +22,11 @@ jobs:
       GOPATH: ${{ github.workspace }}/go
     runs-on: ubuntu-latest
     steps:
-    - name: Install Packages
-      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man
     - uses: actions/download-artifact@master
       with:
           name: opae-fedora
-          path: opae-fedora/opae-fedora.tar
+    - name: Install Packages
+      run: sudo apt update && sudo apt install -y libgpgme-dev libassuan-dev btrfs-tools libdevmapper-dev go-md2man
     - name: Setup Go for use with actions
       uses: actions/setup-go@v1.0.0
       # with:

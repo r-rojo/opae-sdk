@@ -20,7 +20,7 @@ jobs:
     needs: build_docker_image
     env:
       GOPATH: ${{ github.workspace }}/go
-    if: enabled()
+    if: failure()
     runs-on: ubuntu-latest
     steps:
     - uses: actions/download-artifact@master

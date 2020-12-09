@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdummy__afu_1_1mmio__test" kind="class" language="C++" prot="public">
+    <compoundname>dummy_afu::mmio_test</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">test_command</basecompoundref>
+    <includes refid="samples_2dummy__afu_2mmio_8h" local="no">/root/samples/dummy_afu/mmio.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdummy__afu_1_1mmio__test_1a04fa6884b8ffc217cace4c2581eb1ac8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dummy_afu::mmio_test::count_</definition>
+        <argsstring></argsstring>
+        <name>count_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="181" column="12" bodyfile="samples/dummy_afu/mmio.h" bodystart="181" bodyend="-1"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" compoundref="samples_2dummy__afu_2mmio_8h" startline="116" endline="129">add_options</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" compoundref="samples_2dummy__afu_2mmio_8h" startline="131" endline="152">run</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" compoundref="samples_2dummy__afu_2mmio_8h" startline="155" endline="179">run_perf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdummy__afu_1_1mmio__test_1a345f52c800f65b0f97f01756fa20e419" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dummy_afu::mmio_test::sp_index_</definition>
+        <argsstring></argsstring>
+        <name>sp_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="182" column="12" bodyfile="samples/dummy_afu/mmio.h" bodystart="182" bodyend="-1"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" compoundref="samples_2dummy__afu_2mmio_8h" startline="116" endline="129">add_options</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" compoundref="samples_2dummy__afu_2mmio_8h" startline="131" endline="152">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdummy__afu_1_1mmio__test_1a9df22c82e86ee0d2205676960c01094e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dummy_afu::mmio_test::perf_</definition>
+        <argsstring></argsstring>
+        <name>perf_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="183" column="8" bodyfile="samples/dummy_afu/mmio.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" compoundref="samples_2dummy__afu_2mmio_8h" startline="116" endline="129">add_options</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" compoundref="samples_2dummy__afu_2mmio_8h" startline="131" endline="152">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdummy__afu_1_1mmio__test_1a1475d7585eecd522b39b0767eff6e0a8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dummy_afu::mmio_test::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="184" column="12" bodyfile="samples/dummy_afu/mmio.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" compoundref="samples_2dummy__afu_2mmio_8h" startline="116" endline="129">add_options</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" compoundref="samples_2dummy__afu_2mmio_8h" startline="155" endline="179">run_perf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdummy__afu_1_1mmio__test_1a97e5092750cb8d3e671b6fc6d66eebcc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dummy_afu::mmio_test::op_</definition>
+        <argsstring></argsstring>
+        <name>op_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="185" column="15" bodyfile="samples/dummy_afu/mmio.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" compoundref="samples_2dummy__afu_2mmio_8h" startline="116" endline="129">add_options</referencedby>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" compoundref="samples_2dummy__afu_2mmio_8h" startline="155" endline="179">run_perf</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1a5c31bd8c1bc38afb83f814f6406ca937" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dummy_afu::mmio_test::mmio_test</definition>
+        <argsstring>()</argsstring>
+        <name>mmio_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="96" column="3" bodyfile="samples/dummy_afu/mmio.h" bodystart="96" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1a70bd0d084015442089e2fa1023351107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dummy_afu::mmio_test::~mmio_test</definition>
+        <argsstring>()</argsstring>
+        <name>~mmio_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="105" column="11" bodyfile="samples/dummy_afu/mmio.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1a1bfdb1527b7284659cba26e0d6dc7777" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* dummy_afu::mmio_test::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="106" column="22" bodyfile="samples/dummy_afu/mmio.h" bodystart="106" bodyend="109"/>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" compoundref="samples_2dummy__afu_2mmio_8h" startline="155" endline="179">run_perf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1ae11ac9f28ce155a19cac986cdb054fa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* dummy_afu::mmio_test::description</definition>
+        <argsstring>() const</argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="111" column="22" bodyfile="samples/dummy_afu/mmio.h" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dummy_afu::mmio_test::add_options</definition>
+        <argsstring>(CLI::App *app)</argsstring>
+        <name>add_options</name>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="116" column="16" bodyfile="samples/dummy_afu/mmio.h" bodystart="116" bodyend="129"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a04fa6884b8ffc217cace4c2581eb1ac8" compoundref="samples_2dummy__afu_2mmio_8h" startline="181">count_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a97e5092750cb8d3e671b6fc6d66eebcc" compoundref="samples_2dummy__afu_2mmio_8h" startline="185">op_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a9df22c82e86ee0d2205676960c01094e" compoundref="samples_2dummy__afu_2mmio_8h" startline="183">perf_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a345f52c800f65b0f97f01756fa20e419" compoundref="samples_2dummy__afu_2mmio_8h" startline="182">sp_index_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a1475d7585eecd522b39b0767eff6e0a8" compoundref="samples_2dummy__afu_2mmio_8h" startline="184">width_</references>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int dummy_afu::mmio_test::run</definition>
+        <argsstring>(test_afu *afu, CLI::App *app)</argsstring>
+        <name>run</name>
+        <param>
+          <type><ref refid="namespacedummy__afu_1ac06b3900bd7a2d4ba2c3f19ea20f622d" kindref="member">test_afu</ref> *</type>
+          <declname>afu</declname>
+        </param>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="131" column="15" bodyfile="samples/dummy_afu/mmio.h" bodystart="131" bodyend="152"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a04fa6884b8ffc217cace4c2581eb1ac8" compoundref="samples_2dummy__afu_2mmio_8h" startline="181">count_</references>
+        <references refid="namespacedummy__afu_1aeddaa3ca24158ca6357aa3d61b96cfe3a2dd1000f0770dcda833f518caaef2139" compoundref="dummy__afu_8h" startline="43">dummy_afu::MMIO_TEST_SCRATCHPAD</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a9df22c82e86ee0d2205676960c01094e" compoundref="samples_2dummy__afu_2mmio_8h" startline="183">perf_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" compoundref="samples_2dummy__afu_2mmio_8h" startline="155" endline="179">run_perf</references>
+        <references refid="namespacedummy__afu_1aeddaa3ca24158ca6357aa3d61b96cfe3ac7cab4d551fa9a04a732ed2d48f121a0" compoundref="dummy__afu_8h" startline="42">dummy_afu::SCRATCHPAD</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a345f52c800f65b0f97f01756fa20e419" compoundref="samples_2dummy__afu_2mmio_8h" startline="182">sp_index_</references>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dummy_afu::mmio_test::run_perf</definition>
+        <argsstring>(dummy_afu *afu, CLI::App *app)</argsstring>
+        <name>run_perf</name>
+        <param>
+          <type><ref refid="classdummy__afu_1_1dummy__afu" kindref="compound">dummy_afu</ref> *</type>
+          <declname>afu</declname>
+        </param>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/mmio.h" line="155" column="7" bodyfile="samples/dummy_afu/mmio.h" bodystart="155" bodyend="179"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a04fa6884b8ffc217cace4c2581eb1ac8" compoundref="samples_2dummy__afu_2mmio_8h" startline="181">count_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a1bfdb1527b7284659cba26e0d6dc7777" compoundref="samples_2dummy__afu_2mmio_8h" startline="106" endline="109">name</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a97e5092750cb8d3e671b6fc6d66eebcc" compoundref="samples_2dummy__afu_2mmio_8h" startline="185">op_</references>
+        <references refid="classdummy__afu_1_1mmio__test_1a1475d7585eecd522b39b0767eff6e0a8" compoundref="samples_2dummy__afu_2mmio_8h" startline="184">width_</references>
+        <referencedby refid="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" compoundref="samples_2dummy__afu_2mmio_8h" startline="131" endline="152">run</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dummy_afu::mmio_test</label>
+        <link refid="classdummy__afu_1_1mmio__test"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/dummy_afu/mmio.h" line="94" column="1" bodyfile="samples/dummy_afu/mmio.h" bodystart="93" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classdummy__afu_1_1mmio__test_1ad4e1d2ed8ec389198b09a5ce9c940aa5" prot="public" virt="virtual"><scope>dummy_afu::mmio_test</scope><name>add_options</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a04fa6884b8ffc217cace4c2581eb1ac8" prot="private" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>count_</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1ae11ac9f28ce155a19cac986cdb054fa2" prot="public" virt="virtual"><scope>dummy_afu::mmio_test</scope><name>description</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a5c31bd8c1bc38afb83f814f6406ca937" prot="public" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>mmio_test</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a1bfdb1527b7284659cba26e0d6dc7777" prot="public" virt="virtual"><scope>dummy_afu::mmio_test</scope><name>name</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a97e5092750cb8d3e671b6fc6d66eebcc" prot="private" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>op_</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a9df22c82e86ee0d2205676960c01094e" prot="private" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>perf_</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a11bd14e2eaedd19a9b759f30dcc845a7" prot="public" virt="virtual"><scope>dummy_afu::mmio_test</scope><name>run</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1acd17b7274c884cc6f0b700e00c3c4db1" prot="public" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>run_perf</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a345f52c800f65b0f97f01756fa20e419" prot="private" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>sp_index_</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a1475d7585eecd522b39b0767eff6e0a8" prot="private" virt="non-virtual"><scope>dummy_afu::mmio_test</scope><name>width_</name></member>
+      <member refid="classdummy__afu_1_1mmio__test_1a70bd0d084015442089e2fa1023351107" prot="public" virt="virtual"><scope>dummy_afu::mmio_test</scope><name>~mmio_test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

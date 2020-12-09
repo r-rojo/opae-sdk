@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdummy__afu_1_1ddr__test" kind="class" language="C++" prot="public">
+    <compoundname>dummy_afu::ddr_test</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">test_command</basecompoundref>
+    <includes refid="ddr_8h" local="no">/root/samples/dummy_afu/ddr.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdummy__afu_1_1ddr__test_1ae44b501624492b8a12c8b1e7a1cf0921" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dummy_afu::ddr_test::ddr_test</definition>
+        <argsstring>()</argsstring>
+        <name>ddr_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/ddr.h" line="48" column="3" bodyfile="samples/dummy_afu/ddr.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1ddr__test_1a80c55e25295baf20a8e613464c38eb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dummy_afu::ddr_test::~ddr_test</definition>
+        <argsstring>()</argsstring>
+        <name>~ddr_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/ddr.h" line="49" column="11" bodyfile="samples/dummy_afu/ddr.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1ddr__test_1a5062efb52f0cc3c8d744bd9f39f7298d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* dummy_afu::ddr_test::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/ddr.h" line="50" column="22" bodyfile="samples/dummy_afu/ddr.h" bodystart="50" bodyend="53"/>
+        <referencedby refid="classdummy__afu_1_1ddr__test_1a5207a71d34529d7bfac6871282566edb" compoundref="ddr_8h" startline="60" endline="103">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1ddr__test_1a9ee7389012ae0941132809478d6a517b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* dummy_afu::ddr_test::description</definition>
+        <argsstring>() const</argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/ddr.h" line="55" column="22" bodyfile="samples/dummy_afu/ddr.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1ddr__test_1a5207a71d34529d7bfac6871282566edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int dummy_afu::ddr_test::run</definition>
+        <argsstring>(test_afu *afu, CLI::App *app)</argsstring>
+        <name>run</name>
+        <param>
+          <type><ref refid="namespacedummy__afu_1ac06b3900bd7a2d4ba2c3f19ea20f622d" kindref="member">test_afu</ref> *</type>
+          <declname>afu</declname>
+        </param>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/ddr.h" line="60" column="15" bodyfile="samples/dummy_afu/ddr.h" bodystart="60" bodyend="103"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="namespacedummy__afu_1aef855a00ce0a89e5c9d10373084438ad" compoundref="ddr_8h" startline="36" endline="43">dummy_afu::check_stat</references>
+        <references refid="namespacedummy__afu_1aeddaa3ca24158ca6357aa3d61b96cfe3af36a9e642b0ddac03c1f9938fb6789c3" compoundref="dummy__afu_8h" startline="48">dummy_afu::DDR_TEST_CTRL</references>
+        <references refid="classdummy__afu_1_1ddr__test_1a5062efb52f0cc3c8d744bd9f39f7298d" compoundref="ddr_8h" startline="50" endline="53">name</references>
+        <references refid="uniondummy__afu_1_1ddr__test__bank0__stat_1a31db5273b940d4707aed235bc61e29cba452d9ce4a0d81f0a03fb108f90910eff" compoundref="dummy__afu_8h" startline="118">dummy_afu::ddr_test_bank0_stat::offset</references>
+        <references refid="uniondummy__afu_1_1ddr__test__bank1__stat_1aa899e28e4369a17c7c6184750250f5c6a43810c33a13e460071b76c35adbdc7fc" compoundref="dummy__afu_8h" startline="134">dummy_afu::ddr_test_bank1_stat::offset</references>
+        <references refid="uniondummy__afu_1_1ddr__test__bank2__stat_1aa7eeeba80001246e29b1563a5a22b628a3b5fc2a73673ef8ffba47c5c0dc56baf" compoundref="dummy__afu_8h" startline="150">dummy_afu::ddr_test_bank2_stat::offset</references>
+        <references refid="uniondummy__afu_1_1ddr__test__bank3__stat_1a25f2e26d6e38b7015d54b79d246a8b47a5528e77330dfd1667928814465f6282b" compoundref="dummy__afu_8h" startline="166">dummy_afu::ddr_test_bank3_stat::offset</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dummy_afu::ddr_test</label>
+        <link refid="classdummy__afu_1_1ddr__test"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/dummy_afu/ddr.h" line="46" column="1" bodyfile="samples/dummy_afu/ddr.h" bodystart="45" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classdummy__afu_1_1ddr__test_1ae44b501624492b8a12c8b1e7a1cf0921" prot="public" virt="non-virtual"><scope>dummy_afu::ddr_test</scope><name>ddr_test</name></member>
+      <member refid="classdummy__afu_1_1ddr__test_1a9ee7389012ae0941132809478d6a517b" prot="public" virt="virtual"><scope>dummy_afu::ddr_test</scope><name>description</name></member>
+      <member refid="classdummy__afu_1_1ddr__test_1a5062efb52f0cc3c8d744bd9f39f7298d" prot="public" virt="virtual"><scope>dummy_afu::ddr_test</scope><name>name</name></member>
+      <member refid="classdummy__afu_1_1ddr__test_1a5207a71d34529d7bfac6871282566edb" prot="public" virt="virtual"><scope>dummy_afu::ddr_test</scope><name>run</name></member>
+      <member refid="classdummy__afu_1_1ddr__test_1a80c55e25295baf20a8e613464c38eb4d" prot="public" virt="virtual"><scope>dummy_afu::ddr_test</scope><name>~ddr_test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

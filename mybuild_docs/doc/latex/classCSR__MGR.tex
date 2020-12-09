@@ -1,0 +1,258 @@
+\doxysection{C\+S\+R\+\_\+\+M\+GR Class Reference}
+\label{classCSR__MGR}\index{CSR\_MGR@{CSR\_MGR}}
+
+
+{\ttfamily \#include $<$/root/samples/base/sw/csr\+\_\+mgr.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409}{t\+\_\+csr\+\_\+common}} \{ \newline
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+D\+FH}} = 0, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+I\+D\+\_\+L}} = 1, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+I\+D\+\_\+H}} = 2, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+F\+R\+EQ}} = 8, 
+\newline
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+C\+A\+C\+H\+E\+\_\+\+R\+D\+\_\+\+H\+I\+TS}} = 9, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+C\+A\+C\+H\+E\+\_\+\+W\+R\+\_\+\+H\+I\+TS}} = 10, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+L0\+\_\+\+R\+D\+\_\+\+L\+I\+N\+ES}} = 11, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+L0\+\_\+\+W\+R\+\_\+\+L\+I\+N\+ES}} = 12, 
+\newline
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+H0\+\_\+\+L\+I\+N\+ES}} = 13, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+H1\+\_\+\+L\+I\+N\+ES}} = 14, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+F\+I\+U\+\_\+\+S\+T\+A\+TE}} = 15, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+R\+D\+\_\+\+A\+L\+M\+O\+S\+T\+\_\+\+F\+U\+L\+L\+\_\+\+C\+Y\+C\+L\+ES}} = 16, 
+\newline
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+W\+R\+\_\+\+A\+L\+M\+O\+S\+T\+\_\+\+F\+U\+L\+L\+\_\+\+C\+Y\+C\+L\+ES}} = 17, 
+\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d}{C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+\_\+\+L\+A\+ST}} = 18
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCSR__MGR_ac7ae3940e28aaafac608f84b4fea33bc}{C\+S\+R\+\_\+\+M\+GR}} (\mbox{\hyperlink{opae__svc__wrapper_8h_ae6eb64ba29c9d7aa39a35ee7b6b28a22}{S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}} \&\mbox{\hyperlink{classCSR__MGR_a1117785e23d08cb603d672af5f84950c}{svc}})
+\item 
+\mbox{\hyperlink{classCSR__MGR_ac0391b0bde496135d845aad2297d25c8}{$\sim$\+C\+S\+R\+\_\+\+M\+GR}} ()
+\item 
+void \mbox{\hyperlink{classCSR__MGR_ac9ba9ab9f39dee563ba722c249184262}{write\+C\+SR}} (uint32\+\_\+t idx, uint64\+\_\+t v)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classCSR__MGR_a713ff1aa00f9b5bbb40d3c9d17a6a59a}{read\+C\+SR}} (uint32\+\_\+t idx)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classCSR__MGR_a0d46e4a76019f08cd664776b96e041d6}{read\+Common\+C\+SR}} (\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409}{t\+\_\+csr\+\_\+common}} idx)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classCSR__MGR_aacdfb2d642d46b73bca9ac63f1b5022f}{get\+A\+F\+U\+M\+Hz}} (uint64\+\_\+t u\+Clk\+\_\+usr\+\_\+mhz=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{classCSR__MGR_af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5}{U\+S\+E\+R\+\_\+\+C\+S\+R\+\_\+\+B\+A\+SE}} = 32
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{opae__svc__wrapper_8h_ae6eb64ba29c9d7aa39a35ee7b6b28a22}{S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}} \& \mbox{\hyperlink{classCSR__MGR_a1117785e23d08cb603d672af5f84950c}{svc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 39 of file csr\+\_\+mgr.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\label{classCSR__MGR_af8d923be0486defc86aed1b7cc8b20fe}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_CSR\_BASE@{USER\_CSR\_BASE}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!USER\_CSR\_BASE@{USER\_CSR\_BASE}}}\mbox{\label{classCSR__MGR_af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5}} 
+U\+S\+E\+R\+\_\+\+C\+S\+R\+\_\+\+B\+A\+SE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 42 of file csr\+\_\+mgr.\+h.
+
+\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409}} 
+\index{CSR\_MGR@{CSR\_MGR}!t\_csr\_common@{t\_csr\_common}}
+\index{t\_csr\_common@{t\_csr\_common}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{t\_csr\_common}{t\_csr\_common}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409}{C\+S\+R\+\_\+\+M\+G\+R\+::t\+\_\+csr\+\_\+common}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_DFH@{CSR\_COMMON\_DFH}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_DFH@{CSR\_COMMON\_DFH}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+D\+FH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_ID\_L@{CSR\_COMMON\_ID\_L}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_ID\_L@{CSR\_COMMON\_ID\_L}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+I\+D\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_ID\_H@{CSR\_COMMON\_ID\_H}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_ID\_H@{CSR\_COMMON\_ID\_H}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+I\+D\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_FREQ@{CSR\_COMMON\_FREQ}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_FREQ@{CSR\_COMMON\_FREQ}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+F\+R\+EQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_CACHE\_RD\_HITS@{CSR\_COMMON\_CACHE\_RD\_HITS}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_CACHE\_RD\_HITS@{CSR\_COMMON\_CACHE\_RD\_HITS}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+C\+A\+C\+H\+E\+\_\+\+R\+D\+\_\+\+H\+I\+TS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_CACHE\_WR\_HITS@{CSR\_COMMON\_CACHE\_WR\_HITS}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_CACHE\_WR\_HITS@{CSR\_COMMON\_CACHE\_WR\_HITS}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+C\+A\+C\+H\+E\+\_\+\+W\+R\+\_\+\+H\+I\+TS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_VL0\_RD\_LINES@{CSR\_COMMON\_VL0\_RD\_LINES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_VL0\_RD\_LINES@{CSR\_COMMON\_VL0\_RD\_LINES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+L0\+\_\+\+R\+D\+\_\+\+L\+I\+N\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_VL0\_WR\_LINES@{CSR\_COMMON\_VL0\_WR\_LINES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_VL0\_WR\_LINES@{CSR\_COMMON\_VL0\_WR\_LINES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+L0\+\_\+\+W\+R\+\_\+\+L\+I\+N\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_VH0\_LINES@{CSR\_COMMON\_VH0\_LINES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_VH0\_LINES@{CSR\_COMMON\_VH0\_LINES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+H0\+\_\+\+L\+I\+N\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_VH1\_LINES@{CSR\_COMMON\_VH1\_LINES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_VH1\_LINES@{CSR\_COMMON\_VH1\_LINES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+V\+H1\+\_\+\+L\+I\+N\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_FIU\_STATE@{CSR\_COMMON\_FIU\_STATE}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_FIU\_STATE@{CSR\_COMMON\_FIU\_STATE}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+F\+I\+U\+\_\+\+S\+T\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_RD\_ALMOST\_FULL\_CYCLES@{CSR\_COMMON\_RD\_ALMOST\_FULL\_CYCLES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_RD\_ALMOST\_FULL\_CYCLES@{CSR\_COMMON\_RD\_ALMOST\_FULL\_CYCLES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+R\+D\+\_\+\+A\+L\+M\+O\+S\+T\+\_\+\+F\+U\+L\+L\+\_\+\+C\+Y\+C\+L\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_WR\_ALMOST\_FULL\_CYCLES@{CSR\_COMMON\_WR\_ALMOST\_FULL\_CYCLES}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_WR\_ALMOST\_FULL\_CYCLES@{CSR\_COMMON\_WR\_ALMOST\_FULL\_CYCLES}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+W\+R\+\_\+\+A\+L\+M\+O\+S\+T\+\_\+\+F\+U\+L\+L\+\_\+\+C\+Y\+C\+L\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CSR\_COMMON\_\_LAST@{CSR\_COMMON\_\_LAST}!CSR\_MGR@{CSR\_MGR}}\index{CSR\_MGR@{CSR\_MGR}!CSR\_COMMON\_\_LAST@{CSR\_COMMON\_\_LAST}}}\mbox{\label{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d}} 
+C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+\_\+\+L\+A\+ST&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 74 of file csr\+\_\+mgr.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classCSR__MGR_ac7ae3940e28aaafac608f84b4fea33bc}} 
+\index{CSR\_MGR@{CSR\_MGR}!CSR\_MGR@{CSR\_MGR}}
+\index{CSR\_MGR@{CSR\_MGR}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{CSR\_MGR()}{CSR\_MGR()}}
+{\footnotesize\ttfamily C\+S\+R\+\_\+\+M\+G\+R\+::\+C\+S\+R\+\_\+\+M\+GR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{opae__svc__wrapper_8h_ae6eb64ba29c9d7aa39a35ee7b6b28a22}{S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}} \&}]{svc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file csr\+\_\+mgr.\+h.
+
+\mbox{\label{classCSR__MGR_ac0391b0bde496135d845aad2297d25c8}} 
+\index{CSR\_MGR@{CSR\_MGR}!````~CSR\_MGR@{$\sim$CSR\_MGR}}
+\index{````~CSR\_MGR@{$\sim$CSR\_MGR}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSR\_MGR()}{~CSR\_MGR()}}
+{\footnotesize\ttfamily C\+S\+R\+\_\+\+M\+G\+R\+::$\sim$\+C\+S\+R\+\_\+\+M\+GR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file csr\+\_\+mgr.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classCSR__MGR_ac9ba9ab9f39dee563ba722c249184262}} 
+\index{CSR\_MGR@{CSR\_MGR}!writeCSR@{writeCSR}}
+\index{writeCSR@{writeCSR}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{writeCSR()}{writeCSR()}}
+{\footnotesize\ttfamily void C\+S\+R\+\_\+\+M\+G\+R\+::write\+C\+SR (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx,  }\item[{uint64\+\_\+t}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file csr\+\_\+mgr.\+h.
+
+
+
+References svc, and U\+S\+E\+R\+\_\+\+C\+S\+R\+\_\+\+B\+A\+SE.
+
+
+
+Referenced by main().
+
+\mbox{\label{classCSR__MGR_a713ff1aa00f9b5bbb40d3c9d17a6a59a}} 
+\index{CSR\_MGR@{CSR\_MGR}!readCSR@{readCSR}}
+\index{readCSR@{readCSR}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{readCSR()}{readCSR()}}
+{\footnotesize\ttfamily uint64\+\_\+t C\+S\+R\+\_\+\+M\+G\+R\+::read\+C\+SR (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file csr\+\_\+mgr.\+h.
+
+
+
+References svc, and U\+S\+E\+R\+\_\+\+C\+S\+R\+\_\+\+B\+A\+SE.
+
+\mbox{\label{classCSR__MGR_a0d46e4a76019f08cd664776b96e041d6}} 
+\index{CSR\_MGR@{CSR\_MGR}!readCommonCSR@{readCommonCSR}}
+\index{readCommonCSR@{readCommonCSR}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{readCommonCSR()}{readCommonCSR()}}
+{\footnotesize\ttfamily uint64\+\_\+t C\+S\+R\+\_\+\+M\+G\+R\+::read\+Common\+C\+SR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCSR__MGR_a6b169b03223ee195d47d21ff270bf409}{t\+\_\+csr\+\_\+common}}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file csr\+\_\+mgr.\+h.
+
+
+
+References C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+\_\+\+L\+A\+ST, and svc.
+
+
+
+Referenced by get\+A\+F\+U\+M\+Hz().
+
+\mbox{\label{classCSR__MGR_aacdfb2d642d46b73bca9ac63f1b5022f}} 
+\index{CSR\_MGR@{CSR\_MGR}!getAFUMHz@{getAFUMHz}}
+\index{getAFUMHz@{getAFUMHz}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{getAFUMHz()}{getAFUMHz()}}
+{\footnotesize\ttfamily uint64\+\_\+t C\+S\+R\+\_\+\+M\+G\+R\+::get\+A\+F\+U\+M\+Hz (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{u\+Clk\+\_\+usr\+\_\+mhz = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file csr\+\_\+mgr.\+h.
+
+
+
+References C\+S\+R\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+F\+R\+EQ, and read\+Common\+C\+S\+R().
+
+
+
+Referenced by main().
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\label{classCSR__MGR_a1117785e23d08cb603d672af5f84950c}} 
+\index{CSR\_MGR@{CSR\_MGR}!svc@{svc}}
+\index{svc@{svc}!CSR\_MGR@{CSR\_MGR}}
+\doxysubsubsection{\texorpdfstring{svc}{svc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opae__svc__wrapper_8h_ae6eb64ba29c9d7aa39a35ee7b6b28a22}{S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}}\& C\+S\+R\+\_\+\+M\+G\+R\+::svc\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 126 of file csr\+\_\+mgr.\+h.
+
+
+
+Referenced by read\+Common\+C\+S\+R(), read\+C\+S\+R(), and write\+C\+S\+R().
+

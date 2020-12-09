@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structconfig_1_1target" kind="struct" language="C++" prot="public">
+    <compoundname>config::target</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconfig_1_1target_1af867cbf6134f0932aeadbe2045b95bb1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config::target::bus</definition>
+        <argsstring></argsstring>
+        <name>bus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hello_fpga/hello_fpga.c" line="129" column="5" bodyfile="samples/hello_fpga/hello_fpga.c" bodystart="129" bodyend="-1"/>
+        <referencedby refid="hello__fpga_8c_1a3a1b6f72679286eae6f9eec936cc5533" compoundref="hello__fpga_8c" startline="144" endline="200">parse_args</referencedby>
+        <referencedby refid="hello__fpga_8c_1a47a2834f92903ad0fae9a16c3360715d" compoundref="hello__fpga_8c" startline="202" endline="232">find_fpga</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>config::target</label>
+        <link refid="structconfig_1_1target"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/hello_fpga/hello_fpga.c" line="128" column="13" bodyfile="samples/hello_fpga/hello_fpga.c" bodystart="128" bodyend="130"/>
+    <listofallmembers>
+      <member refid="structconfig_1_1target_1af867cbf6134f0932aeadbe2045b95bb1" prot="public" virt="non-virtual"><scope>config::target</scope><name>bus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

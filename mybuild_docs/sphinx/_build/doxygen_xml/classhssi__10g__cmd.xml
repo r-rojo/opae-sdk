@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhssi__10g__cmd" kind="class" language="C++" prot="public">
+    <compoundname>hssi_10g_cmd</compoundname>
+    <basecompoundref refid="classhssi__cmd" prot="public" virt="non-virtual">hssi_cmd</basecompoundref>
+    <includes refid="hssi__10g__cmd_8h" local="no">/root/samples/hssi/hssi_10g_cmd.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classhssi__10g__cmd_1ac229f059a06d51e434c6b9da850abc42" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::port_</definition>
+        <argsstring></argsstring>
+        <name>port_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="284" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="284" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1ae634755c920470721628ab5ab06bdf58" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hssi_10g_cmd::eth_loopback_</definition>
+        <argsstring></argsstring>
+        <name>eth_loopback_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="285" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="285" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1aadd0f9db0c701bc02a23e89badc64bb0" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::num_packets_</definition>
+        <argsstring></argsstring>
+        <name>num_packets_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="286" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="286" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1abd37648368fdfa6caeb887fe0d8460c0" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hssi_10g_cmd::random_length_</definition>
+        <argsstring></argsstring>
+        <name>random_length_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="287" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="287" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1a4e0767e0f12273dace4fa75eddf1decd" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hssi_10g_cmd::random_payload_</definition>
+        <argsstring></argsstring>
+        <name>random_payload_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="288" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="288" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1ace75496cfab7ca96e4791575fce22207" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::packet_length_</definition>
+        <argsstring></argsstring>
+        <name>packet_length_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="289" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="289" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1abd3ca25b1ca1732b68b4e6caab09ad40" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hssi_10g_cmd::src_addr_</definition>
+        <argsstring></argsstring>
+        <name>src_addr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="290" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="290" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1a4078a0208d3d4c0ed25b553056ca6064" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hssi_10g_cmd::dest_addr_</definition>
+        <argsstring></argsstring>
+        <name>dest_addr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="291" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="291" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1a918f3fcf2f29b5ab82d3ed9e6c7e77de" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::rnd_seed0_</definition>
+        <argsstring></argsstring>
+        <name>rnd_seed0_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="292" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="292" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1a551dce10ac132f2ee200d1c7a37edeec" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::rnd_seed1_</definition>
+        <argsstring></argsstring>
+        <name>rnd_seed1_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="293" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="293" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhssi__10g__cmd_1a6b6d1608738d2c16d4c1925130c6263e" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_10g_cmd::rnd_seed2_</definition>
+        <argsstring></argsstring>
+        <name>rnd_seed2_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="294" column="12" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="294" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" compoundref="hssi__10g__cmd_8h" startline="80" endline="125">add_options</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhssi__10g__cmd_1a4ee82ae4682d6a531aacfd35ba4f5910" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hssi_10g_cmd::hssi_10g_cmd</definition>
+        <argsstring>()</argsstring>
+        <name>hssi_10g_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="56" column="3" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="56" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1af33928e3684381253c94728aa000932a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* hssi_10g_cmd::name</definition>
+        <argsstring>() const override</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="70" column="22" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1a680495300041fec9bde25551362ce195" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* hssi_10g_cmd::description</definition>
+        <argsstring>() const override</argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="75" column="22" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void hssi_10g_cmd::add_options</definition>
+        <argsstring>(CLI::App *app) override</argsstring>
+        <name>add_options</name>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="80" column="16" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="80" bodyend="125"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="classhssi__10g__cmd_1a4078a0208d3d4c0ed25b553056ca6064" compoundref="hssi__10g__cmd_8h" startline="291">dest_addr_</references>
+        <references refid="classhssi__10g__cmd_1ae634755c920470721628ab5ab06bdf58" compoundref="hssi__10g__cmd_8h" startline="285">eth_loopback_</references>
+        <references refid="classhssi__10g__cmd_1aadd0f9db0c701bc02a23e89badc64bb0" compoundref="hssi__10g__cmd_8h" startline="286">num_packets_</references>
+        <references refid="classhssi__10g__cmd_1ace75496cfab7ca96e4791575fce22207" compoundref="hssi__10g__cmd_8h" startline="289">packet_length_</references>
+        <references refid="classhssi__10g__cmd_1ac229f059a06d51e434c6b9da850abc42" compoundref="hssi__10g__cmd_8h" startline="284">port_</references>
+        <references refid="classhssi__10g__cmd_1abd37648368fdfa6caeb887fe0d8460c0" compoundref="hssi__10g__cmd_8h" startline="287">random_length_</references>
+        <references refid="classhssi__10g__cmd_1a4e0767e0f12273dace4fa75eddf1decd" compoundref="hssi__10g__cmd_8h" startline="288">random_payload_</references>
+        <references refid="classhssi__10g__cmd_1a918f3fcf2f29b5ab82d3ed9e6c7e77de" compoundref="hssi__10g__cmd_8h" startline="292">rnd_seed0_</references>
+        <references refid="classhssi__10g__cmd_1a551dce10ac132f2ee200d1c7a37edeec" compoundref="hssi__10g__cmd_8h" startline="293">rnd_seed1_</references>
+        <references refid="classhssi__10g__cmd_1a6b6d1608738d2c16d4c1925130c6263e" compoundref="hssi__10g__cmd_8h" startline="294">rnd_seed2_</references>
+        <references refid="classhssi__10g__cmd_1abd3ca25b1ca1732b68b4e6caab09ad40" compoundref="hssi__10g__cmd_8h" startline="290">src_addr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int hssi_10g_cmd::run</definition>
+        <argsstring>(test_afu *afu, CLI::App *app) override</argsstring>
+        <name>run</name>
+        <param>
+          <type><ref refid="ddr_8h_1abc250359b0b249806cbba4173e9644b4" kindref="member">test_afu</ref> *</type>
+          <declname>afu</declname>
+        </param>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="127" column="15" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="127" bodyend="213"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+        <references refid="hssi__10g__cmd_8h_1a2c69118ddfb7e4103b35f7730c1a57b9" compoundref="hssi__10g__cmd_8h" startline="38">CSR_DEST_ADDR0</references>
+        <references refid="hssi__10g__cmd_8h_1aa9a5a168e6cb93107ba02389bd91a117" compoundref="hssi__10g__cmd_8h" startline="39">CSR_DEST_ADDR1</references>
+        <references refid="hssi__10g__cmd_8h_1a9d63f6ba744592cdac940e37951018c9" compoundref="hssi__10g__cmd_8h" startline="51">CSR_MAC_LOOP</references>
+        <references refid="hssi__10g__cmd_8h_1af40e5b66e5d16497e47e8b10fc7e9a44" compoundref="hssi__10g__cmd_8h" startline="31">CSR_NUM_PACKETS</references>
+        <references refid="hssi__10g__cmd_8h_1a9015b2280acc5e2d1e518f764b9e754b" compoundref="hssi__10g__cmd_8h" startline="44">CSR_PACKET_LENGTH</references>
+        <references refid="hssi__10g__cmd_8h_1a313cf0cae4a33761d5d25dc87b871445" compoundref="hssi__10g__cmd_8h" startline="40">CSR_PACKET_TX_COUNT</references>
+        <references refid="hssi__10g__cmd_8h_1a24b333e7caef952009c18ad2e26badce" compoundref="hssi__10g__cmd_8h" startline="32">CSR_RANDOM_LENGTH</references>
+        <references refid="hssi__10g__cmd_8h_1acf50e8198c1decdb5f3264099db2fea8" compoundref="hssi__10g__cmd_8h" startline="33">CSR_RANDOM_PAYLOAD</references>
+        <references refid="hssi__10g__cmd_8h_1a1ce90b64e0156aaf617121855559acd7" compoundref="hssi__10g__cmd_8h" startline="41">CSR_RND_SEED0</references>
+        <references refid="hssi__10g__cmd_8h_1a204070435ba257c6b00152dee5e73ea4" compoundref="hssi__10g__cmd_8h" startline="42">CSR_RND_SEED1</references>
+        <references refid="hssi__10g__cmd_8h_1a002555ad38e153b807633299fa9d672c" compoundref="hssi__10g__cmd_8h" startline="43">CSR_RND_SEED2</references>
+        <references refid="hssi__10g__cmd_8h_1a59ea99e840facf8745bcaa0b2e00886e" compoundref="hssi__10g__cmd_8h" startline="36">CSR_SRC_ADDR0</references>
+        <references refid="hssi__10g__cmd_8h_1af7bf5ece5127db0085135197d0d40436" compoundref="hssi__10g__cmd_8h" startline="37">CSR_SRC_ADDR1</references>
+        <references refid="hssi__10g__cmd_8h_1a2154daea96bd7d69f410acb711d86b03" compoundref="hssi__10g__cmd_8h" startline="34">CSR_START</references>
+        <references refid="hssi__10g__cmd_8h_1afae4a4b81a4217f713ed1aab257fbc31" compoundref="hssi__10g__cmd_8h" startline="35">CSR_STOP</references>
+        <references refid="classhssi__10g__cmd_1a4078a0208d3d4c0ed25b553056ca6064" compoundref="hssi__10g__cmd_8h" startline="291">dest_addr_</references>
+        <references refid="classhssi__cmd_1a49f44707a8d19094be36a91ffa570e79" compoundref="hssi__cmd_8h" startline="76" endline="85">hssi_cmd::enable_eth_loopback</references>
+        <references refid="classhssi__10g__cmd_1ae634755c920470721628ab5ab06bdf58" compoundref="hssi__10g__cmd_8h" startline="285">eth_loopback_</references>
+        <references refid="classhssi__afu_1a0a5190683fbccdd1ed97c89fc148981e" compoundref="hssi__afu_8h" startline="60" endline="93">hssi_afu::ethernet_interface</references>
+        <references refid="hssi__cmd_8h_1a02028d30e3cea7b4e76419c00a1c6e6d" compoundref="hssi__cmd_8h" startline="36">INVALID_MAC</references>
+        <references refid="classhssi__cmd_1a153a98d3c481a21b25abed3a6e25192f" compoundref="hssi__cmd_8h" startline="45" endline="56">hssi_cmd::mac_bits_for</references>
+        <references refid="classhssi__afu_1a8555e906fd776954d39ddf432a7996f8" compoundref="hssi__afu_8h" startline="148" endline="202">hssi_afu::mbox_read</references>
+        <references refid="classhssi__afu_1a86638ffebd322c2f71d60e1ac6ba63ea" compoundref="hssi__afu_8h" startline="95" endline="146">hssi_afu::mbox_write</references>
+        <references refid="classhssi__10g__cmd_1aadd0f9db0c701bc02a23e89badc64bb0" compoundref="hssi__10g__cmd_8h" startline="286">num_packets_</references>
+        <references refid="classhssi__10g__cmd_1ace75496cfab7ca96e4791575fce22207" compoundref="hssi__10g__cmd_8h" startline="289">packet_length_</references>
+        <references refid="classhssi__10g__cmd_1ac229f059a06d51e434c6b9da850abc42" compoundref="hssi__10g__cmd_8h" startline="284">port_</references>
+        <references refid="classhssi__10g__cmd_1accc68e7c9f9a76c7a3fad9c62a3fe8be" compoundref="hssi__10g__cmd_8h" startline="220" endline="281">print_registers</references>
+        <references refid="classhssi__10g__cmd_1abd37648368fdfa6caeb887fe0d8460c0" compoundref="hssi__10g__cmd_8h" startline="287">random_length_</references>
+        <references refid="classhssi__10g__cmd_1a4e0767e0f12273dace4fa75eddf1decd" compoundref="hssi__10g__cmd_8h" startline="288">random_payload_</references>
+        <references refid="classhssi__10g__cmd_1a918f3fcf2f29b5ab82d3ed9e6c7e77de" compoundref="hssi__10g__cmd_8h" startline="292">rnd_seed0_</references>
+        <references refid="classhssi__10g__cmd_1a551dce10ac132f2ee200d1c7a37edeec" compoundref="hssi__10g__cmd_8h" startline="293">rnd_seed1_</references>
+        <references refid="classhssi__10g__cmd_1a6b6d1608738d2c16d4c1925130c6263e" compoundref="hssi__10g__cmd_8h" startline="294">rnd_seed2_</references>
+        <references refid="classhssi__cmd_1a16ed7a08a031da6147af3abd5ea2bab5" compoundref="hssi__cmd_8h" startline="104">hssi_cmd::running_</references>
+        <references refid="classhssi__cmd_1ab9e34f47f9b8507649f79894950ed59e" compoundref="hssi__cmd_8h" startline="70" endline="74">hssi_cmd::show_eth_stats</references>
+        <references refid="classhssi__10g__cmd_1abd3ca25b1ca1732b68b4e6caab09ad40" compoundref="hssi__10g__cmd_8h" startline="290">src_addr_</references>
+        <references refid="hssi__afu_8h_1a0a379a8f9138cdda028b7d15a52d9e39" compoundref="hssi__afu_8h" startline="43">TRAFFIC_CTRL_PORT_SEL</references>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1a0762cc43180e6bcd5fabc98461450949" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* hssi_10g_cmd::afu_id</definition>
+        <argsstring>() const override</argsstring>
+        <name>afu_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="215" column="22" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__10g__cmd_1accc68e7c9f9a76c7a3fad9c62a3fe8be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; hssi_10g_cmd::print_registers</definition>
+        <argsstring>(std::ostream &amp;os, hssi_afu *hafu) const</argsstring>
+        <name>print_registers</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classhssi__afu" kindref="compound">hssi_afu</ref> *</type>
+          <declname>hafu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_10g_cmd.h" line="220" column="17" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="220" bodyend="281"/>
+        <references refid="hssi__afu_8h_1ab2b3c37ae1a49971b27a9fbdbcc4d1d3" compoundref="hssi__afu_8h" startline="44">AFU_SCRATCHPAD</references>
+        <references refid="hssi__10g__cmd_8h_1ad95d174ae6c1a6d25aba40f36403bbab" compoundref="hssi__10g__cmd_8h" startline="49">CSR_AVST_RX_ERR</references>
+        <references refid="hssi__10g__cmd_8h_1a2c69118ddfb7e4103b35f7730c1a57b9" compoundref="hssi__10g__cmd_8h" startline="38">CSR_DEST_ADDR0</references>
+        <references refid="hssi__10g__cmd_8h_1aa9a5a168e6cb93107ba02389bd91a117" compoundref="hssi__10g__cmd_8h" startline="39">CSR_DEST_ADDR1</references>
+        <references refid="hssi__10g__cmd_8h_1a9d63f6ba744592cdac940e37951018c9" compoundref="hssi__10g__cmd_8h" startline="51">CSR_MAC_LOOP</references>
+        <references refid="hssi__10g__cmd_8h_1af40e5b66e5d16497e47e8b10fc7e9a44" compoundref="hssi__10g__cmd_8h" startline="31">CSR_NUM_PACKETS</references>
+        <references refid="hssi__10g__cmd_8h_1a73e849a9472ea96b16645083c5f71544" compoundref="hssi__10g__cmd_8h" startline="46">CSR_NUM_PKT</references>
+        <references refid="hssi__10g__cmd_8h_1a9015b2280acc5e2d1e518f764b9e754b" compoundref="hssi__10g__cmd_8h" startline="44">CSR_PACKET_LENGTH</references>
+        <references refid="hssi__10g__cmd_8h_1a313cf0cae4a33761d5d25dc87b871445" compoundref="hssi__10g__cmd_8h" startline="40">CSR_PACKET_TX_COUNT</references>
+        <references refid="hssi__10g__cmd_8h_1a4dbb799ec3d5b286fda4e3251029925f" compoundref="hssi__10g__cmd_8h" startline="48">CSR_PKT_BAD</references>
+        <references refid="hssi__10g__cmd_8h_1a4ea062053ff71409ce9535f3e35546a6" compoundref="hssi__10g__cmd_8h" startline="47">CSR_PKT_GOOD</references>
+        <references refid="hssi__10g__cmd_8h_1a24b333e7caef952009c18ad2e26badce" compoundref="hssi__10g__cmd_8h" startline="32">CSR_RANDOM_LENGTH</references>
+        <references refid="hssi__10g__cmd_8h_1acf50e8198c1decdb5f3264099db2fea8" compoundref="hssi__10g__cmd_8h" startline="33">CSR_RANDOM_PAYLOAD</references>
+        <references refid="hssi__10g__cmd_8h_1a1ce90b64e0156aaf617121855559acd7" compoundref="hssi__10g__cmd_8h" startline="41">CSR_RND_SEED0</references>
+        <references refid="hssi__10g__cmd_8h_1a204070435ba257c6b00152dee5e73ea4" compoundref="hssi__10g__cmd_8h" startline="42">CSR_RND_SEED1</references>
+        <references refid="hssi__10g__cmd_8h_1a002555ad38e153b807633299fa9d672c" compoundref="hssi__10g__cmd_8h" startline="43">CSR_RND_SEED2</references>
+        <references refid="hssi__10g__cmd_8h_1a59ea99e840facf8745bcaa0b2e00886e" compoundref="hssi__10g__cmd_8h" startline="36">CSR_SRC_ADDR0</references>
+        <references refid="hssi__10g__cmd_8h_1af7bf5ece5127db0085135197d0d40436" compoundref="hssi__10g__cmd_8h" startline="37">CSR_SRC_ADDR1</references>
+        <references refid="hssi__10g__cmd_8h_1a2154daea96bd7d69f410acb711d86b03" compoundref="hssi__10g__cmd_8h" startline="34">CSR_START</references>
+        <references refid="hssi__10g__cmd_8h_1afae4a4b81a4217f713ed1aab257fbc31" compoundref="hssi__10g__cmd_8h" startline="35">CSR_STOP</references>
+        <references refid="hssi__afu_8h_1ac0baaf0917fee2104b9c6b44075298a2" compoundref="hssi__afu_8h" startline="38">ETH_AFU_DFH</references>
+        <references refid="hssi__afu_8h_1a8b95eb7d4b6d30992c5274633ab33fef" compoundref="hssi__afu_8h" startline="40">ETH_AFU_ID_H</references>
+        <references refid="hssi__afu_8h_1abe08ed7e56c85bcf7089b573333dd320" compoundref="hssi__afu_8h" startline="39">ETH_AFU_ID_L</references>
+        <references refid="classhssi__cmd_1ae4683ed6127d0ac876b8f24a83bbdc1f" compoundref="hssi__cmd_8h" startline="88" endline="96">hssi_cmd::int_to_hex</references>
+        <references refid="classhssi__afu_1a8555e906fd776954d39ddf432a7996f8" compoundref="hssi__afu_8h" startline="148" endline="202">hssi_afu::mbox_read</references>
+        <references refid="hssi__afu_8h_1a461eab73cc68f8fa3a50edaae21cfee3" compoundref="hssi__afu_8h" startline="41">TRAFFIC_CTRL_CMD</references>
+        <references refid="hssi__afu_8h_1a3ce04cd0dea4df8da87b9f643cb4d069" compoundref="hssi__afu_8h" startline="42">TRAFFIC_CTRL_DATA</references>
+        <references refid="hssi__afu_8h_1a0a379a8f9138cdda028b7d15a52d9e39" compoundref="hssi__afu_8h" startline="43">TRAFFIC_CTRL_PORT_SEL</references>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">run</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>hssi_10g_cmd</label>
+        <link refid="classhssi__10g__cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hssi_cmd</label>
+        <link refid="classhssi__cmd"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>hssi_10g_cmd</label>
+        <link refid="classhssi__10g__cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hssi_cmd</label>
+        <link refid="classhssi__cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/hssi/hssi_10g_cmd.h" line="54" column="1" bodyfile="samples/hssi/hssi_10g_cmd.h" bodystart="53" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classhssi__10g__cmd_1a12f9d3d69d8822cdfb3c35b22c4654d8" prot="public" virt="virtual"><scope>hssi_10g_cmd</scope><name>add_options</name></member>
+      <member refid="classhssi__10g__cmd_1a0762cc43180e6bcd5fabc98461450949" prot="public" virt="virtual"><scope>hssi_10g_cmd</scope><name>afu_id</name></member>
+      <member refid="classhssi__10g__cmd_1a680495300041fec9bde25551362ce195" prot="public" virt="virtual"><scope>hssi_10g_cmd</scope><name>description</name></member>
+      <member refid="classhssi__10g__cmd_1a4078a0208d3d4c0ed25b553056ca6064" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>dest_addr_</name></member>
+      <member refid="classhssi__cmd_1a49f44707a8d19094be36a91ffa570e79" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>enable_eth_loopback</name></member>
+      <member refid="classhssi__10g__cmd_1ae634755c920470721628ab5ab06bdf58" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>eth_loopback_</name></member>
+      <member refid="classhssi__10g__cmd_1a4ee82ae4682d6a531aacfd35ba4f5910" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>hssi_10g_cmd</name></member>
+      <member refid="classhssi__cmd_1a9241a77d197ac297be1ea1759c24fe08" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>hssi_cmd</name></member>
+      <member refid="classhssi__cmd_1ae4683ed6127d0ac876b8f24a83bbdc1f" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>int_to_hex</name></member>
+      <member refid="classhssi__cmd_1a153a98d3c481a21b25abed3a6e25192f" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>mac_bits_for</name></member>
+      <member refid="classhssi__10g__cmd_1af33928e3684381253c94728aa000932a" prot="public" virt="virtual"><scope>hssi_10g_cmd</scope><name>name</name></member>
+      <member refid="classhssi__10g__cmd_1aadd0f9db0c701bc02a23e89badc64bb0" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>num_packets_</name></member>
+      <member refid="classhssi__10g__cmd_1ace75496cfab7ca96e4791575fce22207" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>packet_length_</name></member>
+      <member refid="classhssi__10g__cmd_1ac229f059a06d51e434c6b9da850abc42" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>port_</name></member>
+      <member refid="classhssi__10g__cmd_1accc68e7c9f9a76c7a3fad9c62a3fe8be" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>print_registers</name></member>
+      <member refid="classhssi__10g__cmd_1abd37648368fdfa6caeb887fe0d8460c0" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>random_length_</name></member>
+      <member refid="classhssi__10g__cmd_1a4e0767e0f12273dace4fa75eddf1decd" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>random_payload_</name></member>
+      <member refid="classhssi__10g__cmd_1a918f3fcf2f29b5ab82d3ed9e6c7e77de" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>rnd_seed0_</name></member>
+      <member refid="classhssi__10g__cmd_1a551dce10ac132f2ee200d1c7a37edeec" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>rnd_seed1_</name></member>
+      <member refid="classhssi__10g__cmd_1a6b6d1608738d2c16d4c1925130c6263e" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>rnd_seed2_</name></member>
+      <member refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" prot="public" virt="virtual"><scope>hssi_10g_cmd</scope><name>run</name></member>
+      <member refid="classhssi__cmd_1a308020145dd686d7b5ab1a4bf22ee9c7" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>run_process</name></member>
+      <member refid="classhssi__cmd_1a16ed7a08a031da6147af3abd5ea2bab5" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>running_</name></member>
+      <member refid="classhssi__cmd_1ab9e34f47f9b8507649f79894950ed59e" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>show_eth_stats</name></member>
+      <member refid="classhssi__10g__cmd_1abd3ca25b1ca1732b68b4e6caab09ad40" prot="protected" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>src_addr_</name></member>
+      <member refid="classhssi__cmd_1a69cfbacb80d5d1ec6ec657bd8e6fc02b" prot="public" virt="non-virtual"><scope>hssi_10g_cmd</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,175 @@
+.TH "OPAE_SVC_WRAPPER" 3 "Wed Dec 9 2020" "Version -.." "OPAE C API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OPAE_SVC_WRAPPER
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include </root/samples/base/sw/opae_svc_wrapper\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOPAE_SVC_WRAPPER\fP (const char *accel_uuid)"
+.br
+.ti -1c
+.RI "\fB~OPAE_SVC_WRAPPER\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisOk\fP (void) const"
+.br
+.ti -1c
+.RI "bool \fBhwIsSimulated\fP (void) const"
+.br
+.ti -1c
+.RI "\fBfpga_result\fP \fBmmioWrite64\fP (uint32_t idx, uint64_t v)"
+.br
+.ti -1c
+.RI "uint64_t \fBmmioRead64\fP (uint32_t idx)"
+.br
+.ti -1c
+.RI "void * \fBallocBuffer\fP (size_t nBytes, uint64_t *ioAddress=NULL)"
+.br
+.ti -1c
+.RI "void \fBfreeBuffer\fP (void *va)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "mpf_handle_t \fBmpf_handle\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBfpga_handle\fP \fBaccel_handle\fP"
+.br
+.ti -1c
+.RI "bool \fBis_ok\fP"
+.br
+.ti -1c
+.RI "bool \fBis_simulated\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfpga_result\fP \fBfindAndOpenAccel\fP (const char *accel_uuid)"
+.br
+.ti -1c
+.RI "bool \fBprobeForASE\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 39 of file opae_svc_wrapper\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OPAE_SVC_WRAPPER::OPAE_SVC_WRAPPER (const char * accel_uuid)"
+
+.PP
+Definition at line 43 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References findAndOpenAccel(), FPGA_OK, is_ok, is_simulated, and probeForASE()\&.
+.SS "OPAE_SVC_WRAPPER::~OPAE_SVC_WRAPPER ()"
+
+.PP
+Definition at line 64 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References accel_handle, fpgaClose(), fpgaUnmapMMIO(), and mpf_handle\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool OPAE_SVC_WRAPPER::isOk (void) const\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file opae_svc_wrapper\&.h\&.
+.PP
+References is_ok\&.
+.PP
+Referenced by main()\&.
+.SS "bool OPAE_SVC_WRAPPER::hwIsSimulated (void) const\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file opae_svc_wrapper\&.h\&.
+.PP
+References is_simulated\&.
+.PP
+Referenced by main()\&.
+.SS "\fBfpga_result\fP OPAE_SVC_WRAPPER::mmioWrite64 (uint32_t idx, uint64_t v)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file opae_svc_wrapper\&.h\&.
+.PP
+References accel_handle, and fpgaWriteMMIO64()\&.
+.SS "uint64_t OPAE_SVC_WRAPPER::mmioRead64 (uint32_t idx)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file opae_svc_wrapper\&.h\&.
+.PP
+References accel_handle, FPGA_OK, and fpgaReadMMIO64()\&.
+.SS "void * OPAE_SVC_WRAPPER::allocBuffer (size_t nBytes, uint64_t * ioAddress = \fCNULL\fP)"
+
+.PP
+Definition at line 73 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References accel_handle, FPGA_OK, fpgaGetIOAddress(), fpgaPrepareBuffer(), and mpf_handle\&.
+.PP
+Referenced by main()\&.
+.SS "void OPAE_SVC_WRAPPER::freeBuffer (void * va)"
+
+.PP
+Definition at line 119 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References mpf_handle\&.
+.SS "\fBfpga_result\fP OPAE_SVC_WRAPPER::findAndOpenAccel (const char * accel_uuid)\fC [private]\fP"
+
+.PP
+Definition at line 132 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References accel_handle, FPGA_ACCELERATOR, FPGA_NO_MEMORY, FPGA_NOT_FOUND, FPGA_OK, fpgaDestroyProperties(), fpgaDestroyToken(), fpgaEnumerate(), fpgaGetProperties(), fpgaMapMMIO(), fpgaOpen(), fpgaPropertiesSetGUID(), fpgaPropertiesSetObjectType(), and mpf_handle\&.
+.PP
+Referenced by OPAE_SVC_WRAPPER()\&.
+.SS "bool OPAE_SVC_WRAPPER::probeForASE ()\fC [private]\fP"
+
+.PP
+Definition at line 213 of file opae_svc_wrapper\&.cpp\&.
+.PP
+References FPGA_DEVICE, FPGA_OK, fpgaDestroyProperties(), fpgaDestroyToken(), fpgaEnumerate(), fpgaGetProperties(), fpgaPropertiesGetDeviceID(), and fpgaPropertiesSetObjectType()\&.
+.PP
+Referenced by OPAE_SVC_WRAPPER()\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fBfpga_handle\fP OPAE_SVC_WRAPPER::accel_handle\fC [protected]\fP"
+
+.PP
+Definition at line 43 of file opae_svc_wrapper\&.h\&.
+.PP
+Referenced by allocBuffer(), findAndOpenAccel(), mmioRead64(), mmioWrite64(), and ~OPAE_SVC_WRAPPER()\&.
+.SS "mpf_handle_t OPAE_SVC_WRAPPER::mpf_handle"
+
+.PP
+Definition at line 46 of file opae_svc_wrapper\&.h\&.
+.PP
+Referenced by allocBuffer(), findAndOpenAccel(), freeBuffer(), and ~OPAE_SVC_WRAPPER()\&.
+.SS "bool OPAE_SVC_WRAPPER::is_ok\fC [protected]\fP"
+
+.PP
+Definition at line 88 of file opae_svc_wrapper\&.h\&.
+.PP
+Referenced by isOk(), and OPAE_SVC_WRAPPER()\&.
+.SS "bool OPAE_SVC_WRAPPER::is_simulated\fC [protected]\fP"
+
+.PP
+Definition at line 89 of file opae_svc_wrapper\&.h\&.
+.PP
+Referenced by hwIsSimulated(), and OPAE_SVC_WRAPPER()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OPAE C API from the source code\&.

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOPAE__SVC__WRAPPER" kind="class" language="C++" prot="public">
+    <compoundname>OPAE_SVC_WRAPPER</compoundname>
+    <includes refid="opae__svc__wrapper_8h" local="no">/root/samples/base/sw/opae_svc_wrapper.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" prot="protected" static="no" mutable="no">
+        <type><ref refid="types_8h_1a4ad40f31195233b629bcde187b0556d5" kindref="member">fpga_handle</ref></type>
+        <definition>fpga_handle OPAE_SVC_WRAPPER::accel_handle</definition>
+        <argsstring></argsstring>
+        <name>accel_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="43" column="13" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a4f2a736ef2c3a156920c1a5222687d30" compoundref="opae__svc__wrapper_8cpp" startline="73" endline="116">allocBuffer</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a916f71d85053fe81c8133c979a0d708b" compoundref="opae__svc__wrapper_8cpp" startline="132" endline="206">findAndOpenAccel</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a281abe0a9252474335b936c009ad251e" compoundref="opae__svc__wrapper_8h" startline="66" endline="74">mmioRead64</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a3fd9e93c128f899bee5f3bbbab81e219" compoundref="opae__svc__wrapper_8h" startline="62" endline="64">mmioWrite64</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1ae083706201ed1840f43948fc2d8d3e96" compoundref="opae__svc__wrapper_8cpp" startline="64" endline="69">~OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classOPAE__SVC__WRAPPER_1a3dd68150a88b78618f553a8faba861a7" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OPAE_SVC_WRAPPER::is_ok</definition>
+        <argsstring></argsstring>
+        <name>is_ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="88" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a252a41e18d78ac05567be886891bc818" compoundref="opae__svc__wrapper_8h" startline="54" endline="54">isOk</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" compoundref="opae__svc__wrapper_8cpp" startline="43" endline="61">OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classOPAE__SVC__WRAPPER_1a3c7191d3867b45c6a3bfb73404bbb225" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OPAE_SVC_WRAPPER::is_simulated</definition>
+        <argsstring></argsstring>
+        <name>is_simulated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="89" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a10530eb779fd25a29b486e4abad8f4dc" compoundref="opae__svc__wrapper_8h" startline="57" endline="57">hwIsSimulated</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" compoundref="opae__svc__wrapper_8cpp" startline="43" endline="61">OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" prot="public" static="no" mutable="no">
+        <type>mpf_handle_t</type>
+        <definition>mpf_handle_t OPAE_SVC_WRAPPER::mpf_handle</definition>
+        <argsstring></argsstring>
+        <name>mpf_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="46" column="14" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a4f2a736ef2c3a156920c1a5222687d30" compoundref="opae__svc__wrapper_8cpp" startline="73" endline="116">allocBuffer</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a916f71d85053fe81c8133c979a0d708b" compoundref="opae__svc__wrapper_8cpp" startline="132" endline="206">findAndOpenAccel</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1a53aa0ca525f05782a5c5b3b43816c49f" compoundref="opae__svc__wrapper_8cpp" startline="119" endline="128">freeBuffer</referencedby>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1ae083706201ed1840f43948fc2d8d3e96" compoundref="opae__svc__wrapper_8cpp" startline="64" endline="69">~OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OPAE_SVC_WRAPPER::OPAE_SVC_WRAPPER</definition>
+        <argsstring>(const char *accel_uuid)</argsstring>
+        <name>OPAE_SVC_WRAPPER</name>
+        <param>
+          <type>const char *</type>
+          <declname>accel_uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="50" column="1" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="43" bodyend="61"/>
+        <references refid="classOPAE__SVC__WRAPPER_1a916f71d85053fe81c8133c979a0d708b" compoundref="opae__svc__wrapper_8cpp" startline="132" endline="206">findAndOpenAccel</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da727cb0690aa450810ffc8f5371401327" compoundref="types__enum_8h" startline="58">FPGA_OK</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a3dd68150a88b78618f553a8faba861a7" compoundref="opae__svc__wrapper_8h" startline="88">is_ok</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a3c7191d3867b45c6a3bfb73404bbb225" compoundref="opae__svc__wrapper_8h" startline="89">is_simulated</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a018e86425d2a24aae7ec66c78bf339d2" compoundref="opae__svc__wrapper_8cpp" startline="213" endline="238">probeForASE</references>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1ae083706201ed1840f43948fc2d8d3e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OPAE_SVC_WRAPPER::~OPAE_SVC_WRAPPER</definition>
+        <argsstring>()</argsstring>
+        <name>~OPAE_SVC_WRAPPER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="51" column="1" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="64" bodyend="69"/>
+        <references refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" compoundref="opae__svc__wrapper_8h" startline="43">accel_handle</references>
+        <references refid="access_8h_1ac83789ebb65dc6b2adeae3d7e7fa3e79">fpgaClose</references>
+        <references refid="opae-libs_2include_2opae_2mmio_8h_1a8c8db22506e1fbfd16440c660bfee28f">fpgaUnmapMMIO</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" compoundref="opae__svc__wrapper_8h" startline="46">mpf_handle</references>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a252a41e18d78ac05567be886891bc818" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OPAE_SVC_WRAPPER::isOk</definition>
+        <argsstring>(void) const</argsstring>
+        <name>isOk</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="54" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="54" bodyend="54"/>
+        <references refid="classOPAE__SVC__WRAPPER_1a3dd68150a88b78618f553a8faba861a7" compoundref="opae__svc__wrapper_8h" startline="88">is_ok</references>
+        <referencedby refid="hello__mpf__afu_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="hello__mpf__afu_8cpp" startline="47" endline="93">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a10530eb779fd25a29b486e4abad8f4dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OPAE_SVC_WRAPPER::hwIsSimulated</definition>
+        <argsstring>(void) const</argsstring>
+        <name>hwIsSimulated</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="57" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="57" bodyend="57"/>
+        <references refid="classOPAE__SVC__WRAPPER_1a3c7191d3867b45c6a3bfb73404bbb225" compoundref="opae__svc__wrapper_8h" startline="89">is_simulated</references>
+        <referencedby refid="hello__mpf__afu_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="hello__mpf__afu_8cpp" startline="47" endline="93">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a3fd9e93c128f899bee5f3bbbab81e219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6d" kindref="member">fpga_result</ref></type>
+        <definition>fpga_result OPAE_SVC_WRAPPER::mmioWrite64</definition>
+        <argsstring>(uint32_t idx, uint64_t v)</argsstring>
+        <name>mmioWrite64</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="62" column="13" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="62" bodyend="64"/>
+        <references refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" compoundref="opae__svc__wrapper_8h" startline="43">accel_handle</references>
+        <references refid="opae-libs_2include_2opae_2mmio_8h_1a6df7f745d9b9d47582714fe8e2d1a761">fpgaWriteMMIO64</references>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a281abe0a9252474335b936c009ad251e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t OPAE_SVC_WRAPPER::mmioRead64</definition>
+        <argsstring>(uint32_t idx)</argsstring>
+        <name>mmioRead64</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="66" column="10" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="66" bodyend="74"/>
+        <references refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" compoundref="opae__svc__wrapper_8h" startline="43">accel_handle</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da727cb0690aa450810ffc8f5371401327" compoundref="types__enum_8h" startline="58">FPGA_OK</references>
+        <references refid="opae-libs_2include_2opae_2mmio_8h_1a011ba900710ddf70c13ca089c4742187">fpgaReadMMIO64</references>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a4f2a736ef2c3a156920c1a5222687d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * OPAE_SVC_WRAPPER::allocBuffer</definition>
+        <argsstring>(size_t nBytes, uint64_t *ioAddress=NULL)</argsstring>
+        <name>allocBuffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>nBytes</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>ioAddress</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="83" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="73" bodyend="116"/>
+        <references refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" compoundref="opae__svc__wrapper_8h" startline="43">accel_handle</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da727cb0690aa450810ffc8f5371401327" compoundref="types__enum_8h" startline="58">FPGA_OK</references>
+        <references refid="buffer_8h_1aed20b8768e38a5414a331dd09a2aa221">fpgaGetIOAddress</references>
+        <references refid="buffer_8h_1aac3ed0146bc42c35f99610a319e87303">fpgaPrepareBuffer</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" compoundref="opae__svc__wrapper_8h" startline="46">mpf_handle</references>
+        <referencedby refid="hello__mpf__afu_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="hello__mpf__afu_8cpp" startline="47" endline="93">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a53aa0ca525f05782a5c5b3b43816c49f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OPAE_SVC_WRAPPER::freeBuffer</definition>
+        <argsstring>(void *va)</argsstring>
+        <name>freeBuffer</name>
+        <param>
+          <type>void *</type>
+          <declname>va</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="84" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="119" bodyend="128"/>
+        <references refid="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" compoundref="opae__svc__wrapper_8h" startline="46">mpf_handle</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a916f71d85053fe81c8133c979a0d708b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6d" kindref="member">fpga_result</ref></type>
+        <definition>fpga_result OPAE_SVC_WRAPPER::findAndOpenAccel</definition>
+        <argsstring>(const char *accel_uuid)</argsstring>
+        <name>findAndOpenAccel</name>
+        <param>
+          <type>const char *</type>
+          <declname>accel_uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="93" column="13" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="132" bodyend="206"/>
+        <references refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" compoundref="opae__svc__wrapper_8h" startline="43">accel_handle</references>
+        <references refid="types__enum_8h_1a9b2ddb9e533441e79f19d45fa0a24934a5c3973a253ffaabddd0a083f05abebc7" compoundref="types__enum_8h" startline="114">FPGA_ACCELERATOR</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da01318ecc0ead885cee673d213bb4eeab" compoundref="types__enum_8h" startline="63">FPGA_NO_MEMORY</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da7aee5958cf7f46e9d80c4ee50d42d86c" compoundref="types__enum_8h" startline="62">FPGA_NOT_FOUND</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da727cb0690aa450810ffc8f5371401327" compoundref="types__enum_8h" startline="58">FPGA_OK</references>
+        <references refid="properties_8h_1a6f83533f996cf6bd25274e0b7b9c3050">fpgaDestroyProperties</references>
+        <references refid="enum_8h_1a150a7a8f46e0d6df12cc329ff7030e21">fpgaDestroyToken</references>
+        <references refid="enum_8h_1a277ba17f2377895855545bd82c1f901d">fpgaEnumerate</references>
+        <references refid="properties_8h_1a010d3b6839fc8763e66e4f953682a489">fpgaGetProperties</references>
+        <references refid="opae-libs_2include_2opae_2mmio_8h_1a2903267d37ea5c64522b0addce74da5f">fpgaMapMMIO</references>
+        <references refid="access_8h_1addde6b2bafcd6632a2c0b595c6bc0ef3">fpgaOpen</references>
+        <references refid="properties_8h_1a71ad1e59994b2c8b04ea036a64515117">fpgaPropertiesSetGUID</references>
+        <references refid="properties_8h_1a3724caa06200e0d3f0b56611c379d75b">fpgaPropertiesSetObjectType</references>
+        <references refid="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" compoundref="opae__svc__wrapper_8h" startline="46">mpf_handle</references>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" compoundref="opae__svc__wrapper_8cpp" startline="43" endline="61">OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOPAE__SVC__WRAPPER_1a018e86425d2a24aae7ec66c78bf339d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OPAE_SVC_WRAPPER::probeForASE</definition>
+        <argsstring>()</argsstring>
+        <name>probeForASE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/opae_svc_wrapper.h" line="96" column="6" bodyfile="samples/base/sw/opae_svc_wrapper.cpp" bodystart="213" bodyend="238"/>
+        <references refid="types__enum_8h_1a9b2ddb9e533441e79f19d45fa0a24934a91f784c1c357473adbde7188a244219a" compoundref="types__enum_8h" startline="109">FPGA_DEVICE</references>
+        <references refid="types__enum_8h_1a27aaa9bd2d94c9b53602b1a7af49fc6da727cb0690aa450810ffc8f5371401327" compoundref="types__enum_8h" startline="58">FPGA_OK</references>
+        <references refid="properties_8h_1a6f83533f996cf6bd25274e0b7b9c3050">fpgaDestroyProperties</references>
+        <references refid="enum_8h_1a150a7a8f46e0d6df12cc329ff7030e21">fpgaDestroyToken</references>
+        <references refid="enum_8h_1a277ba17f2377895855545bd82c1f901d">fpgaEnumerate</references>
+        <references refid="properties_8h_1a010d3b6839fc8763e66e4f953682a489">fpgaGetProperties</references>
+        <references refid="properties_8h_1ac3237ae88feff35ba0c285e27cac58a5">fpgaPropertiesGetDeviceID</references>
+        <references refid="properties_8h_1a3724caa06200e0d3f0b56611c379d75b">fpgaPropertiesSetObjectType</references>
+        <referencedby refid="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" compoundref="opae__svc__wrapper_8cpp" startline="43" endline="61">OPAE_SVC_WRAPPER</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>OPAE_SVC_WRAPPER</label>
+        <link refid="classOPAE__SVC__WRAPPER"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/base/sw/opae_svc_wrapper.h" line="40" column="1" bodyfile="samples/base/sw/opae_svc_wrapper.h" bodystart="39" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classOPAE__SVC__WRAPPER_1ad7886f8d75ee9320890ed73e4cb5b4e6" prot="protected" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>accel_handle</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a4f2a736ef2c3a156920c1a5222687d30" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>allocBuffer</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a916f71d85053fe81c8133c979a0d708b" prot="private" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>findAndOpenAccel</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a53aa0ca525f05782a5c5b3b43816c49f" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>freeBuffer</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a10530eb779fd25a29b486e4abad8f4dc" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>hwIsSimulated</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a3dd68150a88b78618f553a8faba861a7" prot="protected" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>is_ok</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a3c7191d3867b45c6a3bfb73404bbb225" prot="protected" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>is_simulated</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a252a41e18d78ac05567be886891bc818" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>isOk</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a281abe0a9252474335b936c009ad251e" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>mmioRead64</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a3fd9e93c128f899bee5f3bbbab81e219" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>mmioWrite64</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a8dbe01292036f4474ea8b8c600779dd0" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>mpf_handle</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1acacf5194ca98c5c716e3ee6178cbfcaa" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>OPAE_SVC_WRAPPER</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1a018e86425d2a24aae7ec66c78bf339d2" prot="private" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>probeForASE</name></member>
+      <member refid="classOPAE__SVC__WRAPPER_1ae083706201ed1840f43948fc2d8d3e96" prot="public" virt="non-virtual"><scope>OPAE_SVC_WRAPPER</scope><name>~OPAE_SVC_WRAPPER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

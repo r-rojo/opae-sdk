@@ -1,0 +1,278 @@
+\doxysection{O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER Class Reference}
+\label{classOPAE__SVC__WRAPPER}\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+
+
+{\ttfamily \#include $<$/root/samples/base/sw/opae\+\_\+svc\+\_\+wrapper.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOPAE__SVC__WRAPPER_acacf5194ca98c5c716e3ee6178cbfcaa}{O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}} (const char $\ast$accel\+\_\+uuid)
+\item 
+\mbox{\hyperlink{classOPAE__SVC__WRAPPER_ae083706201ed1840f43948fc2d8d3e96}{$\sim$\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER}} ()
+\item 
+bool \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a252a41e18d78ac05567be886891bc818}{is\+Ok}} (void) const
+\item 
+bool \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a10530eb779fd25a29b486e4abad8f4dc}{hw\+Is\+Simulated}} (void) const
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a3fd9e93c128f899bee5f3bbbab81e219}{mmio\+Write64}} (uint32\+\_\+t idx, uint64\+\_\+t v)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a281abe0a9252474335b936c009ad251e}{mmio\+Read64}} (uint32\+\_\+t idx)
+\item 
+void $\ast$ \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a4f2a736ef2c3a156920c1a5222687d30}{alloc\+Buffer}} (size\+\_\+t n\+Bytes, uint64\+\_\+t $\ast$io\+Address=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a53aa0ca525f05782a5c5b3b43816c49f}{free\+Buffer}} (void $\ast$va)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+mpf\+\_\+handle\+\_\+t \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a8dbe01292036f4474ea8b8c600779dd0}{mpf\+\_\+handle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} \mbox{\hyperlink{classOPAE__SVC__WRAPPER_ad7886f8d75ee9320890ed73e4cb5b4e6}{accel\+\_\+handle}}
+\item 
+bool \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a3dd68150a88b78618f553a8faba861a7}{is\+\_\+ok}}
+\item 
+bool \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a3c7191d3867b45c6a3bfb73404bbb225}{is\+\_\+simulated}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a916f71d85053fe81c8133c979a0d708b}{find\+And\+Open\+Accel}} (const char $\ast$accel\+\_\+uuid)
+\item 
+bool \mbox{\hyperlink{classOPAE__SVC__WRAPPER_a018e86425d2a24aae7ec66c78bf339d2}{probe\+For\+A\+SE}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 39 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classOPAE__SVC__WRAPPER_acacf5194ca98c5c716e3ee6178cbfcaa}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{OPAE\_SVC\_WRAPPER()}{OPAE\_SVC\_WRAPPER()}}
+{\footnotesize\ttfamily O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER (\begin{DoxyParamCaption}\item[{const char $\ast$}]{accel\+\_\+uuid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References find\+And\+Open\+Accel(), F\+P\+G\+A\+\_\+\+OK, is\+\_\+ok, is\+\_\+simulated, and probe\+For\+A\+S\+E().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_ae083706201ed1840f43948fc2d8d3e96}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!````~OPAE\_SVC\_WRAPPER@{$\sim$OPAE\_SVC\_WRAPPER}}
+\index{````~OPAE\_SVC\_WRAPPER@{$\sim$OPAE\_SVC\_WRAPPER}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{$\sim$OPAE\_SVC\_WRAPPER()}{~OPAE\_SVC\_WRAPPER()}}
+{\footnotesize\ttfamily O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::$\sim$\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+ER (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References accel\+\_\+handle, fpga\+Close(), fpga\+Unmap\+M\+M\+I\+O(), and mpf\+\_\+handle.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classOPAE__SVC__WRAPPER_a252a41e18d78ac05567be886891bc818}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!isOk@{isOk}}
+\index{isOk@{isOk}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{isOk()}{isOk()}}
+{\footnotesize\ttfamily bool O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::is\+Ok (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+References is\+\_\+ok.
+
+
+
+Referenced by main().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a10530eb779fd25a29b486e4abad8f4dc}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!hwIsSimulated@{hwIsSimulated}}
+\index{hwIsSimulated@{hwIsSimulated}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{hwIsSimulated()}{hwIsSimulated()}}
+{\footnotesize\ttfamily bool O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::hw\+Is\+Simulated (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+References is\+\_\+simulated.
+
+
+
+Referenced by main().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a3fd9e93c128f899bee5f3bbbab81e219}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!mmioWrite64@{mmioWrite64}}
+\index{mmioWrite64@{mmioWrite64}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{mmioWrite64()}{mmioWrite64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::mmio\+Write64 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx,  }\item[{uint64\+\_\+t}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+References accel\+\_\+handle, and fpga\+Write\+M\+M\+I\+O64().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a281abe0a9252474335b936c009ad251e}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!mmioRead64@{mmioRead64}}
+\index{mmioRead64@{mmioRead64}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{mmioRead64()}{mmioRead64()}}
+{\footnotesize\ttfamily uint64\+\_\+t O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::mmio\+Read64 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+References accel\+\_\+handle, F\+P\+G\+A\+\_\+\+OK, and fpga\+Read\+M\+M\+I\+O64().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a4f2a736ef2c3a156920c1a5222687d30}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!allocBuffer@{allocBuffer}}
+\index{allocBuffer@{allocBuffer}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{allocBuffer()}{allocBuffer()}}
+{\footnotesize\ttfamily void $\ast$ O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::alloc\+Buffer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n\+Bytes,  }\item[{uint64\+\_\+t $\ast$}]{io\+Address = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References accel\+\_\+handle, F\+P\+G\+A\+\_\+\+OK, fpga\+Get\+I\+O\+Address(), fpga\+Prepare\+Buffer(), and mpf\+\_\+handle.
+
+
+
+Referenced by main().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a53aa0ca525f05782a5c5b3b43816c49f}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!freeBuffer@{freeBuffer}}
+\index{freeBuffer@{freeBuffer}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{freeBuffer()}{freeBuffer()}}
+{\footnotesize\ttfamily void O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::free\+Buffer (\begin{DoxyParamCaption}\item[{void $\ast$}]{va }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References mpf\+\_\+handle.
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a916f71d85053fe81c8133c979a0d708b}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!findAndOpenAccel@{findAndOpenAccel}}
+\index{findAndOpenAccel@{findAndOpenAccel}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{findAndOpenAccel()}{findAndOpenAccel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::find\+And\+Open\+Accel (\begin{DoxyParamCaption}\item[{const char $\ast$}]{accel\+\_\+uuid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 132 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References accel\+\_\+handle, F\+P\+G\+A\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+OR, F\+P\+G\+A\+\_\+\+N\+O\+\_\+\+M\+E\+M\+O\+RY, F\+P\+G\+A\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND, F\+P\+G\+A\+\_\+\+OK, fpga\+Destroy\+Properties(), fpga\+Destroy\+Token(), fpga\+Enumerate(), fpga\+Get\+Properties(), fpga\+Map\+M\+M\+I\+O(), fpga\+Open(), fpga\+Properties\+Set\+G\+U\+I\+D(), fpga\+Properties\+Set\+Object\+Type(), and mpf\+\_\+handle.
+
+
+
+Referenced by O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a018e86425d2a24aae7ec66c78bf339d2}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!probeForASE@{probeForASE}}
+\index{probeForASE@{probeForASE}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{probeForASE()}{probeForASE()}}
+{\footnotesize\ttfamily bool O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::probe\+For\+A\+SE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 213 of file opae\+\_\+svc\+\_\+wrapper.\+cpp.
+
+
+
+References F\+P\+G\+A\+\_\+\+D\+E\+V\+I\+CE, F\+P\+G\+A\+\_\+\+OK, fpga\+Destroy\+Properties(), fpga\+Destroy\+Token(), fpga\+Enumerate(), fpga\+Get\+Properties(), fpga\+Properties\+Get\+Device\+I\+D(), and fpga\+Properties\+Set\+Object\+Type().
+
+
+
+Referenced by O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\label{classOPAE__SVC__WRAPPER_ad7886f8d75ee9320890ed73e4cb5b4e6}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!accel\_handle@{accel\_handle}}
+\index{accel\_handle@{accel\_handle}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{accel\_handle}{accel\_handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::accel\+\_\+handle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+Referenced by alloc\+Buffer(), find\+And\+Open\+Accel(), mmio\+Read64(), mmio\+Write64(), and $\sim$\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a8dbe01292036f4474ea8b8c600779dd0}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!mpf\_handle@{mpf\_handle}}
+\index{mpf\_handle@{mpf\_handle}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{mpf\_handle}{mpf\_handle}}
+{\footnotesize\ttfamily mpf\+\_\+handle\+\_\+t O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::mpf\+\_\+handle}
+
+
+
+Definition at line 46 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+Referenced by alloc\+Buffer(), find\+And\+Open\+Accel(), free\+Buffer(), and $\sim$\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a3dd68150a88b78618f553a8faba861a7}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!is\_ok@{is\_ok}}
+\index{is\_ok@{is\_ok}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{is\_ok}{is\_ok}}
+{\footnotesize\ttfamily bool O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::is\+\_\+ok\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 88 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+Referenced by is\+Ok(), and O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+
+\mbox{\label{classOPAE__SVC__WRAPPER_a3c7191d3867b45c6a3bfb73404bbb225}} 
+\index{OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}!is\_simulated@{is\_simulated}}
+\index{is\_simulated@{is\_simulated}!OPAE\_SVC\_WRAPPER@{OPAE\_SVC\_WRAPPER}}
+\doxysubsubsection{\texorpdfstring{is\_simulated}{is\_simulated}}
+{\footnotesize\ttfamily bool O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::is\+\_\+simulated\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 89 of file opae\+\_\+svc\+\_\+wrapper.\+h.
+
+
+
+Referenced by hw\+Is\+Simulated(), and O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+

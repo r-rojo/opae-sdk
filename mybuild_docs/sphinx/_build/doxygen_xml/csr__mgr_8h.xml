@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="csr__mgr_8h" kind="file" language="C++">
+    <compoundname>csr_mgr.h</compoundname>
+    <includes refid="opae__svc__wrapper_8h" local="yes">opae_svc_wrapper.h</includes>
+    <includedby refid="hello__mpf__afu_8cpp" local="yes">samples/hello_mpf_afu/sw/hello_mpf_afu.cpp</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>stdbool.h</label>
+      </node>
+      <node id="26">
+        <label>opae/version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>opae/event.h</label>
+        <link refid="event_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>opae/properties.h</label>
+        <link refid="properties_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>opae/manage.h</label>
+        <link refid="manage_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>opae/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>samples/base/sw/csr_mgr.h</label>
+        <link refid="csr__mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>opae/init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>opae/enum.h</label>
+        <link refid="enum_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>errno.h</label>
+      </node>
+      <node id="15">
+        <label>opae/access.h</label>
+        <link refid="access_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>opae_svc_wrapper.h</label>
+        <link refid="opae__svc__wrapper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
+      </node>
+      <node id="22">
+        <label>opae/umsg.h</label>
+        <link refid="umsg_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>opae/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>opae/types_enum.h</label>
+        <link refid="types__enum_8h"/>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+      <node id="23">
+        <label>opae/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>opae/userclk.h</label>
+        <link refid="userclk_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>opae/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>opae/mpf/mpf.h</label>
+      </node>
+      <node id="27">
+        <label>opae/sysobject.h</label>
+        <link refid="sysobject_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>opae/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>opae/fpga.h</label>
+        <link refid="fpga_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>opae/mmio.h</label>
+        <link refid="opae-libs_2include_2opae_2mmio_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>opae/metrics.h</label>
+        <link refid="metrics_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>samples/hello_mpf_afu/sw/hello_mpf_afu.cpp</label>
+        <link refid="hello__mpf__afu_8cpp"/>
+      </node>
+      <node id="1">
+        <label>samples/base/sw/csr_mgr.h</label>
+        <link refid="csr__mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCSR__MGR" prot="public">CSR_MGR</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2014-2018,<sp/>Intel<sp/>Corporation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Intel<sp/>Corporation<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="opae__svc__wrapper_8h" kindref="compound">opae_svc_wrapper.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Manage<sp/>a<sp/>standard<sp/>collection<sp/>of<sp/>CSRS.<sp/><sp/>This<sp/>is<sp/>the<sp/>software-side<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>the<sp/>base<sp/>cci_csrs<sp/>RTL<sp/>module.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classCSR__MGR" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCSR__MGR" kindref="compound">CSR_MGR</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Offset<sp/>of<sp/>user<sp/>CSRs<sp/>in<sp/>the<sp/>CSR<sp/>index<sp/>space.<sp/><sp/>Offsets<sp/>below<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>are<sp/>in<sp/>the<sp/>&quot;common&quot;<sp/>(application-independent)<sp/>CSR<sp/>space,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>defined<sp/>below.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>constant<sp/>must<sp/>match<sp/>the<sp/>RTL<sp/>implementation<sp/>in<sp/>csr_mgr.sv!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" kindref="member">USER_CSR_BASE</ref><sp/>=<sp/>32</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="classCSR__MGR_1ac7ae3940e28aaafac608f84b4fea33bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="classCSR__MGR_1ac7ae3940e28aaafac608f84b4fea33bc" kindref="member">CSR_MGR</ref>(<ref refid="opae__svc__wrapper_8h_1ae6eb64ba29c9d7aa39a35ee7b6b28a22" kindref="member">SVC_WRAPPER</ref>&amp;<sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>)<sp/>:<sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>(<ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>)<sp/>{};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classCSR__MGR_1ac0391b0bde496135d845aad2297d25c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="classCSR__MGR_1ac0391b0bde496135d845aad2297d25c8" kindref="member">~CSR_MGR</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write/read<sp/>application-specific<sp/>CSRs.<sp/><sp/>The<sp/>maximum<sp/>CSR<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>application-dependent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classCSR__MGR_1ac9ba9ab9f39dee563ba722c249184262" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCSR__MGR_1ac9ba9ab9f39dee563ba722c249184262" kindref="member">writeCSR</ref>(uint32_t<sp/>idx,<sp/>uint64_t<sp/>v)<sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>.mmioWrite64(8<sp/>*<sp/>(<ref refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" kindref="member">USER_CSR_BASE</ref><sp/>+<sp/>idx),<sp/>v);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classCSR__MGR_1a713ff1aa00f9b5bbb40d3c9d17a6a59a" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint64_t<sp/><ref refid="classCSR__MGR_1a713ff1aa00f9b5bbb40d3c9d17a6a59a" kindref="member">readCSR</ref>(uint32_t<sp/>idx)<sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>.mmioRead64(8<sp/>*<sp/>(<ref refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" kindref="member">USER_CSR_BASE</ref><sp/>+<sp/>idx));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Common<sp/>CSRs<sp/>available<sp/>on<sp/>in<sp/>all<sp/>programs<sp/>using<sp/>CSR_MGR.<sp/><sp/>These<sp/>offsets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>match<sp/>the<sp/>implementation<sp/>in<sp/>csr_mgr.sv.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="75" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1" kindref="member">CSR_COMMON_DFH</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="76" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49" kindref="member">CSR_COMMON_ID_L</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="77" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5" kindref="member">CSR_COMMON_ID_H</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AFU<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" kindref="member">CSR_COMMON_FREQ</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>read/write<sp/>hits<sp/>in<sp/>the<sp/>FIU<sp/>system<sp/>memory<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e" kindref="member">CSR_COMMON_CACHE_RD_HITS</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="82" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18" kindref="member">CSR_COMMON_CACHE_WR_HITS</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lines<sp/>read/written<sp/>on<sp/>the<sp/>cached<sp/>physical<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411" kindref="member">CSR_COMMON_VL0_RD_LINES</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="85" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae" kindref="member">CSR_COMMON_VL0_WR_LINES</ref><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lines<sp/>read<sp/>or<sp/>written<sp/>on<sp/>the<sp/>non-cached<sp/>physical<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc" kindref="member">CSR_COMMON_VH0_LINES</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="88" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816" kindref="member">CSR_COMMON_VH1_LINES</ref><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>collection<sp/>of<sp/>status<sp/>signals<sp/>from<sp/>the<sp/>FIU.<sp/><sp/>See<sp/>&quot;FIU<sp/>state&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>defined<sp/>in<sp/>csr_mgr.sv.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717" kindref="member">CSR_COMMON_FIU_STATE</ref><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="92" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc" kindref="member">CSR_COMMON_RD_ALMOST_FULL_CYCLES</ref><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="93" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494" kindref="member">CSR_COMMON_WR_ALMOST_FULL_CYCLES</ref><sp/>=<sp/>17,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" kindref="member">CSR_COMMON__LAST</ref><sp/>=<sp/>18</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/>}<sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" kindref="member">t_csr_common</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>one<sp/>of<sp/>the<sp/>common<sp/>CSRs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint64_t<sp/><ref refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" kindref="member">readCommonCSR</ref>(<ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" kindref="member">t_csr_common</ref><sp/>idx)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" kindref="member">CSR_COMMON__LAST</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>~uint64_t(0);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>.mmioRead64(8<sp/>*<sp/>uint32_t(idx));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>frequency<sp/>at<sp/>which<sp/>the<sp/>AFU<sp/>is<sp/>running.<sp/><sp/>In<sp/>the<sp/>common</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>framework<sp/>here,<sp/>a<sp/>CSR<sp/>holds<sp/>the<sp/>frequency<sp/>of<sp/>the<sp/>clock<sp/>to<sp/>which<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AFU<sp/>is<sp/>attached.<sp/><sp/>When<sp/>the<sp/>attached<sp/>clock<sp/>is<sp/>the<sp/>&quot;user<sp/>clock&quot;<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>frequency<sp/>isn&apos;t<sp/>known<sp/>at<sp/>compile<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classCSR__MGR_1aacdfb2d642d46b73bca9ac63f1b5022f" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint64_t<sp/><ref refid="classCSR__MGR_1aacdfb2d642d46b73bca9ac63f1b5022f" kindref="member">getAFUMHz</ref>(uint64_t<sp/>uClk_usr_mhz<sp/>=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>What&apos;s<sp/>the<sp/>AFU<sp/>frequency<sp/>(MHz)?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>afu_mhz<sp/>=<sp/><ref refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" kindref="member">readCommonCSR</ref>(<ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" kindref="member">CSR_COMMON_FREQ</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(afu_mhz<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>indicates<sp/>uClk_usr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afu_mhz<sp/>=<sp/>uClk_usr_mhz;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(afu_mhz<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>indicates<sp/>uClk_usrDiv2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afu_mhz<sp/>=<sp/>uClk_usr_mhz<sp/>&gt;&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>afu_mhz;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126" refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="opae__svc__wrapper_8h_1ae6eb64ba29c9d7aa39a35ee7b6b28a22" kindref="member">SVC_WRAPPER</ref>&amp;<sp/><ref refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" kindref="member">svc</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="samples/base/sw/csr_mgr.h"/>
+  </compounddef>
+</doxygen>

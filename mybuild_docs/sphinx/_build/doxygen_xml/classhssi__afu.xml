@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhssi__afu" kind="class" language="C++" prot="public">
+    <compoundname>hssi_afu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">test_afu</basecompoundref>
+    <includes refid="hssi__afu_8h" local="no">/root/samples/hssi/hssi_afu.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhssi__afu_1ab13aa4088100a9ac313862ae7d5c7edc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hssi_afu::hssi_afu</definition>
+        <argsstring>()</argsstring>
+        <name>hssi_afu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_afu.h" line="56" column="3" bodyfile="samples/hssi/hssi_afu.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__afu_1a0a5190683fbccdd1ed97c89fc148981e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string hssi_afu::ethernet_interface</definition>
+        <argsstring>()</argsstring>
+        <name>ethernet_interface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_afu.h" line="60" column="15" bodyfile="samples/hssi/hssi_afu.h" bodystart="60" bodyend="93"/>
+        <references refid="classopae_1_1fpga_1_1types_1_1properties_1ab2b9142ce432de4aff9c0a20e9bc4c42">opae::fpga::types::properties::get</references>
+        <referencedby refid="classhssi__100g__cmd_1acf6da90316e7dd11f43f60df7a720926" compoundref="hssi__100g__cmd_8h" startline="93" endline="162">hssi_100g_cmd::run</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__afu_1a86638ffebd322c2f71d60e1ac6ba63ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hssi_afu::mbox_write</definition>
+        <argsstring>(uint16_t offset, uint32_t data)</argsstring>
+        <name>mbox_write</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_afu.h" line="95" column="8" bodyfile="samples/hssi/hssi_afu.h" bodystart="95" bodyend="146"/>
+        <references refid="hssi__afu_8h_1a859eb8f8ff2398eff21aab5346844144" compoundref="hssi__afu_8h" startline="48">ACK_TRANS</references>
+        <references refid="hssi__afu_8h_1a16b1ade4a60a95678d58b2fa6b9fcc10" compoundref="hssi__afu_8h" startline="49">AFU_CMD_SHIFT</references>
+        <references refid="hssi__afu_8h_1a462fb2ba6f2af99ec3d021ded436bb65" compoundref="hssi__afu_8h" startline="52">NO_TIMEOUT</references>
+        <references refid="hssi__afu_8h_1a461eab73cc68f8fa3a50edaae21cfee3" compoundref="hssi__afu_8h" startline="41">TRAFFIC_CTRL_CMD</references>
+        <references refid="hssi__afu_8h_1a3ce04cd0dea4df8da87b9f643cb4d069" compoundref="hssi__afu_8h" startline="42">TRAFFIC_CTRL_DATA</references>
+        <references refid="hssi__afu_8h_1af792feb13ae0c1eab8f95f64c8baa96d" compoundref="hssi__afu_8h" startline="47">WRITE_CMD</references>
+        <references refid="hssi__afu_8h_1abe6eab6a74c11bf2db22b5f73d41fd47" compoundref="hssi__afu_8h" startline="50">WRITE_DATA_SHIFT</references>
+        <referencedby refid="classhssi__100g__cmd_1acf6da90316e7dd11f43f60df7a720926" compoundref="hssi__100g__cmd_8h" startline="93" endline="162">hssi_100g_cmd::run</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__afu_1a8555e906fd776954d39ddf432a7996f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t hssi_afu::mbox_read</definition>
+        <argsstring>(uint16_t offset)</argsstring>
+        <name>mbox_read</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_afu.h" line="148" column="12" bodyfile="samples/hssi/hssi_afu.h" bodystart="148" bodyend="202"/>
+        <references refid="hssi__afu_8h_1a859eb8f8ff2398eff21aab5346844144" compoundref="hssi__afu_8h" startline="48">ACK_TRANS</references>
+        <references refid="hssi__afu_8h_1a16b1ade4a60a95678d58b2fa6b9fcc10" compoundref="hssi__afu_8h" startline="49">AFU_CMD_SHIFT</references>
+        <references refid="hssi__afu_8h_1a462fb2ba6f2af99ec3d021ded436bb65" compoundref="hssi__afu_8h" startline="52">NO_TIMEOUT</references>
+        <references refid="hssi__afu_8h_1a21623e2a5501c821da54dd76ffc1d077" compoundref="hssi__afu_8h" startline="46">READ_CMD</references>
+        <references refid="hssi__afu_8h_1a461eab73cc68f8fa3a50edaae21cfee3" compoundref="hssi__afu_8h" startline="41">TRAFFIC_CTRL_CMD</references>
+        <references refid="hssi__afu_8h_1a3ce04cd0dea4df8da87b9f643cb4d069" compoundref="hssi__afu_8h" startline="42">TRAFFIC_CTRL_DATA</references>
+        <referencedby refid="classhssi__100g__cmd_1adedc4e33cb2ef457b66822f80ec5373c" compoundref="hssi__100g__cmd_8h" startline="169" endline="208">hssi_100g_cmd::print_registers</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1accc68e7c9f9a76c7a3fad9c62a3fe8be" compoundref="hssi__10g__cmd_8h" startline="220" endline="281">hssi_10g_cmd::print_registers</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hssi_afu</label>
+        <link refid="classhssi__afu"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/hssi/hssi_afu.h" line="54" column="31" bodyfile="samples/hssi/hssi_afu.h" bodystart="54" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classhssi__afu_1a0a5190683fbccdd1ed97c89fc148981e" prot="public" virt="non-virtual"><scope>hssi_afu</scope><name>ethernet_interface</name></member>
+      <member refid="classhssi__afu_1ab13aa4088100a9ac313862ae7d5c7edc" prot="public" virt="non-virtual"><scope>hssi_afu</scope><name>hssi_afu</name></member>
+      <member refid="classhssi__afu_1a8555e906fd776954d39ddf432a7996f8" prot="public" virt="non-virtual"><scope>hssi_afu</scope><name>mbox_read</name></member>
+      <member refid="classhssi__afu_1a86638ffebd322c2f71d60e1ac6ba63ea" prot="public" virt="non-virtual"><scope>hssi_afu</scope><name>mbox_write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

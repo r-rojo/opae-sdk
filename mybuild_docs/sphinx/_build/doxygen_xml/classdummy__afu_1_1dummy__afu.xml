@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdummy__afu_1_1dummy__afu" kind="class" language="C++" prot="public">
+    <compoundname>dummy_afu::dummy_afu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">test_afu</basecompoundref>
+    <includes refid="dummy__afu_8h" local="no">/root/samples/dummy_afu/dummy_afu.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdummy__afu_1_1dummy__afu_1ae6e804471d96d97b1fefd1be976b1525" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dummy_afu::dummy_afu::count_</definition>
+        <argsstring></argsstring>
+        <name>count_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="308" column="12" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdummy__afu_1_1dummy__afu_1a559a248f4c1be5a66bf80d164bf5b5c4" prot="private" static="no" mutable="no">
+        <type>std::map&lt; uint32_t, uint32_t &gt;</type>
+        <definition>std::map&lt;uint32_t, uint32_t&gt; dummy_afu::dummy_afu::limits_</definition>
+        <argsstring></argsstring>
+        <name>limits_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="309" column="12" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1aae0500ab86280590301a8f2035871ea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dummy_afu::dummy_afu::dummy_afu</definition>
+        <argsstring>(const char *afu_id=&quot;91c2a3a1-4a23-4e21-a7cd-2b36dbf2ed73&quot;)</argsstring>
+        <name>dummy_afu</name>
+        <param>
+          <type>const char *</type>
+          <declname>afu_id</declname>
+          <defval>&quot;91c2a3a1-4a23-4e21-a7cd-2b36dbf2ed73&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="185" column="3" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a28786abacbd10d38cb75c7735b5f06d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int dummy_afu::dummy_afu::run</definition>
+        <argsstring>(CLI::App *app, test_command::ptr_t test) override</argsstring>
+        <name>run</name>
+        <param>
+          <type>CLI::App *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>test_command::ptr_t</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="192" column="15" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="192" bodyend="217"/>
+        <references refid="hssi_8cpp_1a7ccd62f1083f322e0d1dfaa9c23ecb88" compoundref="hssi_8cpp" startline="31">app</references>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a6cfa065131aeb2c767957a427a45ca55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dummy_afu::dummy_afu::read</definition>
+        <argsstring>(uint32_t offset) const</argsstring>
+        <name>read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="220" column="12" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a8dbe9b9d6a378367d4ebd928a40aa7df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::write</definition>
+        <argsstring>(uint32_t offset, T value) const</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="225" column="15" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1aba415621cca0fff2789c41e2f2a103ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dummy_afu::dummy_afu::read</definition>
+        <argsstring>(uint32_t offset, uint32_t i) const</argsstring>
+        <name>read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="230" column="5" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a924a1ad3f5a424df863ddaf368daeaab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::write</definition>
+        <argsstring>(uint32_t offset, uint32_t i, T value) const</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="235" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a45941fbe75bbfbe64e1ad425576c51c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1aa90c1193c9d6c97f256f7482529d2afe" kindref="member">shared_buffer::ptr_t</ref></type>
+        <definition>shared_buffer::ptr_t dummy_afu::dummy_afu::allocate</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="239" column="24" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="239" bodyend="242"/>
+        <references refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1a5a3761aa33084d9a4038e457903e189b">opae::fpga::types::shared_buffer::allocate</references>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a367b5eea5a958b43526f6caed83fa3cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::fill</definition>
+        <argsstring>(shared_buffer::ptr_t buffer)</argsstring>
+        <name>fill</name>
+        <param>
+          <type><ref refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1aa90c1193c9d6c97f256f7482529d2afe" kindref="member">shared_buffer::ptr_t</ref></type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="244" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="244" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1ab2520eacac74a76eeb451b2434d7bacf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::fill</definition>
+        <argsstring>(shared_buffer::ptr_t buffer, uint32_t value)</argsstring>
+        <name>fill</name>
+        <param>
+          <type><ref refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1aa90c1193c9d6c97f256f7482529d2afe" kindref="member">shared_buffer::ptr_t</ref></type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="256" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1af04b7db0dd1a4cc07a892805e02b4a4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classopae_1_1fpga_1_1types_1_1event_1a018f8b02575a7ed99cc013463f319e03" kindref="member">event::ptr_t</ref></type>
+        <definition>event::ptr_t dummy_afu::dummy_afu::register_interrupt</definition>
+        <argsstring>()</argsstring>
+        <name>register_interrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="261" column="16" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="261" bodyend="265"/>
+        <references refid="types__enum_8h_1a6eccf38d4643d14fbc51f34e03131fa6a4927c38c144629dfd0ac7b798853d18f" compoundref="types__enum_8h" startline="79">FPGA_EVENT_INTERRUPT</references>
+        <references refid="classopae_1_1fpga_1_1types_1_1event_1aebb5fa8450368e3288b25c729b6dbacf">opae::fpga::types::event::register_event</references>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a41f2ecf19989492da3d175c1f1307c45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::interrupt_wait</definition>
+        <argsstring>(event::ptr_t event, int timeout=-1)</argsstring>
+        <name>interrupt_wait</name>
+        <param>
+          <type><ref refid="classopae_1_1fpga_1_1types_1_1event_1a018f8b02575a7ed99cc013463f319e03" kindref="member">event::ptr_t</ref></type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="267" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="267" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a5b15cc613c3c02bca2247f52b281e316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::compare</definition>
+        <argsstring>(shared_buffer::ptr_t b1, shared_buffer::ptr_t b2, uint32_t count=0)</argsstring>
+        <name>compare</name>
+        <param>
+          <type><ref refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1aa90c1193c9d6c97f256f7482529d2afe" kindref="member">shared_buffer::ptr_t</ref></type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type><ref refid="classopae_1_1fpga_1_1types_1_1shared__buffer_1aa90c1193c9d6c97f256f7482529d2afe" kindref="member">shared_buffer::ptr_t</ref></type>
+          <declname>b2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="280" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="280" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a7338b50ed10fd0eb076ed439c6734bed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dummy_afu::dummy_afu::read_register</definition>
+        <argsstring>()</argsstring>
+        <name>read_register</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="290" column="5" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1aaaf5867f6ca84c1c1f6e6701b463b24e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>volatile T* dummy_afu::dummy_afu::register_ptr</definition>
+        <argsstring>(uint32_t offset)</argsstring>
+        <name>register_ptr</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="296" column="14" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1a8575458fcf22efea09c3feb33195e043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dummy_afu::dummy_afu::write_register</definition>
+        <argsstring>(uint32_t offset, T *reg)</argsstring>
+        <name>write_register</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="302" column="8" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="302" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdummy__afu_1_1dummy__afu_1ad76648d08dd4f8ca7fcd93f2a0cf0a57" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dummy_afu::dummy_afu::get_offset</definition>
+        <argsstring>(uint32_t base, uint32_t i) const</argsstring>
+        <name>get_offset</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/dummy_afu/dummy_afu.h" line="311" column="12" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="311" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dummy_afu::dummy_afu</label>
+        <link refid="classdummy__afu_1_1dummy__afu"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/dummy_afu/dummy_afu.h" line="183" column="32" bodyfile="samples/dummy_afu/dummy_afu.h" bodystart="183" bodyend="321"/>
+    <listofallmembers>
+      <member refid="classdummy__afu_1_1dummy__afu_1a45941fbe75bbfbe64e1ad425576c51c8" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>allocate</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a5b15cc613c3c02bca2247f52b281e316" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>compare</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1ae6e804471d96d97b1fefd1be976b1525" prot="private" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>count_</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1aae0500ab86280590301a8f2035871ea2" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>dummy_afu</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a367b5eea5a958b43526f6caed83fa3cd" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>fill</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1ab2520eacac74a76eeb451b2434d7bacf" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>fill</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1ad76648d08dd4f8ca7fcd93f2a0cf0a57" prot="private" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>get_offset</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a41f2ecf19989492da3d175c1f1307c45" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>interrupt_wait</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a559a248f4c1be5a66bf80d164bf5b5c4" prot="private" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>limits_</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a6cfa065131aeb2c767957a427a45ca55" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>read</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1aba415621cca0fff2789c41e2f2a103ce" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>read</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a7338b50ed10fd0eb076ed439c6734bed" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>read_register</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1af04b7db0dd1a4cc07a892805e02b4a4f" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>register_interrupt</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1aaaf5867f6ca84c1c1f6e6701b463b24e" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>register_ptr</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a28786abacbd10d38cb75c7735b5f06d9" prot="public" virt="virtual"><scope>dummy_afu::dummy_afu</scope><name>run</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a8dbe9b9d6a378367d4ebd928a40aa7df" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>write</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a924a1ad3f5a424df863ddaf368daeaab" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>write</name></member>
+      <member refid="classdummy__afu_1_1dummy__afu_1a8575458fcf22efea09c3feb33195e043" prot="public" virt="non-virtual"><scope>dummy_afu::dummy_afu</scope><name>write_register</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

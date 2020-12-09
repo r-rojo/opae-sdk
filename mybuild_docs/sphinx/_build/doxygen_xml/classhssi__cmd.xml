@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classhssi__cmd" kind="class" language="C++" prot="public">
+    <compoundname>hssi_cmd</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">test_command</basecompoundref>
+    <derivedcompoundref refid="classhssi__100g__cmd" prot="public" virt="non-virtual">hssi_100g_cmd</derivedcompoundref>
+    <derivedcompoundref refid="classhssi__10g__cmd" prot="public" virt="non-virtual">hssi_10g_cmd</derivedcompoundref>
+    <includes refid="hssi__cmd_8h" local="no">/root/samples/hssi/hssi_cmd.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classhssi__cmd_1a16ed7a08a031da6147af3abd5ea2bab5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hssi_cmd::running_</definition>
+        <argsstring></argsstring>
+        <name>running_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="104" column="8" bodyfile="samples/hssi/hssi_cmd.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+        <referencedby refid="classhssi__cmd_1a69cfbacb80d5d1ec6ec657bd8e6fc02b" compoundref="hssi__cmd_8h" startline="98" endline="101">stop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhssi__cmd_1a9241a77d197ac297be1ea1759c24fe08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hssi_cmd::hssi_cmd</definition>
+        <argsstring>()</argsstring>
+        <name>hssi_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="41" column="3" bodyfile="samples/hssi/hssi_cmd.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1a153a98d3c481a21b25abed3a6e25192f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t hssi_cmd::mac_bits_for</definition>
+        <argsstring>(std::string addr) const</argsstring>
+        <name>mac_bits_for</name>
+        <param>
+          <type>std::string</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="45" column="12" bodyfile="samples/hssi/hssi_cmd.h" bodystart="45" bodyend="56"/>
+        <references refid="hssi__cmd_8h_1a02028d30e3cea7b4e76419c00a1c6e6d" compoundref="hssi__cmd_8h" startline="36">INVALID_MAC</references>
+        <referencedby refid="classhssi__100g__cmd_1acf6da90316e7dd11f43f60df7a720926" compoundref="hssi__100g__cmd_8h" startline="93" endline="162">hssi_100g_cmd::run</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1a308020145dd686d7b5ab1a4bf22ee9c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hssi_cmd::run_process</definition>
+        <argsstring>(const std::string &amp;proc)</argsstring>
+        <name>run_process</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>proc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="58" column="8" bodyfile="samples/hssi/hssi_cmd.h" bodystart="58" bodyend="68"/>
+        <referencedby refid="classhssi__cmd_1a49f44707a8d19094be36a91ffa570e79" compoundref="hssi__cmd_8h" startline="76" endline="85">enable_eth_loopback</referencedby>
+        <referencedby refid="classhssi__cmd_1ab9e34f47f9b8507649f79894950ed59e" compoundref="hssi__cmd_8h" startline="70" endline="74">show_eth_stats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1ab9e34f47f9b8507649f79894950ed59e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hssi_cmd::show_eth_stats</definition>
+        <argsstring>(const std::string &amp;eth)</argsstring>
+        <name>show_eth_stats</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="70" column="8" bodyfile="samples/hssi/hssi_cmd.h" bodystart="70" bodyend="74"/>
+        <references refid="classhssi__cmd_1a308020145dd686d7b5ab1a4bf22ee9c7" compoundref="hssi__cmd_8h" startline="58" endline="68">run_process</references>
+        <referencedby refid="classhssi__100g__cmd_1acf6da90316e7dd11f43f60df7a720926" compoundref="hssi__100g__cmd_8h" startline="93" endline="162">hssi_100g_cmd::run</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1a49f44707a8d19094be36a91ffa570e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hssi_cmd::enable_eth_loopback</definition>
+        <argsstring>(const std::string &amp;eth, bool enable)</argsstring>
+        <name>enable_eth_loopback</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eth</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="76" column="8" bodyfile="samples/hssi/hssi_cmd.h" bodystart="76" bodyend="85"/>
+        <references refid="classhssi__cmd_1a308020145dd686d7b5ab1a4bf22ee9c7" compoundref="hssi__cmd_8h" startline="58" endline="68">run_process</references>
+        <references refid="hello__afu_8c_1a300ec1c0f7befcbb990985d36d56d8c9">usleep</references>
+        <referencedby refid="classhssi__100g__cmd_1acf6da90316e7dd11f43f60df7a720926" compoundref="hssi__100g__cmd_8h" startline="93" endline="162">hssi_100g_cmd::run</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1a5b43c5b65f93917f74fb158c1261aeee" compoundref="hssi__10g__cmd_8h" startline="127" endline="213">hssi_10g_cmd::run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1ae4683ed6127d0ac876b8f24a83bbdc1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string hssi_cmd::int_to_hex</definition>
+        <argsstring>(X x) const</argsstring>
+        <name>int_to_hex</name>
+        <param>
+          <type>X</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="88" column="15" bodyfile="samples/hssi/hssi_cmd.h" bodystart="88" bodyend="96"/>
+        <referencedby refid="classhssi__100g__cmd_1adedc4e33cb2ef457b66822f80ec5373c" compoundref="hssi__100g__cmd_8h" startline="169" endline="208">hssi_100g_cmd::print_registers</referencedby>
+        <referencedby refid="classhssi__10g__cmd_1accc68e7c9f9a76c7a3fad9c62a3fe8be" compoundref="hssi__10g__cmd_8h" startline="220" endline="281">hssi_10g_cmd::print_registers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhssi__cmd_1a69cfbacb80d5d1ec6ec657bd8e6fc02b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hssi_cmd::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hssi/hssi_cmd.h" line="98" column="8" bodyfile="samples/hssi/hssi_cmd.h" bodystart="98" bodyend="101"/>
+        <references refid="classhssi__cmd_1a16ed7a08a031da6147af3abd5ea2bab5" compoundref="hssi__cmd_8h" startline="104">running_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>hssi_10g_cmd</label>
+        <link refid="classhssi__10g__cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hssi_cmd</label>
+        <link refid="classhssi__cmd"/>
+      </node>
+      <node id="2">
+        <label>hssi_100g_cmd</label>
+        <link refid="classhssi__100g__cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>hssi_cmd</label>
+        <link refid="classhssi__cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/hssi/hssi_cmd.h" line="39" column="1" bodyfile="samples/hssi/hssi_cmd.h" bodystart="38" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classhssi__cmd_1a49f44707a8d19094be36a91ffa570e79" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>enable_eth_loopback</name></member>
+      <member refid="classhssi__cmd_1a9241a77d197ac297be1ea1759c24fe08" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>hssi_cmd</name></member>
+      <member refid="classhssi__cmd_1ae4683ed6127d0ac876b8f24a83bbdc1f" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>int_to_hex</name></member>
+      <member refid="classhssi__cmd_1a153a98d3c481a21b25abed3a6e25192f" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>mac_bits_for</name></member>
+      <member refid="classhssi__cmd_1a308020145dd686d7b5ab1a4bf22ee9c7" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>run_process</name></member>
+      <member refid="classhssi__cmd_1a16ed7a08a031da6147af3abd5ea2bab5" prot="protected" virt="non-virtual"><scope>hssi_cmd</scope><name>running_</name></member>
+      <member refid="classhssi__cmd_1ab9e34f47f9b8507649f79894950ed59e" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>show_eth_stats</name></member>
+      <member refid="classhssi__cmd_1a69cfbacb80d5d1ec6ec657bd8e6fc02b" prot="public" virt="non-virtual"><scope>hssi_cmd</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,231 @@
+\doxysection{opae-\/libs/include/opae/mmio.h File Reference}
+\label{opae-libs_2include_2opae_2mmio_8h}\index{opae-\/libs/include/opae/mmio.h@{opae-\/libs/include/opae/mmio.h}}
+
+
+Functions for mapping and accessing M\+M\+IO space.  
+
+
+{\ttfamily \#include $<$opae/types.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a6df7f745d9b9d47582714fe8e2d1a761}{fpga\+Write\+M\+M\+I\+O64}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t offset, uint64\+\_\+t value)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a011ba900710ddf70c13ca089c4742187}{fpga\+Read\+M\+M\+I\+O64}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t offset, uint64\+\_\+t $\ast$value)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_ae538bfe7158d1911c5e749bbc063aa3d}{fpga\+Write\+M\+M\+I\+O32}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t offset, uint32\+\_\+t value)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a81dc89da3e94e26efff1af1eeebb7f5d}{fpga\+Read\+M\+M\+I\+O32}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t offset, uint32\+\_\+t $\ast$value)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a9cf56711df0f234686426c58d8b00cb0}{fpga\+Write\+M\+M\+I\+O512}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t offset, const void $\ast$value)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a2903267d37ea5c64522b0addce74da5f}{fpga\+Map\+M\+M\+IO}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num, uint64\+\_\+t $\ast$$\ast$mmio\+\_\+ptr)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a8c8db22506e1fbfd16440c660bfee28f}{fpga\+Unmap\+M\+M\+IO}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} handle, uint32\+\_\+t mmio\+\_\+num)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for mapping and accessing M\+M\+IO space. 
+
+Most F\+P\+GA accelerators provide access to control registers through memory-\/mappable address spaces, commonly referred to as \char`\"{}\+M\+M\+I\+O spaces\char`\"{}. This file provides functions to map, unmap, read, and write M\+M\+IO spaces.
+
+Note that an accelerator may have multiple M\+M\+IO spaces, denoted by the {\ttfamily mmio\+\_\+num} argument of the A\+P\+Is below. The meaning and properties of each M\+M\+IO space are up to the accelerator designer. 
+
+\doxysubsection{Function Documentation}
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a6df7f745d9b9d47582714fe8e2d1a761}} 
+\index{mmio.h@{mmio.h}!fpgaWriteMMIO64@{fpgaWriteMMIO64}}
+\index{fpgaWriteMMIO64@{fpgaWriteMMIO64}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaWriteMMIO64()}{fpgaWriteMMIO64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Write\+M\+M\+I\+O64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t}]{offset,  }\item[{uint64\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+Write 64 bit value to M\+M\+IO space
+
+This function will write to M\+M\+IO space of the target object at a specified offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened accelerator resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & Byte offset into M\+M\+IO space \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & Value to write (64 bit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+
+
+Referenced by main(), and O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::mmio\+Write64().
+
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a011ba900710ddf70c13ca089c4742187}} 
+\index{mmio.h@{mmio.h}!fpgaReadMMIO64@{fpgaReadMMIO64}}
+\index{fpgaReadMMIO64@{fpgaReadMMIO64}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaReadMMIO64()}{fpgaReadMMIO64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Read\+M\+M\+I\+O64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t}]{offset,  }\item[{uint64\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+Read 64 bit value from M\+M\+IO space
+
+This function will read from M\+M\+IO space of the target object at a specified offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened accelerator resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & Byte offset into M\+M\+IO space \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & Pointer to memory where read value is returned (64 bit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+
+
+Referenced by find\+\_\+nlb\+\_\+n3000(), main(), and O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::mmio\+Read64().
+
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_ae538bfe7158d1911c5e749bbc063aa3d}} 
+\index{mmio.h@{mmio.h}!fpgaWriteMMIO32@{fpgaWriteMMIO32}}
+\index{fpgaWriteMMIO32@{fpgaWriteMMIO32}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaWriteMMIO32()}{fpgaWriteMMIO32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Write\+M\+M\+I\+O32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t}]{offset,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+Write 32 bit value to M\+M\+IO space
+
+This function will write to M\+M\+IO space of the target object at a specified offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened accelerator resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & Byte offset into M\+M\+IO space \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & Value to write (32 bit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+
+
+Referenced by main().
+
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a81dc89da3e94e26efff1af1eeebb7f5d}} 
+\index{mmio.h@{mmio.h}!fpgaReadMMIO32@{fpgaReadMMIO32}}
+\index{fpgaReadMMIO32@{fpgaReadMMIO32}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaReadMMIO32()}{fpgaReadMMIO32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Read\+M\+M\+I\+O32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t}]{offset,  }\item[{uint32\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+Read 32 bit value from M\+M\+IO space
+
+This function will read from M\+M\+IO space of the target object at a specified offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened accelerator resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & Byte offset into M\+M\+IO space \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & Pointer to memory where read value is returned (32 bit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a9cf56711df0f234686426c58d8b00cb0}} 
+\index{mmio.h@{mmio.h}!fpgaWriteMMIO512@{fpgaWriteMMIO512}}
+\index{fpgaWriteMMIO512@{fpgaWriteMMIO512}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaWriteMMIO512()}{fpgaWriteMMIO512()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Write\+M\+M\+I\+O512 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t}]{offset,  }\item[{const void $\ast$}]{value }\end{DoxyParamCaption})}
+
+Write 512 bit value to M\+M\+IO space
+
+512 bit M\+M\+IO writes may not be supported on all platforms.
+
+This function will write to M\+M\+IO space of the target object at a specified offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened accelerator resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & Byte offset into M\+M\+IO space \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & Pointer to memory holding value to write (512 bits) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a2903267d37ea5c64522b0addce74da5f}} 
+\index{mmio.h@{mmio.h}!fpgaMapMMIO@{fpgaMapMMIO}}
+\index{fpgaMapMMIO@{fpgaMapMMIO}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaMapMMIO()}{fpgaMapMMIO()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Map\+M\+M\+IO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num,  }\item[{uint64\+\_\+t $\ast$$\ast$}]{mmio\+\_\+ptr }\end{DoxyParamCaption})}
+
+Map M\+M\+IO space
+
+This function will return a pointer to the specified M\+M\+IO space of the target object in process virtual memory, if supported by the target. Some M\+M\+IO spaces may be restricted to privileged processes, depending on the used handle and type.
+
+After mapping the respective M\+M\+IO space, you can access it through direct pointer operations (observing supported access sizes and alignments of the target platform and accelerator).
+
+\begin{DoxyNote}{Note}
+Some targets (such as the A\+SE simulator) do not support memory-\/mapping of IO register spaces and will not return a pointer to an actually mapped space. Instead, they will return {\ttfamily F\+P\+G\+A\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}. Usually, these platforms still allow the application to issue M\+M\+IO operations using \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a81dc89da3e94e26efff1af1eeebb7f5d}{fpga\+Read\+M\+M\+I\+O32()}}, \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_ae538bfe7158d1911c5e749bbc063aa3d}{fpga\+Write\+M\+M\+I\+O32()}}, fpge\+Read\+M\+M\+I\+O64(), and \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a6df7f745d9b9d47582714fe8e2d1a761}{fpga\+Write\+M\+M\+I\+O64()}}.
+\end{DoxyNote}
+If the caller passes in N\+U\+LL for mmio\+\_\+ptr, no mapping will be performed, and no virtual address will be returned, though the call will return {\ttfamily F\+P\+G\+A\+\_\+\+OK}. This implies that all accesses will be performed through \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a81dc89da3e94e26efff1af1eeebb7f5d}{fpga\+Read\+M\+M\+I\+O32()}}, \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_ae538bfe7158d1911c5e749bbc063aa3d}{fpga\+Write\+M\+M\+I\+O32()}}, fpge\+Read\+M\+M\+I\+O64(), and \mbox{\hyperlink{opae-libs_2include_2opae_2mmio_8h_a6df7f745d9b9d47582714fe8e2d1a761}{fpga\+Write\+M\+M\+I\+O64()}}. This is the only supported case for A\+SE.
+
+The number of available M\+M\+IO spaces can be retrieved through the num\+\_\+mmio property (fpga\+Property\+Get\+Num\+M\+M\+I\+O()).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\mbox{\texttt{ out}}  & {\em mmio\+\_\+ptr} & Pointer to memory where a pointer to the M\+M\+IO space will be returned. May be N\+U\+LL, in which case no pointer is returned. Returned address may be N\+U\+LL if underlying platform does not support memory mapping for register access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. F\+P\+G\+A\+\_\+\+N\+O\+\_\+\+A\+C\+C\+E\+SS if the process\textquotesingle{} permissions are not sufficient to map the requested M\+M\+IO space. F\+P\+G\+A\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED if platform does not support memory mapped IO. 
+\end{DoxyReturn}
+
+
+Referenced by O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::find\+And\+Open\+Accel(), and main().
+
+\mbox{\label{opae-libs_2include_2opae_2mmio_8h_a8c8db22506e1fbfd16440c660bfee28f}} 
+\index{mmio.h@{mmio.h}!fpgaUnmapMMIO@{fpgaUnmapMMIO}}
+\index{fpgaUnmapMMIO@{fpgaUnmapMMIO}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{fpgaUnmapMMIO()}{fpgaUnmapMMIO()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} fpga\+Unmap\+M\+M\+IO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{handle,  }\item[{uint32\+\_\+t}]{mmio\+\_\+num }\end{DoxyParamCaption})}
+
+Unmap M\+M\+IO space
+
+This function will unmap a previously mapped M\+M\+IO space of the target object, rendering any pointers to it invalid.
+
+\begin{DoxyNote}{Note}
+This call is only supported by hardware targets, not by A\+SE simulation.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Handle to previously opened resource \\
+\hline
+\mbox{\texttt{ in}}  & {\em mmio\+\_\+num} & Number of M\+M\+IO space to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+P\+G\+A\+\_\+\+OK on success. F\+P\+G\+A\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM if any of the supplied parameters is invalid. F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON if an internal exception occurred while trying to access the handle. 
+\end{DoxyReturn}
+
+
+Referenced by main(), and O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R\+::$\sim$\+O\+P\+A\+E\+\_\+\+S\+V\+C\+\_\+\+W\+R\+A\+P\+P\+E\+R().
+

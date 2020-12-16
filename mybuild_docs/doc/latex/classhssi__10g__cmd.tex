@@ -1,0 +1,310 @@
+\doxysection{hssi\+\_\+10g\+\_\+cmd Class Reference}
+\label{classhssi__10g__cmd}\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+
+
+{\ttfamily \#include $<$/root/samples/hssi/hssi\+\_\+10g\+\_\+cmd.\+h$>$}
+
+Inheritance diagram for hssi\+\_\+10g\+\_\+cmd\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classhssi__10g__cmd}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhssi__10g__cmd_a4ee82ae4682d6a531aacfd35ba4f5910}{hssi\+\_\+10g\+\_\+cmd}} ()
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classhssi__10g__cmd_af33928e3684381253c94728aa000932a}{name}} () const override
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classhssi__10g__cmd_a680495300041fec9bde25551362ce195}{description}} () const override
+\item 
+virtual void \mbox{\hyperlink{classhssi__10g__cmd_a12f9d3d69d8822cdfb3c35b22c4654d8}{add\+\_\+options}} (C\+L\+I\+::\+App $\ast$\mbox{\hyperlink{hssi_8cpp_a7ccd62f1083f322e0d1dfaa9c23ecb88}{app}}) override
+\item 
+virtual int \mbox{\hyperlink{classhssi__10g__cmd_a5b43c5b65f93917f74fb158c1261aeee}{run}} (\mbox{\hyperlink{ddr_8h_abc250359b0b249806cbba4173e9644b4}{test\+\_\+afu}} $\ast$afu, C\+L\+I\+::\+App $\ast$\mbox{\hyperlink{hssi_8cpp_a7ccd62f1083f322e0d1dfaa9c23ecb88}{app}}) override
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classhssi__10g__cmd_a0762cc43180e6bcd5fabc98461450949}{afu\+\_\+id}} () const override
+\item 
+std\+::ostream \& \mbox{\hyperlink{classhssi__10g__cmd_accc68e7c9f9a76c7a3fad9c62a3fe8be}{print\+\_\+registers}} (std\+::ostream \&os, \mbox{\hyperlink{classhssi__afu}{hssi\+\_\+afu}} $\ast$hafu) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_ac229f059a06d51e434c6b9da850abc42}{port\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classhssi__10g__cmd_ae634755c920470721628ab5ab06bdf58}{eth\+\_\+loopback\+\_\+}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_aadd0f9db0c701bc02a23e89badc64bb0}{num\+\_\+packets\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classhssi__10g__cmd_abd37648368fdfa6caeb887fe0d8460c0}{random\+\_\+length\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classhssi__10g__cmd_a4e0767e0f12273dace4fa75eddf1decd}{random\+\_\+payload\+\_\+}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_ace75496cfab7ca96e4791575fce22207}{packet\+\_\+length\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classhssi__10g__cmd_abd3ca25b1ca1732b68b4e6caab09ad40}{src\+\_\+addr\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classhssi__10g__cmd_a4078a0208d3d4c0ed25b553056ca6064}{dest\+\_\+addr\+\_\+}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_a918f3fcf2f29b5ab82d3ed9e6c7e77de}{rnd\+\_\+seed0\+\_\+}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_a551dce10ac132f2ee200d1c7a37edeec}{rnd\+\_\+seed1\+\_\+}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__10g__cmd_a6b6d1608738d2c16d4c1925130c6263e}{rnd\+\_\+seed2\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 53 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classhssi__10g__cmd_a4ee82ae4682d6a531aacfd35ba4f5910}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{hssi\_10g\_cmd()}{hssi\_10g\_cmd()}}
+{\footnotesize\ttfamily hssi\+\_\+10g\+\_\+cmd\+::hssi\+\_\+10g\+\_\+cmd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classhssi__10g__cmd_af33928e3684381253c94728aa000932a}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!name@{name}}
+\index{name@{name}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily virtual const char$\ast$ hssi\+\_\+10g\+\_\+cmd\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 70 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+\mbox{\label{classhssi__10g__cmd_a680495300041fec9bde25551362ce195}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!description@{description}}
+\index{description@{description}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily virtual const char$\ast$ hssi\+\_\+10g\+\_\+cmd\+::description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 75 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+\mbox{\label{classhssi__10g__cmd_a12f9d3d69d8822cdfb3c35b22c4654d8}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily virtual void hssi\+\_\+10g\+\_\+cmd\+::add\+\_\+options (\begin{DoxyParamCaption}\item[{C\+L\+I\+::\+App $\ast$}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 80 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+References app, dest\+\_\+addr\+\_\+, eth\+\_\+loopback\+\_\+, num\+\_\+packets\+\_\+, packet\+\_\+length\+\_\+, port\+\_\+, random\+\_\+length\+\_\+, random\+\_\+payload\+\_\+, rnd\+\_\+seed0\+\_\+, rnd\+\_\+seed1\+\_\+, rnd\+\_\+seed2\+\_\+, and src\+\_\+addr\+\_\+.
+
+\mbox{\label{classhssi__10g__cmd_a5b43c5b65f93917f74fb158c1261aeee}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!run@{run}}
+\index{run@{run}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual int hssi\+\_\+10g\+\_\+cmd\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ddr_8h_abc250359b0b249806cbba4173e9644b4}{test\+\_\+afu}} $\ast$}]{afu,  }\item[{C\+L\+I\+::\+App $\ast$}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 127 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+References app, C\+S\+R\+\_\+\+D\+E\+S\+T\+\_\+\+A\+D\+D\+R0, C\+S\+R\+\_\+\+D\+E\+S\+T\+\_\+\+A\+D\+D\+R1, C\+S\+R\+\_\+\+M\+A\+C\+\_\+\+L\+O\+OP, C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+P\+A\+C\+K\+E\+TS, C\+S\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+L\+E\+N\+G\+TH, C\+S\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+X\+\_\+\+C\+O\+U\+NT, C\+S\+R\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+L\+E\+N\+G\+TH, C\+S\+R\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+P\+A\+Y\+L\+O\+AD, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D0, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D1, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D2, C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+D\+R0, C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+D\+R1, C\+S\+R\+\_\+\+S\+T\+A\+RT, C\+S\+R\+\_\+\+S\+T\+OP, dest\+\_\+addr\+\_\+, hssi\+\_\+cmd\+::enable\+\_\+eth\+\_\+loopback(), eth\+\_\+loopback\+\_\+, hssi\+\_\+afu\+::ethernet\+\_\+interface(), I\+N\+V\+A\+L\+I\+D\+\_\+\+M\+AC, hssi\+\_\+cmd\+::mac\+\_\+bits\+\_\+for(), hssi\+\_\+afu\+::mbox\+\_\+read(), hssi\+\_\+afu\+::mbox\+\_\+write(), num\+\_\+packets\+\_\+, packet\+\_\+length\+\_\+, port\+\_\+, print\+\_\+registers(), random\+\_\+length\+\_\+, random\+\_\+payload\+\_\+, rnd\+\_\+seed0\+\_\+, rnd\+\_\+seed1\+\_\+, rnd\+\_\+seed2\+\_\+, hssi\+\_\+cmd\+::running\+\_\+, hssi\+\_\+cmd\+::show\+\_\+eth\+\_\+stats(), src\+\_\+addr\+\_\+, and T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T\+\_\+\+S\+EL.
+
+\mbox{\label{classhssi__10g__cmd_a0762cc43180e6bcd5fabc98461450949}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!afu\_id@{afu\_id}}
+\index{afu\_id@{afu\_id}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{afu\_id()}{afu\_id()}}
+{\footnotesize\ttfamily virtual const char$\ast$ hssi\+\_\+10g\+\_\+cmd\+::afu\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 215 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+\mbox{\label{classhssi__10g__cmd_accc68e7c9f9a76c7a3fad9c62a3fe8be}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!print\_registers@{print\_registers}}
+\index{print\_registers@{print\_registers}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{print\_registers()}{print\_registers()}}
+{\footnotesize\ttfamily std\+::ostream\& hssi\+\_\+10g\+\_\+cmd\+::print\+\_\+registers (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{classhssi__afu}{hssi\+\_\+afu}} $\ast$}]{hafu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 220 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+References A\+F\+U\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD, C\+S\+R\+\_\+\+A\+V\+S\+T\+\_\+\+R\+X\+\_\+\+E\+RR, C\+S\+R\+\_\+\+D\+E\+S\+T\+\_\+\+A\+D\+D\+R0, C\+S\+R\+\_\+\+D\+E\+S\+T\+\_\+\+A\+D\+D\+R1, C\+S\+R\+\_\+\+M\+A\+C\+\_\+\+L\+O\+OP, C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+P\+A\+C\+K\+E\+TS, C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+P\+KT, C\+S\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+L\+E\+N\+G\+TH, C\+S\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+X\+\_\+\+C\+O\+U\+NT, C\+S\+R\+\_\+\+P\+K\+T\+\_\+\+B\+AD, C\+S\+R\+\_\+\+P\+K\+T\+\_\+\+G\+O\+OD, C\+S\+R\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+L\+E\+N\+G\+TH, C\+S\+R\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+P\+A\+Y\+L\+O\+AD, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D0, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D1, C\+S\+R\+\_\+\+R\+N\+D\+\_\+\+S\+E\+E\+D2, C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+D\+R0, C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+D\+R1, C\+S\+R\+\_\+\+S\+T\+A\+RT, C\+S\+R\+\_\+\+S\+T\+OP, E\+T\+H\+\_\+\+A\+F\+U\+\_\+\+D\+FH, E\+T\+H\+\_\+\+A\+F\+U\+\_\+\+I\+D\+\_\+H, E\+T\+H\+\_\+\+A\+F\+U\+\_\+\+I\+D\+\_\+L, hssi\+\_\+cmd\+::int\+\_\+to\+\_\+hex(), hssi\+\_\+afu\+::mbox\+\_\+read(), T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+MD, T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+D\+A\+TA, and T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+R\+T\+\_\+\+S\+EL.
+
+
+
+Referenced by run().
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\label{classhssi__10g__cmd_ac229f059a06d51e434c6b9da850abc42}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!port\_@{port\_}}
+\index{port\_@{port\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{port\_}{port\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::port\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 284 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_ae634755c920470721628ab5ab06bdf58}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!eth\_loopback\_@{eth\_loopback\_}}
+\index{eth\_loopback\_@{eth\_loopback\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{eth\_loopback\_}{eth\_loopback\_}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+10g\+\_\+cmd\+::eth\+\_\+loopback\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 285 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_aadd0f9db0c701bc02a23e89badc64bb0}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!num\_packets\_@{num\_packets\_}}
+\index{num\_packets\_@{num\_packets\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{num\_packets\_}{num\_packets\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::num\+\_\+packets\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 286 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_abd37648368fdfa6caeb887fe0d8460c0}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!random\_length\_@{random\_length\_}}
+\index{random\_length\_@{random\_length\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{random\_length\_}{random\_length\_}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+10g\+\_\+cmd\+::random\+\_\+length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 287 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_a4e0767e0f12273dace4fa75eddf1decd}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!random\_payload\_@{random\_payload\_}}
+\index{random\_payload\_@{random\_payload\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{random\_payload\_}{random\_payload\_}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+10g\+\_\+cmd\+::random\+\_\+payload\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 288 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_ace75496cfab7ca96e4791575fce22207}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!packet\_length\_@{packet\_length\_}}
+\index{packet\_length\_@{packet\_length\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{packet\_length\_}{packet\_length\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::packet\+\_\+length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 289 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_abd3ca25b1ca1732b68b4e6caab09ad40}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!src\_addr\_@{src\_addr\_}}
+\index{src\_addr\_@{src\_addr\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{src\_addr\_}{src\_addr\_}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+10g\+\_\+cmd\+::src\+\_\+addr\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 290 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_a4078a0208d3d4c0ed25b553056ca6064}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!dest\_addr\_@{dest\_addr\_}}
+\index{dest\_addr\_@{dest\_addr\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{dest\_addr\_}{dest\_addr\_}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+10g\+\_\+cmd\+::dest\+\_\+addr\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 291 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_a918f3fcf2f29b5ab82d3ed9e6c7e77de}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!rnd\_seed0\_@{rnd\_seed0\_}}
+\index{rnd\_seed0\_@{rnd\_seed0\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{rnd\_seed0\_}{rnd\_seed0\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::rnd\+\_\+seed0\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 292 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_a551dce10ac132f2ee200d1c7a37edeec}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!rnd\_seed1\_@{rnd\_seed1\_}}
+\index{rnd\_seed1\_@{rnd\_seed1\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{rnd\_seed1\_}{rnd\_seed1\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::rnd\+\_\+seed1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 293 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+
+\mbox{\label{classhssi__10g__cmd_a6b6d1608738d2c16d4c1925130c6263e}} 
+\index{hssi\_10g\_cmd@{hssi\_10g\_cmd}!rnd\_seed2\_@{rnd\_seed2\_}}
+\index{rnd\_seed2\_@{rnd\_seed2\_}!hssi\_10g\_cmd@{hssi\_10g\_cmd}}
+\doxysubsubsection{\texorpdfstring{rnd\_seed2\_}{rnd\_seed2\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+10g\+\_\+cmd\+::rnd\+\_\+seed2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 294 of file hssi\+\_\+10g\+\_\+cmd.\+h.
+
+
+
+Referenced by add\+\_\+options(), and run().
+

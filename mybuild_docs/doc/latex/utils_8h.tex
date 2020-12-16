@@ -1,0 +1,44 @@
+\doxysection{opae-\/libs/include/opae/utils.h File Reference}
+\label{utils_8h}\index{opae-\/libs/include/opae/utils.h@{opae-\/libs/include/opae/utils.h}}
+
+
+Utility functions and macros for the F\+P\+GA A\+PI.  
+
+
+{\ttfamily \#include $<$opae/types.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{utils_8h_a2a3fc0d8baf294d2da980ba544368b32}{fpga\+Err\+Str}} (\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} e)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions and macros for the F\+P\+GA A\+PI. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{utils_8h_a2a3fc0d8baf294d2da980ba544368b32}} 
+\index{utils.h@{utils.h}!fpgaErrStr@{fpgaErrStr}}
+\index{fpgaErrStr@{fpgaErrStr}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{fpgaErrStr()}{fpgaErrStr()}}
+{\footnotesize\ttfamily const char$\ast$ fpga\+Err\+Str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}}}]{e }\end{DoxyParamCaption})}
+
+Return human-\/readable error message
+
+Returns a pointer to a human-\/readable error message corresponding to the provided fpga\+\_\+error error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em e} & Error code (as returned by another F\+P\+GA A\+PI function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to a descriptive error message string 
+\end{DoxyReturn}
+
+
+Referenced by print\+\_\+err().
+

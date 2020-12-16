@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structevents__config_1_1target" kind="struct" language="C++" prot="public">
+    <compoundname>events_config::target</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structevents__config_1_1target_1afd0988159618ac01bffa002cedbe117e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int events_config::target::bus</definition>
+        <argsstring></argsstring>
+        <name>bus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/hello_events/hello_events.c" line="94" column="5" bodyfile="samples/hello_events/hello_events.c" bodystart="94" bodyend="-1"/>
+        <referencedby refid="hello__events_8c_1a3a1b6f72679286eae6f9eec936cc5533" compoundref="hello__events_8c" startline="163" endline="208">parse_args</referencedby>
+        <referencedby refid="hello__events_8c_1a187c0e0b83b8fa199546fc583b8debcd" compoundref="hello__events_8c" startline="210" endline="236">find_fpga</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>events_config::target</label>
+        <link refid="structevents__config_1_1target"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/hello_events/hello_events.c" line="93" column="13" bodyfile="samples/hello_events/hello_events.c" bodystart="93" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structevents__config_1_1target_1afd0988159618ac01bffa002cedbe117e" prot="public" virt="non-virtual"><scope>events_config::target</scope><name>bus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_7a6ad60e9e9b24289ae29724aba31efd" kind="dir">
+    <compoundname>opae-libs/include/opae/cxx</compoundname>
+    <innerdir refid="dir_6df0592cbd55cfb649dd5f71f40bd8b0">opae-libs/include/opae/cxx/core</innerdir>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="opae-libs/include/opae/cxx/"/>
+  </compounddef>
+</doxygen>

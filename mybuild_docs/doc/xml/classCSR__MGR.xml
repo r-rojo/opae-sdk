@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCSR__MGR" kind="class" language="C++" prot="public">
+    <compoundname>CSR_MGR</compoundname>
+    <includes refid="csr__mgr_8h" local="no">/root/samples/base/sw/csr_mgr.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20fe" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" prot="protected">
+          <name>USER_CSR_BASE</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="42" column="6" bodyfile="samples/base/sw/csr_mgr.h" bodystart="42" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" prot="public" static="no" strong="no">
+        <type></type>
+        <name>t_csr_common</name>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1" prot="public">
+          <name>CSR_COMMON_DFH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49" prot="public">
+          <name>CSR_COMMON_ID_L</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5" prot="public">
+          <name>CSR_COMMON_ID_H</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" prot="public">
+          <name>CSR_COMMON_FREQ</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e" prot="public">
+          <name>CSR_COMMON_CACHE_RD_HITS</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18" prot="public">
+          <name>CSR_COMMON_CACHE_WR_HITS</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411" prot="public">
+          <name>CSR_COMMON_VL0_RD_LINES</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae" prot="public">
+          <name>CSR_COMMON_VL0_WR_LINES</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc" prot="public">
+          <name>CSR_COMMON_VH0_LINES</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816" prot="public">
+          <name>CSR_COMMON_VH1_LINES</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717" prot="public">
+          <name>CSR_COMMON_FIU_STATE</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc" prot="public">
+          <name>CSR_COMMON_RD_ALMOST_FULL_CYCLES</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494" prot="public">
+          <name>CSR_COMMON_WR_ALMOST_FULL_CYCLES</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" prot="public">
+          <name>CSR_COMMON__LAST</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="74" column="14" bodyfile="samples/base/sw/csr_mgr.h" bodystart="74" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" prot="protected" static="no" mutable="no">
+        <type><ref refid="opae__svc__wrapper_8h_1ae6eb64ba29c9d7aa39a35ee7b6b28a22" kindref="member">SVC_WRAPPER</ref> &amp;</type>
+        <definition>SVC_WRAPPER&amp; CSR_MGR::svc</definition>
+        <argsstring></argsstring>
+        <name>svc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="126" column="13" bodyfile="samples/base/sw/csr_mgr.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" compoundref="csr__mgr_8h" startline="99" endline="103">readCommonCSR</referencedby>
+        <referencedby refid="classCSR__MGR_1a713ff1aa00f9b5bbb40d3c9d17a6a59a" compoundref="csr__mgr_8h" startline="66" endline="68">readCSR</referencedby>
+        <referencedby refid="classCSR__MGR_1ac9ba9ab9f39dee563ba722c249184262" compoundref="csr__mgr_8h" startline="62" endline="64">writeCSR</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCSR__MGR_1ac7ae3940e28aaafac608f84b4fea33bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CSR_MGR::CSR_MGR</definition>
+        <argsstring>(SVC_WRAPPER &amp;svc)</argsstring>
+        <name>CSR_MGR</name>
+        <param>
+          <type><ref refid="opae__svc__wrapper_8h_1ae6eb64ba29c9d7aa39a35ee7b6b28a22" kindref="member">SVC_WRAPPER</ref> &amp;</type>
+          <declname>svc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="54" column="1" bodyfile="samples/base/sw/csr_mgr.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCSR__MGR_1ac0391b0bde496135d845aad2297d25c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CSR_MGR::~CSR_MGR</definition>
+        <argsstring>()</argsstring>
+        <name>~CSR_MGR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="56" column="1" bodyfile="samples/base/sw/csr_mgr.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classCSR__MGR_1ac9ba9ab9f39dee563ba722c249184262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSR_MGR::writeCSR</definition>
+        <argsstring>(uint32_t idx, uint64_t v)</argsstring>
+        <name>writeCSR</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="62" column="6" bodyfile="samples/base/sw/csr_mgr.h" bodystart="62" bodyend="64"/>
+        <references refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" compoundref="csr__mgr_8h" startline="126">svc</references>
+        <references refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" compoundref="csr__mgr_8h" startline="50">USER_CSR_BASE</references>
+        <referencedby refid="hello__mpf__afu_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="hello__mpf__afu_8cpp" startline="47" endline="93">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCSR__MGR_1a713ff1aa00f9b5bbb40d3c9d17a6a59a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t CSR_MGR::readCSR</definition>
+        <argsstring>(uint32_t idx)</argsstring>
+        <name>readCSR</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="66" column="10" bodyfile="samples/base/sw/csr_mgr.h" bodystart="66" bodyend="68"/>
+        <references refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" compoundref="csr__mgr_8h" startline="126">svc</references>
+        <references refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" compoundref="csr__mgr_8h" startline="50">USER_CSR_BASE</references>
+      </memberdef>
+      <memberdef kind="function" id="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t CSR_MGR::readCommonCSR</definition>
+        <argsstring>(t_csr_common idx)</argsstring>
+        <name>readCommonCSR</name>
+        <param>
+          <type><ref refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" kindref="member">t_csr_common</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="99" column="10" bodyfile="samples/base/sw/csr_mgr.h" bodystart="99" bodyend="103"/>
+        <references refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" compoundref="csr__mgr_8h" startline="95">CSR_COMMON__LAST</references>
+        <references refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" compoundref="csr__mgr_8h" startline="126">svc</references>
+        <referencedby refid="classCSR__MGR_1aacdfb2d642d46b73bca9ac63f1b5022f" compoundref="csr__mgr_8h" startline="111" endline="123">getAFUMHz</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCSR__MGR_1aacdfb2d642d46b73bca9ac63f1b5022f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t CSR_MGR::getAFUMHz</definition>
+        <argsstring>(uint64_t uClk_usr_mhz=0)</argsstring>
+        <name>getAFUMHz</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>uClk_usr_mhz</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="samples/base/sw/csr_mgr.h" line="111" column="10" bodyfile="samples/base/sw/csr_mgr.h" bodystart="111" bodyend="123"/>
+        <references refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" compoundref="csr__mgr_8h" startline="79">CSR_COMMON_FREQ</references>
+        <references refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" compoundref="csr__mgr_8h" startline="99" endline="103">readCommonCSR</references>
+        <referencedby refid="hello__mpf__afu_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="hello__mpf__afu_8cpp" startline="47" endline="93">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CSR_MGR</label>
+        <link refid="classCSR__MGR"/>
+      </node>
+    </collaborationgraph>
+    <location file="samples/base/sw/csr_mgr.h" line="40" column="1" bodyfile="samples/base/sw/csr_mgr.h" bodystart="39" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a90f45dc3c9f10de23b49c3c7bc72f92d" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON__LAST</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7006782428e010f64764cc1756a1876e" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_CACHE_RD_HITS</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409aef328632f7cbd2239f3525fe79e82e18" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_CACHE_WR_HITS</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a9edeb7226c932a92059bae2dbebca7b1" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_DFH</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a045c7ddc477c40817753914999bc3717" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_FIU_STATE</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ac12b839eca01cec70d70f714ef3d62fd" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_FREQ</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a46983c4dab6d931ccea6e4455c2536d5" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_ID_H</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a85b0be195092f58557461fa442eecc49" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_ID_L</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a591601bad38ab34ddf01b43a5b6c8fcc" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_RD_ALMOST_FULL_CYCLES</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a45cc6ce0585113de5d557f3e249176fc" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_VH0_LINES</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409ad1b69cf0bd7009808b958210872c0816" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_VH1_LINES</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a32ffaeeb03196fc81772a42047c92411" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_VL0_RD_LINES</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a7e04ab1af2651c0570ab7ed2347330ae" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_VL0_WR_LINES</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409a863566cb9b43af276c11195ab69c1494" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_COMMON_WR_ALMOST_FULL_CYCLES</name></member>
+      <member refid="classCSR__MGR_1ac7ae3940e28aaafac608f84b4fea33bc" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>CSR_MGR</name></member>
+      <member refid="classCSR__MGR_1aacdfb2d642d46b73bca9ac63f1b5022f" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>getAFUMHz</name></member>
+      <member refid="classCSR__MGR_1a0d46e4a76019f08cd664776b96e041d6" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>readCommonCSR</name></member>
+      <member refid="classCSR__MGR_1a713ff1aa00f9b5bbb40d3c9d17a6a59a" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>readCSR</name></member>
+      <member refid="classCSR__MGR_1a1117785e23d08cb603d672af5f84950c" prot="protected" virt="non-virtual"><scope>CSR_MGR</scope><name>svc</name></member>
+      <member refid="classCSR__MGR_1a6b169b03223ee195d47d21ff270bf409" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>t_csr_common</name></member>
+      <member refid="classCSR__MGR_1af8d923be0486defc86aed1b7cc8b20feac0ae0e8b689c8367bb5ebc3190c5c7d5" prot="protected" virt="non-virtual"><scope>CSR_MGR</scope><name>USER_CSR_BASE</name></member>
+      <member refid="classCSR__MGR_1ac9ba9ab9f39dee563ba722c249184262" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>writeCSR</name></member>
+      <member refid="classCSR__MGR_1ac0391b0bde496135d845aad2297d25c8" prot="public" virt="non-virtual"><scope>CSR_MGR</scope><name>~CSR_MGR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

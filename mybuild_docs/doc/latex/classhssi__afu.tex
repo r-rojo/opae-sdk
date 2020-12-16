@@ -1,0 +1,100 @@
+\doxysection{hssi\+\_\+afu Class Reference}
+\label{classhssi__afu}\index{hssi\_afu@{hssi\_afu}}
+
+
+{\ttfamily \#include $<$/root/samples/hssi/hssi\+\_\+afu.\+h$>$}
+
+Inheritance diagram for hssi\+\_\+afu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classhssi__afu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhssi__afu_ab13aa4088100a9ac313862ae7d5c7edc}{hssi\+\_\+afu}} ()
+\item 
+std\+::string \mbox{\hyperlink{classhssi__afu_a0a5190683fbccdd1ed97c89fc148981e}{ethernet\+\_\+interface}} ()
+\item 
+void \mbox{\hyperlink{classhssi__afu_a86638ffebd322c2f71d60e1ac6ba63ea}{mbox\+\_\+write}} (uint16\+\_\+t offset, uint32\+\_\+t data)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhssi__afu_a8555e906fd776954d39ddf432a7996f8}{mbox\+\_\+read}} (uint16\+\_\+t offset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 54 of file hssi\+\_\+afu.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classhssi__afu_ab13aa4088100a9ac313862ae7d5c7edc}} 
+\index{hssi\_afu@{hssi\_afu}!hssi\_afu@{hssi\_afu}}
+\index{hssi\_afu@{hssi\_afu}!hssi\_afu@{hssi\_afu}}
+\doxysubsubsection{\texorpdfstring{hssi\_afu()}{hssi\_afu()}}
+{\footnotesize\ttfamily hssi\+\_\+afu\+::hssi\+\_\+afu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file hssi\+\_\+afu.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classhssi__afu_a0a5190683fbccdd1ed97c89fc148981e}} 
+\index{hssi\_afu@{hssi\_afu}!ethernet\_interface@{ethernet\_interface}}
+\index{ethernet\_interface@{ethernet\_interface}!hssi\_afu@{hssi\_afu}}
+\doxysubsubsection{\texorpdfstring{ethernet\_interface()}{ethernet\_interface()}}
+{\footnotesize\ttfamily std\+::string hssi\+\_\+afu\+::ethernet\+\_\+interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file hssi\+\_\+afu.\+h.
+
+
+
+References opae\+::fpga\+::types\+::properties\+::get().
+
+
+
+Referenced by hssi\+\_\+100g\+\_\+cmd\+::run(), and hssi\+\_\+10g\+\_\+cmd\+::run().
+
+\mbox{\label{classhssi__afu_a86638ffebd322c2f71d60e1ac6ba63ea}} 
+\index{hssi\_afu@{hssi\_afu}!mbox\_write@{mbox\_write}}
+\index{mbox\_write@{mbox\_write}!hssi\_afu@{hssi\_afu}}
+\doxysubsubsection{\texorpdfstring{mbox\_write()}{mbox\_write()}}
+{\footnotesize\ttfamily void hssi\+\_\+afu\+::mbox\+\_\+write (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{offset,  }\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 95 of file hssi\+\_\+afu.\+h.
+
+
+
+References A\+C\+K\+\_\+\+T\+R\+A\+NS, A\+F\+U\+\_\+\+C\+M\+D\+\_\+\+S\+H\+I\+FT, N\+O\+\_\+\+T\+I\+M\+E\+O\+UT, T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+MD, T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+D\+A\+TA, W\+R\+I\+T\+E\+\_\+\+C\+MD, and W\+R\+I\+T\+E\+\_\+\+D\+A\+T\+A\+\_\+\+S\+H\+I\+FT.
+
+
+
+Referenced by hssi\+\_\+100g\+\_\+cmd\+::run(), and hssi\+\_\+10g\+\_\+cmd\+::run().
+
+\mbox{\label{classhssi__afu_a8555e906fd776954d39ddf432a7996f8}} 
+\index{hssi\_afu@{hssi\_afu}!mbox\_read@{mbox\_read}}
+\index{mbox\_read@{mbox\_read}!hssi\_afu@{hssi\_afu}}
+\doxysubsubsection{\texorpdfstring{mbox\_read()}{mbox\_read()}}
+{\footnotesize\ttfamily uint32\+\_\+t hssi\+\_\+afu\+::mbox\+\_\+read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file hssi\+\_\+afu.\+h.
+
+
+
+References A\+C\+K\+\_\+\+T\+R\+A\+NS, A\+F\+U\+\_\+\+C\+M\+D\+\_\+\+S\+H\+I\+FT, N\+O\+\_\+\+T\+I\+M\+E\+O\+UT, R\+E\+A\+D\+\_\+\+C\+MD, T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+MD, and T\+R\+A\+F\+F\+I\+C\+\_\+\+C\+T\+R\+L\+\_\+\+D\+A\+TA.
+
+
+
+Referenced by hssi\+\_\+100g\+\_\+cmd\+::print\+\_\+registers(), hssi\+\_\+10g\+\_\+cmd\+::print\+\_\+registers(), and hssi\+\_\+10g\+\_\+cmd\+::run().
+

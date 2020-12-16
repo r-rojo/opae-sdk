@@ -1,0 +1,156 @@
+.TH "CSR_MGR" 3 "Wed Dec 16 2020" "Version -.." "OPAE C API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CSR_MGR
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include </root/samples/base/sw/csr_mgr\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBt_csr_common\fP { \fBCSR_COMMON_DFH\fP = 0, \fBCSR_COMMON_ID_L\fP = 1, \fBCSR_COMMON_ID_H\fP = 2, \fBCSR_COMMON_FREQ\fP = 8, \fBCSR_COMMON_CACHE_RD_HITS\fP = 9, \fBCSR_COMMON_CACHE_WR_HITS\fP = 10, \fBCSR_COMMON_VL0_RD_LINES\fP = 11, \fBCSR_COMMON_VL0_WR_LINES\fP = 12, \fBCSR_COMMON_VH0_LINES\fP = 13, \fBCSR_COMMON_VH1_LINES\fP = 14, \fBCSR_COMMON_FIU_STATE\fP = 15, \fBCSR_COMMON_RD_ALMOST_FULL_CYCLES\fP = 16, \fBCSR_COMMON_WR_ALMOST_FULL_CYCLES\fP = 17, \fBCSR_COMMON__LAST\fP = 18 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCSR_MGR\fP (\fBSVC_WRAPPER\fP &\fBsvc\fP)"
+.br
+.ti -1c
+.RI "\fB~CSR_MGR\fP ()"
+.br
+.ti -1c
+.RI "void \fBwriteCSR\fP (uint32_t idx, uint64_t v)"
+.br
+.ti -1c
+.RI "uint64_t \fBreadCSR\fP (uint32_t idx)"
+.br
+.ti -1c
+.RI "uint64_t \fBreadCommonCSR\fP (\fBt_csr_common\fP idx)"
+.br
+.ti -1c
+.RI "uint64_t \fBgetAFUMHz\fP (uint64_t uClk_usr_mhz=0)"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBUSER_CSR_BASE\fP = 32 }"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSVC_WRAPPER\fP & \fBsvc\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 39 of file csr_mgr\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "anonymous enum\fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUSER_CSR_BASE \fP\fP
+.PP
+Definition at line 42 of file csr_mgr\&.h\&.
+.SS "enum \fBCSR_MGR::t_csr_common\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fICSR_COMMON_DFH \fP\fP
+.TP
+\fB\fICSR_COMMON_ID_L \fP\fP
+.TP
+\fB\fICSR_COMMON_ID_H \fP\fP
+.TP
+\fB\fICSR_COMMON_FREQ \fP\fP
+.TP
+\fB\fICSR_COMMON_CACHE_RD_HITS \fP\fP
+.TP
+\fB\fICSR_COMMON_CACHE_WR_HITS \fP\fP
+.TP
+\fB\fICSR_COMMON_VL0_RD_LINES \fP\fP
+.TP
+\fB\fICSR_COMMON_VL0_WR_LINES \fP\fP
+.TP
+\fB\fICSR_COMMON_VH0_LINES \fP\fP
+.TP
+\fB\fICSR_COMMON_VH1_LINES \fP\fP
+.TP
+\fB\fICSR_COMMON_FIU_STATE \fP\fP
+.TP
+\fB\fICSR_COMMON_RD_ALMOST_FULL_CYCLES \fP\fP
+.TP
+\fB\fICSR_COMMON_WR_ALMOST_FULL_CYCLES \fP\fP
+.TP
+\fB\fICSR_COMMON__LAST \fP\fP
+.PP
+Definition at line 74 of file csr_mgr\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CSR_MGR::CSR_MGR (\fBSVC_WRAPPER\fP & svc)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file csr_mgr\&.h\&.
+.SS "CSR_MGR::~CSR_MGR ()\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file csr_mgr\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CSR_MGR::writeCSR (uint32_t idx, uint64_t v)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file csr_mgr\&.h\&.
+.PP
+References svc, and USER_CSR_BASE\&.
+.PP
+Referenced by main()\&.
+.SS "uint64_t CSR_MGR::readCSR (uint32_t idx)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file csr_mgr\&.h\&.
+.PP
+References svc, and USER_CSR_BASE\&.
+.SS "uint64_t CSR_MGR::readCommonCSR (\fBt_csr_common\fP idx)\fC [inline]\fP"
+
+.PP
+Definition at line 99 of file csr_mgr\&.h\&.
+.PP
+References CSR_COMMON__LAST, and svc\&.
+.PP
+Referenced by getAFUMHz()\&.
+.SS "uint64_t CSR_MGR::getAFUMHz (uint64_t uClk_usr_mhz = \fC0\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 111 of file csr_mgr\&.h\&.
+.PP
+References CSR_COMMON_FREQ, and readCommonCSR()\&.
+.PP
+Referenced by main()\&.
+.SH "Field Documentation"
+.PP 
+.SS "\fBSVC_WRAPPER\fP& CSR_MGR::svc\fC [protected]\fP"
+
+.PP
+Definition at line 126 of file csr_mgr\&.h\&.
+.PP
+Referenced by readCommonCSR(), readCSR(), and writeCSR()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OPAE C API from the source code\&.

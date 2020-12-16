@@ -1,0 +1,45 @@
+.TH "samples/hello_mpf_afu/sw/hello_mpf_afu.cpp" 3 "Wed Dec 16 2020" "Version -.." "OPAE C API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+samples/hello_mpf_afu/sw/hello_mpf_afu.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include 'opae_svc_wrapper\&.h'\fP
+.br
+\fC#include 'csr_mgr\&.h'\fP
+.br
+\fC#include 'afu_json_info\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main (void)"
+
+.PP
+Definition at line 47 of file hello_mpf_afu\&.cpp\&.
+.PP
+References AFU_ACCEL_UUID, OPAE_SVC_WRAPPER::allocBuffer(), CL, CSR_MGR::getAFUMHz(), OPAE_SVC_WRAPPER::hwIsSimulated(), OPAE_SVC_WRAPPER::isOk(), and CSR_MGR::writeCSR()\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OPAE C API from the source code\&.

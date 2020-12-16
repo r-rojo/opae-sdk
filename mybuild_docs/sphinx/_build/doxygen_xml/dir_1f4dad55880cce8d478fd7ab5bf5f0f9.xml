@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_1f4dad55880cce8d478fd7ab5bf5f0f9" kind="dir">
+    <compoundname>opae-libs/include</compoundname>
+    <innerdir refid="dir_d5cc4b41334fd19f2e3574fb282a209c">opae-libs/include/opae</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="opae-libs/include/"/>
+  </compounddef>
+</doxygen>

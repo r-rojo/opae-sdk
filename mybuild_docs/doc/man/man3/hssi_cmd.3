@@ -1,0 +1,111 @@
+.TH "hssi_cmd" 3 "Wed Dec 16 2020" "Version -.." "OPAE C API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+hssi_cmd
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include </root/samples/hssi/hssi_cmd\&.h>\fP
+.PP
+Inherits test_command\&.
+.PP
+Inherited by \fBhssi_100g_cmd\fP, and \fBhssi_10g_cmd\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhssi_cmd\fP ()"
+.br
+.ti -1c
+.RI "uint64_t \fBmac_bits_for\fP (std::string addr) const"
+.br
+.ti -1c
+.RI "void \fBrun_process\fP (const std::string &proc)"
+.br
+.ti -1c
+.RI "void \fBshow_eth_stats\fP (const std::string &eth)"
+.br
+.ti -1c
+.RI "void \fBenable_eth_loopback\fP (const std::string &eth, bool enable)"
+.br
+.ti -1c
+.RI "template<typename X > std::string \fBint_to_hex\fP (X x) const"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBrunning_\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 38 of file hssi_cmd\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "hssi_cmd::hssi_cmd ()\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file hssi_cmd\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "uint64_t hssi_cmd::mac_bits_for (std::string addr) const\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file hssi_cmd\&.h\&.
+.PP
+References INVALID_MAC\&.
+.PP
+Referenced by hssi_100g_cmd::run(), and hssi_10g_cmd::run()\&.
+.SS "void hssi_cmd::run_process (const std::string & proc)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file hssi_cmd\&.h\&.
+.PP
+Referenced by enable_eth_loopback(), and show_eth_stats()\&.
+.SS "void hssi_cmd::show_eth_stats (const std::string & eth)\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file hssi_cmd\&.h\&.
+.PP
+References run_process()\&.
+.PP
+Referenced by hssi_100g_cmd::run(), and hssi_10g_cmd::run()\&.
+.SS "void hssi_cmd::enable_eth_loopback (const std::string & eth, bool enable)\fC [inline]\fP"
+
+.PP
+Definition at line 76 of file hssi_cmd\&.h\&.
+.PP
+References run_process(), and usleep()\&.
+.PP
+Referenced by hssi_100g_cmd::run(), and hssi_10g_cmd::run()\&.
+.SS "template<typename X > std::string hssi_cmd::int_to_hex (X x) const\fC [inline]\fP"
+
+.PP
+Definition at line 88 of file hssi_cmd\&.h\&.
+.PP
+Referenced by hssi_100g_cmd::print_registers(), and hssi_10g_cmd::print_registers()\&.
+.SS "void hssi_cmd::stop ()\fC [inline]\fP"
+
+.PP
+Definition at line 98 of file hssi_cmd\&.h\&.
+.PP
+References running_\&.
+.SH "Field Documentation"
+.PP 
+.SS "bool hssi_cmd::running_\fC [protected]\fP"
+
+.PP
+Definition at line 104 of file hssi_cmd\&.h\&.
+.PP
+Referenced by hssi_10g_cmd::run(), and stop()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OPAE C API from the source code\&.

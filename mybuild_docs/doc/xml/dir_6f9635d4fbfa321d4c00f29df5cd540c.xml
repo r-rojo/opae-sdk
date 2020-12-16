@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_6f9635d4fbfa321d4c00f29df5cd540c" kind="dir">
+    <compoundname>samples</compoundname>
+    <innerdir refid="dir_4cd27f73ed7287b8f44acb0acd2dd477">samples/base</innerdir>
+    <innerdir refid="dir_46bbc21a174e82d41f6e8eeb5dc6e422">samples/dummy_afu</innerdir>
+    <innerdir refid="dir_6acce3db88a88b43cebdae6f598e1ca8">samples/hello_afu</innerdir>
+    <innerdir refid="dir_a1e5e7b9e1b0ccc13b6009e8bf802f72">samples/hello_events</innerdir>
+    <innerdir refid="dir_12d0c83077c2c3a7b33e560e6ab4fe35">samples/hello_fpga</innerdir>
+    <innerdir refid="dir_2033229adb7782cf8cc1ce656fe8f90e">samples/hello_mpf_afu</innerdir>
+    <innerdir refid="dir_59526f0ccfdb87a80341085265b2bf53">samples/hssi</innerdir>
+    <innerdir refid="dir_603ff3a4e61aaf78196dd8de0bb71e6e">samples/object_api</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="samples/"/>
+  </compounddef>
+</doxygen>

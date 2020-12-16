@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_16cc64bd1653029793e40fa10c9098b3" kind="dir">
+    <compoundname>samples/base/sw</compoundname>
+    <innerfile refid="csr__mgr_8h">csr_mgr.h</innerfile>
+    <innerfile refid="opae__svc__wrapper_8cpp">opae_svc_wrapper.cpp</innerfile>
+    <innerfile refid="opae__svc__wrapper_8h">opae_svc_wrapper.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="samples/base/sw/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,565 @@
+\doxysection{samples/hello\+\_\+fpga/hello\+\_\+fpga.c File Reference}
+\label{hello__fpga_8c}\index{samples/hello\_fpga/hello\_fpga.c@{samples/hello\_fpga/hello\_fpga.c}}
+
+
+A code sample illustrates the basic usage of the O\+P\+AE C A\+PI.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$uuid/uuid.\+h$>$}\newline
+{\ttfamily \#include $<$opae/fpga.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{hello__fpga_8c_structcache__line}{cache\+\_\+line}}
+\item 
+struct \mbox{\hyperlink{object__api_8c_structconfig}{config}}
+\item 
+struct \mbox{\hyperlink{object__api_8c_structconfig_1_1target}{config\+::target}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a9fd0cdfdda29532a444c52dd9e1c1d1f}{T\+E\+S\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~30000
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_acda3b44286ccc5e1924198027f28a8c5}{CL}}(x)~((x) $\ast$ 64)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_adf30d050a3289b6d043824dfd97c81f1}{L\+O\+G2\+\_\+\+CL}}~6
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(x)~((x) $\ast$ 1024 $\ast$ 1024)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_ad3542630f57f4e7073dbd18dd41c9e9a}{C\+A\+C\+H\+E\+L\+I\+N\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+D\+DR}}(p)~((p) $>$$>$ \mbox{\hyperlink{hello__fpga_8c_adf30d050a3289b6d043824dfd97c81f1}{L\+O\+G2\+\_\+\+CL}})
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_aaa5caa9ebd221b79ab0d6f8c5568e855}{L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(1)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a680d7d8ff687719f3dfd4a1cf7d04cfe}{L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+S\+I\+ZE}}~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(2)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a01a171b6816e2e3681ee0bea0fd74b70}{L\+P\+B\+K1\+\_\+\+D\+S\+M\+\_\+\+S\+I\+ZE}}~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(2)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a3346cda33cdc35d5d5b42cd489c75aa0}{C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+DR}}~0x0120
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a8fc5dce1142497274a335a84489be3d4}{C\+S\+R\+\_\+\+D\+S\+T\+\_\+\+A\+D\+DR}}~0x0128
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_acbe346f9bf5608488adb1b6ad68809b2}{C\+S\+R\+\_\+\+C\+TL}}~0x0138
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_ac514d59efcfed9b7fb07a3c838f09503}{C\+S\+R\+\_\+\+S\+T\+A\+T\+U\+S1}}~0x0168
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a21f1970d1fcd3dee94bf0ab5aeb54fbd}{C\+S\+R\+\_\+\+C\+FG}}~0x0140
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_ab1c7049b0e183020bdabcaaec8f20e49}{C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES}}~0x0130
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_ac77542e2d0512964e9a065d647b14639}{D\+S\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+TE}}~0x40
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a4502164cd63bc6b91df80c619468e479}{C\+S\+R\+\_\+\+A\+F\+U\+\_\+\+D\+S\+M\+\_\+\+B\+A\+S\+EL}}~0x0110
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a326496be663d917e61f22100670026b9}{N\+L\+B0\+\_\+\+A\+F\+U\+ID}}~\char`\"{}D8424\+D\+C4-\/A4\+A3-\/C413-\/F89E-\/433683F9040B\char`\"{}
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a782f8715b2fd7e1919759a25ee578d44}{N3000\+\_\+\+A\+F\+U\+ID}}~\char`\"{}9A\+E\+F\+F\+E5F-\/8457-\/0612-\/C000-\/C9660\+D824272\char`\"{}
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_acb55d7e03697cb4b95812725b762f653}{F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+H}}~0xd8424dc4a4a3c413
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a46ed725f81a748bec841dd6216f8ac21}{F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+L}}~0xf89e433683f9040b
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_a7635d12a96b25dd1760b4bc44130eed9}{O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO}}(res,  label,  desc)
+\item 
+\#define \mbox{\hyperlink{hello__fpga_8c_acc2c9cc08f0f7b8f21f835d3fa0f6435}{G\+E\+T\+O\+P\+T\+\_\+\+S\+T\+R\+I\+NG}}~\char`\"{}B\+:scv\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{hello__fpga_8c_a300ec1c0f7befcbb990985d36d56d8c9}{usleep}} (unsigned)
+\item 
+void \mbox{\hyperlink{hello__fpga_8c_aa11f434898b86d619a5ceb6a5d7bf066}{print\+\_\+err}} (const char $\ast$s, \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} res)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{hello__fpga_8c_a3a1b6f72679286eae6f9eec936cc5533}{parse\+\_\+args}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{hello__fpga_8c_a47a2834f92903ad0fae9a16c3360715d}{find\+\_\+fpga}} (\mbox{\hyperlink{types_8h_af0b6683499be79fab39ac41db02e7abf}{fpga\+\_\+guid}} afu\+\_\+guid, \mbox{\hyperlink{types_8h_a252f538a10fb51d0988ed52946516d9e}{fpga\+\_\+token}} $\ast$accelerator\+\_\+token, uint32\+\_\+t $\ast$num\+\_\+matches\+\_\+accelerators)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{hello__fpga_8c_aed96c4635797cab6a6fa6b22763aac26}{get\+\_\+bus}} (\mbox{\hyperlink{types_8h_a252f538a10fb51d0988ed52946516d9e}{fpga\+\_\+token}} tok, uint8\+\_\+t $\ast$bus)
+\item 
+bool \mbox{\hyperlink{hello__fpga_8c_a888b04133611aa43ed28c4e4f9f319ae}{probe\+\_\+for\+\_\+ase}} (void)
+\item 
+\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} \mbox{\hyperlink{hello__fpga_8c_af5efd740b98ff6882ecbdde289da7b85}{find\+\_\+nlb\+\_\+n3000}} (\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}} accelerator\+\_\+handle, uint64\+\_\+t $\ast$afu\+\_\+baddr)
+\item 
+int \mbox{\hyperlink{hello__fpga_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{object__api_8c_structconfig}{config}} \mbox{\hyperlink{hello__fpga_8c_a6021fefa0bf488ddb29487b0b9d49979}{config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A code sample illustrates the basic usage of the O\+P\+AE C A\+PI. 
+
+The sample is a host application that demonstrates the basic steps of interacting with F\+P\+GA using the O\+P\+AE library. These steps include\+:
+
+
+\begin{DoxyItemize}
+\item F\+P\+GA enumeration
+\item Resource acquiring and releasing
+\item Managing shared memory buffer
+\item M\+M\+IO read and write
+\end{DoxyItemize}
+
+The sample also demonstrates O\+P\+AE\textquotesingle{}s object model, such as tokens, handles, and properties.
+
+The sample requires a native loopback mode (N\+LB) test image to be loaded on the F\+P\+GA. Refer to \href{https://opae.github.io/docs/fpga_api/quick_start/readme.html}{\texttt{ Quick Start Guide}} for full instructions on building, configuring, and running this code sample. 
+
+\doxysubsection{Data Structure Documentation}
+\index{cache\_line@{cache\_line}}\label{structcache__line}
+\doxysubsubsection{struct cache\+\_\+line}
+
+
+Definition at line 85 of file hello\+\_\+afu.\+c.
+
+\begin{DoxyFields}{Data Fields}
+\mbox{\label{hello__fpga_8c_a3f28028a2861bc1cb7e3d07fa84bb4a2}} 
+uint32\_t&
+uint\mbox{[}16\mbox{]}&
+\\
+\hline
+
+\end{DoxyFields}
+\index{config@{config}}\label{structconfig}
+\doxysubsubsection{struct config}
+
+
+Definition at line 127 of file hello\+\_\+fpga.\+c.
+
+\begin{DoxyFields}{Data Fields}
+\mbox{\label{object__api_8c_a04d846dc4898dbd7b30396e27cca3425}} 
+struct \mbox{\hyperlink{object__api_8c_structconfig_1_1target}{target}}&
+target&
+\\
+\hline
+
+\mbox{\label{object__api_8c_a56a710b532c4f7d6213fbd173920ffca}} 
+int&
+open\_flags&
+\\
+\hline
+
+\mbox{\label{object__api_8c_a860ca20f3c0dd13da4979632fb61f505}} 
+int&
+run\_n3000&
+\\
+\hline
+
+\mbox{\label{object__api_8c_a89002c88f5f547e58ee54bda69ee0914}} 
+int&
+bus&
+\\
+\hline
+
+\mbox{\label{object__api_8c_a026c31834bf67496b4a0af04d40e2adb}} 
+float&
+interval\_sec&
+\\
+\hline
+
+\end{DoxyFields}
+\index{config::target@{config::target}}\label{structconfig_1_1target}
+\doxysubsubsection{struct config\+::target}
+
+
+Definition at line 128 of file hello\+\_\+fpga.\+c.
+
+\begin{DoxyFields}{Data Fields}
+\mbox{\label{object__api_8c_af867cbf6134f0932aeadbe2045b95bb1}} 
+int&
+bus&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{hello__fpga_8c_a9fd0cdfdda29532a444c52dd9e1c1d1f}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!TEST\_TIMEOUT@{TEST\_TIMEOUT}}
+\index{TEST\_TIMEOUT@{TEST\_TIMEOUT}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{TEST\_TIMEOUT}{TEST\_TIMEOUT}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+T\+I\+M\+E\+O\+UT~30000}
+
+
+
+Definition at line 66 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_acda3b44286ccc5e1924198027f28a8c5}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CL@{CL}}
+\index{CL@{CL}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CL}{CL}}
+{\footnotesize\ttfamily \#define CL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x) $\ast$ 64)}
+
+
+
+Definition at line 70 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_adf30d050a3289b6d043824dfd97c81f1}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!LOG2\_CL@{LOG2\_CL}}
+\index{LOG2\_CL@{LOG2\_CL}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{LOG2\_CL}{LOG2\_CL}}
+{\footnotesize\ttfamily \#define L\+O\+G2\+\_\+\+CL~6}
+
+
+
+Definition at line 73 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!MB@{MB}}
+\index{MB@{MB}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{MB}{MB}}
+{\footnotesize\ttfamily \#define MB(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x) $\ast$ 1024 $\ast$ 1024)}
+
+
+
+Definition at line 76 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_ad3542630f57f4e7073dbd18dd41c9e9a}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CACHELINE\_ALIGNED\_ADDR@{CACHELINE\_ALIGNED\_ADDR}}
+\index{CACHELINE\_ALIGNED\_ADDR@{CACHELINE\_ALIGNED\_ADDR}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CACHELINE\_ALIGNED\_ADDR}{CACHELINE\_ALIGNED\_ADDR}}
+{\footnotesize\ttfamily \#define C\+A\+C\+H\+E\+L\+I\+N\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+D\+DR(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~((p) $>$$>$ \mbox{\hyperlink{hello__fpga_8c_adf30d050a3289b6d043824dfd97c81f1}{L\+O\+G2\+\_\+\+CL}})}
+
+
+
+Definition at line 79 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_aaa5caa9ebd221b79ab0d6f8c5568e855}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!LPBK1\_BUFFER\_SIZE@{LPBK1\_BUFFER\_SIZE}}
+\index{LPBK1\_BUFFER\_SIZE@{LPBK1\_BUFFER\_SIZE}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{LPBK1\_BUFFER\_SIZE}{LPBK1\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(1)}
+
+
+
+Definition at line 81 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a680d7d8ff687719f3dfd4a1cf7d04cfe}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!LPBK1\_BUFFER\_ALLOCATION\_SIZE@{LPBK1\_BUFFER\_ALLOCATION\_SIZE}}
+\index{LPBK1\_BUFFER\_ALLOCATION\_SIZE@{LPBK1\_BUFFER\_ALLOCATION\_SIZE}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{LPBK1\_BUFFER\_ALLOCATION\_SIZE}{LPBK1\_BUFFER\_ALLOCATION\_SIZE}}
+{\footnotesize\ttfamily \#define L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+S\+I\+ZE~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(2)}
+
+
+
+Definition at line 82 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a01a171b6816e2e3681ee0bea0fd74b70}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!LPBK1\_DSM\_SIZE@{LPBK1\_DSM\_SIZE}}
+\index{LPBK1\_DSM\_SIZE@{LPBK1\_DSM\_SIZE}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{LPBK1\_DSM\_SIZE}{LPBK1\_DSM\_SIZE}}
+{\footnotesize\ttfamily \#define L\+P\+B\+K1\+\_\+\+D\+S\+M\+\_\+\+S\+I\+ZE~\mbox{\hyperlink{hello__fpga_8c_a44d2b171cc92225ec0a76ef70fc9b531}{MB}}(2)}
+
+
+
+Definition at line 83 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a3346cda33cdc35d5d5b42cd489c75aa0}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_SRC\_ADDR@{CSR\_SRC\_ADDR}}
+\index{CSR\_SRC\_ADDR@{CSR\_SRC\_ADDR}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_SRC\_ADDR}{CSR\_SRC\_ADDR}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+DR~0x0120}
+
+
+
+Definition at line 84 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a8fc5dce1142497274a335a84489be3d4}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_DST\_ADDR@{CSR\_DST\_ADDR}}
+\index{CSR\_DST\_ADDR@{CSR\_DST\_ADDR}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_DST\_ADDR}{CSR\_DST\_ADDR}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+D\+S\+T\+\_\+\+A\+D\+DR~0x0128}
+
+
+
+Definition at line 85 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_acbe346f9bf5608488adb1b6ad68809b2}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_CTL@{CSR\_CTL}}
+\index{CSR\_CTL@{CSR\_CTL}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_CTL}{CSR\_CTL}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+C\+TL~0x0138}
+
+
+
+Definition at line 86 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_ac514d59efcfed9b7fb07a3c838f09503}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_STATUS1@{CSR\_STATUS1}}
+\index{CSR\_STATUS1@{CSR\_STATUS1}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_STATUS1}{CSR\_STATUS1}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+S\+T\+A\+T\+U\+S1~0x0168}
+
+
+
+Definition at line 87 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a21f1970d1fcd3dee94bf0ab5aeb54fbd}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_CFG@{CSR\_CFG}}
+\index{CSR\_CFG@{CSR\_CFG}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_CFG}{CSR\_CFG}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+C\+FG~0x0140}
+
+
+
+Definition at line 88 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_ab1c7049b0e183020bdabcaaec8f20e49}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_NUM\_LINES@{CSR\_NUM\_LINES}}
+\index{CSR\_NUM\_LINES@{CSR\_NUM\_LINES}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_NUM\_LINES}{CSR\_NUM\_LINES}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES~0x0130}
+
+
+
+Definition at line 89 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_ac77542e2d0512964e9a065d647b14639}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!DSM\_STATUS\_TEST\_COMPLETE@{DSM\_STATUS\_TEST\_COMPLETE}}
+\index{DSM\_STATUS\_TEST\_COMPLETE@{DSM\_STATUS\_TEST\_COMPLETE}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{DSM\_STATUS\_TEST\_COMPLETE}{DSM\_STATUS\_TEST\_COMPLETE}}
+{\footnotesize\ttfamily \#define D\+S\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+TE~0x40}
+
+
+
+Definition at line 90 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a4502164cd63bc6b91df80c619468e479}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!CSR\_AFU\_DSM\_BASEL@{CSR\_AFU\_DSM\_BASEL}}
+\index{CSR\_AFU\_DSM\_BASEL@{CSR\_AFU\_DSM\_BASEL}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_AFU\_DSM\_BASEL}{CSR\_AFU\_DSM\_BASEL}}
+{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+A\+F\+U\+\_\+\+D\+S\+M\+\_\+\+B\+A\+S\+EL~0x0110}
+
+
+
+Definition at line 91 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a326496be663d917e61f22100670026b9}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!NLB0\_AFUID@{NLB0\_AFUID}}
+\index{NLB0\_AFUID@{NLB0\_AFUID}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{NLB0\_AFUID}{NLB0\_AFUID}}
+{\footnotesize\ttfamily \#define N\+L\+B0\+\_\+\+A\+F\+U\+ID~\char`\"{}D8424\+D\+C4-\/A4\+A3-\/C413-\/F89E-\/433683F9040B\char`\"{}}
+
+
+
+Definition at line 94 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a782f8715b2fd7e1919759a25ee578d44}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!N3000\_AFUID@{N3000\_AFUID}}
+\index{N3000\_AFUID@{N3000\_AFUID}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{N3000\_AFUID}{N3000\_AFUID}}
+{\footnotesize\ttfamily \#define N3000\+\_\+\+A\+F\+U\+ID~\char`\"{}9A\+E\+F\+F\+E5F-\/8457-\/0612-\/C000-\/C9660\+D824272\char`\"{}}
+
+
+
+Definition at line 97 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_acb55d7e03697cb4b95812725b762f653}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!FPGA\_NLB0\_UUID\_H@{FPGA\_NLB0\_UUID\_H}}
+\index{FPGA\_NLB0\_UUID\_H@{FPGA\_NLB0\_UUID\_H}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{FPGA\_NLB0\_UUID\_H}{FPGA\_NLB0\_UUID\_H}}
+{\footnotesize\ttfamily \#define F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+H~0xd8424dc4a4a3c413}
+
+
+
+Definition at line 98 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a46ed725f81a748bec841dd6216f8ac21}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!FPGA\_NLB0\_UUID\_L@{FPGA\_NLB0\_UUID\_L}}
+\index{FPGA\_NLB0\_UUID\_L@{FPGA\_NLB0\_UUID\_L}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{FPGA\_NLB0\_UUID\_L}{FPGA\_NLB0\_UUID\_L}}
+{\footnotesize\ttfamily \#define F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+L~0xf89e433683f9040b}
+
+
+
+Definition at line 99 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_a7635d12a96b25dd1760b4bc44130eed9}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!ON\_ERR\_GOTO@{ON\_ERR\_GOTO}}
+\index{ON\_ERR\_GOTO@{ON\_ERR\_GOTO}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{ON\_ERR\_GOTO}{ON\_ERR\_GOTO}}
+{\footnotesize\ttfamily \#define O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO(\begin{DoxyParamCaption}\item[{}]{res,  }\item[{}]{label,  }\item[{}]{desc }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{   \textcolor{keywordflow}{do} \{                                       \(\backslash\)}
+\DoxyCodeLine{      if ((res) != FPGA\_OK) \{            \(\backslash\)}
+\DoxyCodeLine{         print\_err((desc), (res));  \(\backslash\)}
+\DoxyCodeLine{         goto label;                \(\backslash\)}
+\DoxyCodeLine{      \}                                  \(\backslash\)}
+\DoxyCodeLine{   \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Definition at line 106 of file hello\+\_\+fpga.\+c.
+
+\mbox{\label{hello__fpga_8c_acc2c9cc08f0f7b8f21f835d3fa0f6435}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!GETOPT\_STRING@{GETOPT\_STRING}}
+\index{GETOPT\_STRING@{GETOPT\_STRING}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{GETOPT\_STRING}{GETOPT\_STRING}}
+{\footnotesize\ttfamily \#define G\+E\+T\+O\+P\+T\+\_\+\+S\+T\+R\+I\+NG~\char`\"{}B\+:scv\char`\"{}}
+
+
+
+Definition at line 143 of file hello\+\_\+fpga.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{hello__fpga_8c_a300ec1c0f7befcbb990985d36d56d8c9}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!usleep@{usleep}}
+\index{usleep@{usleep}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{usleep()}{usleep()}}
+{\footnotesize\ttfamily int usleep (\begin{DoxyParamCaption}\item[{unsigned}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_aa11f434898b86d619a5ceb6a5d7bf066}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!print\_err@{print\_err}}
+\index{print\_err@{print\_err}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{print\_err()}{print\_err()}}
+{\footnotesize\ttfamily void print\+\_\+err (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{\mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}}}]{res }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file hello\+\_\+fpga.\+c.
+
+
+
+References fpga\+Err\+Str().
+
+\mbox{\label{hello__fpga_8c_a3a1b6f72679286eae6f9eec936cc5533}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!parse\_args@{parse\_args}}
+\index{parse\_args@{parse\_args}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{parse\_args()}{parse\_args()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} parse\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 144 of file hello\+\_\+fpga.\+c.
+
+
+
+References config\+::target\+::bus, F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON, F\+P\+G\+A\+\_\+\+OK, F\+P\+G\+A\+\_\+\+O\+P\+E\+N\+\_\+\+S\+H\+A\+R\+ED, fpga\+Get\+O\+P\+A\+E\+C\+Build\+String(), fpga\+Get\+O\+P\+A\+E\+C\+Version\+String(), G\+E\+T\+O\+P\+T\+\_\+\+S\+T\+R\+I\+NG, config\+::open\+\_\+flags, config\+::run\+\_\+n3000, and config\+::target.
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_a47a2834f92903ad0fae9a16c3360715d}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!find\_fpga@{find\_fpga}}
+\index{find\_fpga@{find\_fpga}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{find\_fpga()}{find\_fpga()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} find\+\_\+fpga (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_af0b6683499be79fab39ac41db02e7abf}{fpga\+\_\+guid}}}]{afu\+\_\+guid,  }\item[{\mbox{\hyperlink{types_8h_a252f538a10fb51d0988ed52946516d9e}{fpga\+\_\+token}} $\ast$}]{accelerator\+\_\+token,  }\item[{uint32\+\_\+t $\ast$}]{num\+\_\+matches\+\_\+accelerators }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file hello\+\_\+fpga.\+c.
+
+
+
+References config\+::target\+::bus, F\+P\+G\+A\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+OR, F\+P\+G\+A\+\_\+\+OK, fpga\+Destroy\+Properties(), fpga\+Enumerate(), fpga\+Get\+Properties(), fpga\+Properties\+Set\+Bus(), fpga\+Properties\+Set\+G\+U\+I\+D(), fpga\+Properties\+Set\+Object\+Type(), O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO, and config\+::target.
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_aed96c4635797cab6a6fa6b22763aac26}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!get\_bus@{get\_bus}}
+\index{get\_bus@{get\_bus}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{get\_bus()}{get\_bus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} get\+\_\+bus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a252f538a10fb51d0988ed52946516d9e}{fpga\+\_\+token}}}]{tok,  }\item[{uint8\+\_\+t $\ast$}]{bus }\end{DoxyParamCaption})}
+
+
+
+Definition at line 235 of file hello\+\_\+fpga.\+c.
+
+
+
+References F\+P\+G\+A\+\_\+\+OK, fpga\+Destroy\+Properties(), fpga\+Get\+Properties(), fpga\+Properties\+Get\+Bus(), and O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO.
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_a888b04133611aa43ed28c4e4f9f319ae}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!probe\_for\_ase@{probe\_for\_ase}}
+\index{probe\_for\_ase@{probe\_for\_ase}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{probe\_for\_ase()}{probe\_for\_ase()}}
+{\footnotesize\ttfamily bool probe\+\_\+for\+\_\+ase (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 255 of file hello\+\_\+fpga.\+c.
+
+
+
+References F\+P\+G\+A\+\_\+\+D\+E\+V\+I\+CE, F\+P\+G\+A\+\_\+\+OK, fpga\+Destroy\+Properties(), fpga\+Destroy\+Token(), fpga\+Enumerate(), fpga\+Get\+Properties(), fpga\+Properties\+Get\+Device\+I\+D(), and fpga\+Properties\+Set\+Object\+Type().
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_af5efd740b98ff6882ecbdde289da7b85}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!find\_nlb\_n3000@{find\_nlb\_n3000}}
+\index{find\_nlb\_n3000@{find\_nlb\_n3000}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{find\_nlb\_n3000()}{find\_nlb\_n3000()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types__enum_8h_a27aaa9bd2d94c9b53602b1a7af49fc6d}{fpga\+\_\+result}} find\+\_\+nlb\+\_\+n3000 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a4ad40f31195233b629bcde187b0556d5}{fpga\+\_\+handle}}}]{accelerator\+\_\+handle,  }\item[{uint64\+\_\+t $\ast$}]{afu\+\_\+baddr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file hello\+\_\+fpga.\+c.
+
+
+
+References F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON, F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+H, F\+P\+G\+A\+\_\+\+N\+L\+B0\+\_\+\+U\+U\+I\+D\+\_\+L, F\+P\+G\+A\+\_\+\+OK, fpga\+Read\+M\+M\+I\+O64(), and O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO.
+
+
+
+Referenced by main().
+
+\mbox{\label{hello__fpga_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!main@{main}}
+\index{main@{main}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 334 of file hello\+\_\+fpga.\+c.
+
+
+
+References C\+A\+C\+H\+E\+L\+I\+N\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+D\+DR, CL, C\+S\+R\+\_\+\+A\+F\+U\+\_\+\+D\+S\+M\+\_\+\+B\+A\+S\+EL, C\+S\+R\+\_\+\+C\+FG, C\+S\+R\+\_\+\+C\+TL, C\+S\+R\+\_\+\+D\+S\+T\+\_\+\+A\+D\+DR, C\+S\+R\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES, C\+S\+R\+\_\+\+S\+R\+C\+\_\+\+A\+D\+DR, C\+S\+R\+\_\+\+S\+T\+A\+T\+U\+S1, D\+S\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+S\+T\+\_\+\+C\+O\+M\+P\+L\+E\+TE, find\+\_\+fpga(), find\+\_\+nlb\+\_\+n3000(), F\+P\+G\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON, F\+P\+G\+A\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND, F\+P\+G\+A\+\_\+\+OK, fpga\+Close(), fpga\+Destroy\+Token(), fpga\+Get\+I\+O\+Address(), fpga\+Map\+M\+M\+I\+O(), fpga\+Open(), fpga\+Prepare\+Buffer(), fpga\+Read\+M\+M\+I\+O64(), fpga\+Release\+Buffer(), fpga\+Reset(), fpga\+Unmap\+M\+M\+I\+O(), fpga\+Write\+M\+M\+I\+O32(), fpga\+Write\+M\+M\+I\+O64(), get\+\_\+bus(), L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+S\+I\+ZE, L\+P\+B\+K1\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE, L\+P\+B\+K1\+\_\+\+D\+S\+M\+\_\+\+S\+I\+ZE, N3000\+\_\+\+A\+F\+U\+ID, N\+L\+B0\+\_\+\+A\+F\+U\+ID, O\+N\+\_\+\+E\+R\+R\+\_\+\+G\+O\+TO, config\+::open\+\_\+flags, parse\+\_\+args(), probe\+\_\+for\+\_\+ase(), config\+::run\+\_\+n3000, T\+E\+S\+T\+\_\+\+T\+I\+M\+E\+O\+UT, cache\+\_\+line\+::uint, and usleep().
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{hello__fpga_8c_a6021fefa0bf488ddb29487b0b9d49979}} 
+\index{hello\_fpga.c@{hello\_fpga.c}!config@{config}}
+\index{config@{config}!hello\_fpga.c@{hello\_fpga.c}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{object__api_8c_structconfig}{config}} \mbox{\hyperlink{object__api_8c_structconfig}{config}}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{   .target = \{}
+\DoxyCodeLine{      .bus = -\/1,}
+\DoxyCodeLine{   \},}
+\DoxyCodeLine{   .open\_flags = 0,}
+\DoxyCodeLine{   .run\_n3000 = 0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

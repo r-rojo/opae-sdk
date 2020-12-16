@@ -1,0 +1,61 @@
+.TH "samples/hssi/hssi.cpp" 3 "Wed Dec 16 2020" "Version -.." "OPAE C API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+samples/hssi/hssi.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <csignal>\fP
+.br
+\fC#include 'hssi_afu\&.h'\fP
+.br
+\fC#include 'hssi_10g_cmd\&.h'\fP
+.br
+\fC#include 'hssi_100g_cmd\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsig_handler\fP (int signum)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBhssi_afu\fP \fBapp\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void sig_handler (int signum)"
+
+.PP
+Definition at line 33 of file hssi\&.cpp\&.
+.PP
+References app\&.
+.PP
+Referenced by main()\&.
+.SS "int main (int argc, char * argv[])"
+
+.PP
+Definition at line 45 of file hssi\&.cpp\&.
+.PP
+References app, and sig_handler()\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBhssi_afu\fP app"
+
+.PP
+Definition at line 31 of file hssi\&.cpp\&.
+.PP
+Referenced by hssi_100g_cmd::add_options(), hssi_10g_cmd::add_options(), dummy_afu::mmio_test::add_options(), main(), dummy_afu::lpbk_test::run(), dummy_afu::ddr_test::run(), hssi_100g_cmd::run(), hssi_10g_cmd::run(), dummy_afu::mmio_test::run(), dummy_afu::dummy_afu::run(), dummy_afu::mmio_test::run_perf(), and sig_handler()\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OPAE C API from the source code\&.
